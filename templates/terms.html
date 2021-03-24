@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WD Buzzwords</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>Terms</h2>
+    
     {% for term in terms %}
         {{ term.first_letter }}<br>
         {{ term.term_name }}<br>
         {{ term.term_description }}<br>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
