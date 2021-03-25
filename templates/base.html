@@ -16,17 +16,17 @@
     <header>
         
         <!-- Main navbar -->
-        <nav class="nav-extended green lighten-5">
+        <nav class="nav-extended teal lighten-2">
             <div class="nav-wrapper">
-                <a href="{{ url_for('get_terms') }}" class="left brand-logo grey-text text-darken-4">WD Buzzwords</a>
-                <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="grey-text text-darken-4 fas fa-bars"></i></a>
+                <a href="{{ url_for('get_terms') }}" class="left brand-logo">WD Buzzwords</a>
+                <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_terms') }}">Home</a></li>
                     <li><a href="#">Glossary</a></li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Log In</a></li>
                     <li><a href="#">Log Out</a></li>
-                    <li><a href="#">Register</a></li>
+                    <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
                 </ul>
             </div>
         </nav>
@@ -38,7 +38,7 @@
             <li><a href="#">Profile</a></li>
             <li><a href="#">Log In</a></li>
             <li><a href="#">Log Out</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
         </ul>
     
     </header>
