@@ -10,9 +10,38 @@
     {% block styles %}
     {% endblock %}
     <title>WD Buzzwords</title>
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='img/dictionary.png') }}" />
 </head>
 <body>
+    <header>
+        
+        <!-- Main navbar -->
+        <nav class="nav-extended teal lighten-2">
+            <div class="nav-wrapper">
+                <a href="#home" class="brand-logo">Web Development Buzzwords</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Glossary</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Log Out</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+        </nav>
     
+        <!-- Mobile sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Glossary</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Log Out</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+    
+    </header>
     {% block content %}
     {% endblock %}
 
