@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<h3 class="center-align">Sign Up</h3>
+<h3 class="center-align">Log In</h3>
 
 <div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('sign_up') }}">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
         <div class="card-panel">
             <!-- Username-->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-user prefix grey-text text-darken-4"></i>
+                    <i class="fas fa-user-cog prefix grey-text text-darken-4"></i>
                     <input id="username" name="username" type="text" minlength="5" maxlength="15"
                         pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                     <label for="username">Username</label>
@@ -23,31 +23,21 @@
                     <label for="password">Password</label>
                 </div>
             </div>
-            <!-- Confirm Passsword -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-user-lock prefix grey-text text-darken-4"></i>
-                    <input id="confirm-password" name="password" type="password" minlength="5" maxlength="15"
-                        pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
-                    <label for="confirm-password">Confirm Password</label>
-                </div>
-            </div>
-            <!-- Sign Up Button-->
+            <!-- Log In Button-->
             <div class="row">
                 <button class="col s4 offset-m4 btn btn-large waves-effect waves-light amber accent-3" type="submit"
-                    name="action">Submit
+                    name="action">Log In
                 </button>
             </div>
-
         </div>
     </form>
 </div>
-<!-- Redirect link to Log In Page -->
+            <!-- Redirect link to sign up page -->
 <div class="row">
     <div class="col s12">
         <p class="center-align">
-            Alteady have an account?
-            <a href="{{ url_for('login') }}" class="teal-text text-accent-4">Log In</a>
+            Want to save your favourite buzzwords?
+            <a href="{{ url_for('sign_up') }}" class="teal-text text-accent-4">Create an account</a>
         </p>
     </div>
 </div>
