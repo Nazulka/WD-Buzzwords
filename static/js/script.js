@@ -1,7 +1,7 @@
  $(document).ready(function(){
     $('.sidenav').sidenav({ edge: "right" });
     $('.fixed-action-btn').floatingActionButton();
-    $('input#input_text, textarea#textarea1').characterCounter();
+    $('input#term_name, textarea#term_description').characterCounter();
   });
 
   
