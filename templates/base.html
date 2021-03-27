@@ -25,6 +25,7 @@
                     <li><a href="{{ url_for('get_terms') }}">Glossary</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('account', username=session['user']) }}">Account</a></li>
+                        <li><a href="{{ url_for('add_term') }}">My Contributions</a></li>
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
                         <li><a href="{{ url_for('login') }}">Log In</a></li>
@@ -40,6 +41,7 @@
             <li><a href="{{ url_for('get_terms') }}">Glossary</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('account', username=session['user']) }}">Account</a></li>
+                <li><a href="{{ url_for('add_term') }}">My Contributions</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}">Log In</a></li>

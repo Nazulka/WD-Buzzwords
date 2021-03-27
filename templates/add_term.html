@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="center-align">Add a term</h3>
+    <div class="row">
+        <form class="col m8 offset-m2 s12">
+            <div class="row">
+                <div class="input-field">
+                    <i class="fas fa-pen-alt prefix"></i>
+                    <input id="icon-prefix" type="text">
+                    <label for="icon-prefix">Title</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <i class="fas fa-plus-circle prefix"></i>
+                    <textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
+                    <label for="textarea1">Description</label>
+                </div>
+            </div>
+            <div class="row">
+                <button class="col s4 offset-m4 btn btn-large waves-effect waves-light amber accent-3 center-align" type="submit"
+                    name="action">Submit
+                </button>
+            </div>
+        </form>
+    </div>
+            
+{% endblock %}

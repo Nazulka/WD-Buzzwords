@@ -1,19 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h2>Glossary</h2>
-    
-    {% for term in terms %}
-    {{ term.first_letter }}<br>
-    {{ term.term_name }}<br>
-    {{ term.term_description }}<br>
-    {% endfor %}
-    
     <div class="container">
+        <h2>Glossary</h2>
+        <div class="divider"></div>
+        {% for term in terms %}
+        <div class="divider"></div>
         <div class="row">
-            <div class="col l8 m10 s10 center-align">
-                <h5>{{ term_name }}</h5>
-                <p>{{ term_description }}</p>
+            <div class="section left-align">
+                <h5><strong>{{ term.term_name }}</strong></h5>
+                <p>{{ term.term_description }}</p>
                 <div class="fixed-action-btn">
                     <a href="#" class="btn-floating waves-effect waves-light teal accent-1 btn-small right"><i
                             class="far fa-heart"></i></a>
@@ -24,6 +20,7 @@
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
 
 

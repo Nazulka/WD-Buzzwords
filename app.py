@@ -29,7 +29,7 @@ def home():
 
 @app.route("/get_terms")
 def get_terms():
-    terms = mongo.db.terms.find()
+    terms = list(mongo.db.terms.find())
     return render_template("terms.html", terms=terms)
 
 
@@ -109,6 +109,11 @@ def logout():
     session.pop("user")
 
     return redirect(url_for("login"))
+
+
+@app.route("/add_term")
+def add_term():
+    return render_template("add_term.html")
 
 
 if __name__ == "__main__":
