@@ -1,3 +1,31 @@
+/* Sticky footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+      
+.social-links {
+    width: 100%;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+}
+.social-items {
+    margin: auto;
+    font-size: 1.6rem;
+    padding: 0;
+}
+.copyright {
+    width: 100%;
+}
 .flashes h4{
     line-height: 2;
 }
