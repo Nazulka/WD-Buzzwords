@@ -2,11 +2,29 @@
 {% block content %}
 
     <h2>Glossary</h2>
-
+    
     {% for term in terms %}
-        {{ term.first_letter }}<br>
-        {{ term.term_name }}<br>
-        {{ term.term_description }}<br>
+    {{ term.first_letter }}<br>
+    {{ term.term_name }}<br>
+    {{ term.term_description }}<br>
     {% endfor %}
+    
+    <div class="container">
+        <div class="row">
+            <div class="col l8 m10 s10 center-align">
+                <h5>{{ term_name }}</h5>
+                <p>{{ term_description }}</p>
+                <div class="fixed-action-btn">
+                    <a href="#" class="btn-floating waves-effect waves-light teal accent-1 btn-small right"><i
+                            class="far fa-heart"></i></a>
+                    <ul>
+                        <li><a href="#" class="btn-floating btn-small red"><i class="fas fa-save"></i></a></li>
+                        <li><a href="#" class="btn-floating btn-small yellow"><i class="fas fa-share-alt"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 {% endblock %}
