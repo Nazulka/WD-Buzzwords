@@ -6,7 +6,7 @@
         submit your word.</h6>
     <!-- Card Panel -->
     <div class="row card-panel grey lighten-5">
-        <form class="col m8 offset-m2 s12" method="POST" action="">
+        <form class="col m8 offset-m2 s12" method="POST" action="{{ url_for('add_term') }}">
             <!-- Card Panel Image -->
             <div class="row">
                 <div class="col s12 m12 center-align">
@@ -35,12 +35,12 @@
                     <label for="term_description">What does it mean?</label>
                 </div>
             </div>
+            <!-- Card Panel Submit Button -->
             <div class="row">
                 <button class="col s4 offset-m4 btn btn-large waves-effect waves-light amber accent-3 center-align"
-                    type="submit" name="action">Submit
+                    type="submit">Submit
                 </button>
             </div>
-            <!-- Card Panel Submit Button -->
             <div class="row">
                 <div class="col s12">
                     <p class="center-align">

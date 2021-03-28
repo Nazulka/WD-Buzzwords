@@ -111,8 +111,18 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_term")
+@app.route("/add_term", methods=["GET", "POST"])
 def add_term():
+    if request.method == "POST":
+        term = {
+            "term_name": request.form.get("term_name"),
+            "term_description": request.form.get("term_description"),
+            "added_by": session["user"]
+        }
+        mongo.db.terms.insert_one(term)
+        flash("Your entry successfully added!")
+        return redirect(url_for("get_terms"))
+
     return render_template("add_term.html")
 
 
