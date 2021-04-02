@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-pen-alt prefix"></i>
-                    <input id="term_name" name="term_name" minlength="3" maxlength="50" type="text" class="validate"
+                    <input id="term_name" name="term_name" minlength="3" maxlength="50" value="{{ term.term_name }}" type="text" class="validate"
                         required>
                     <label for="term_name">What's your word?</label>
                 </div>
@@ -21,15 +21,19 @@
                 <div class="input-field col s12">
                     <i class="far fa-sticky-note prefix"></i>
                     <textarea id="term_description" name="term_description" class="materialize-textarea validate"
-                        minlength="5" data-length="500" required></textarea>
+                        minlength="5" data-length="500" required>
+                        {{- term.term_description }}
+                    </textarea>
                     <label for="term_description">What does it mean?</label>
                 </div>
             </div>
-            <!-- Card Panel Edit Button -->
+            <!-- Edit Button -->
             <div class="row">
-                <button class="col s4 offset-m4 btn btn-large waves-effect waves-light amber accent-3 center-align"
-                    type="submit">Edit Word
+                <button class="col s4 offset-m2 btn btn-large waves-effect waves-light amber accent-3 center-align"
+                    type="submit">Edit
                 </button>
+                <!-- Cancel changes Button-->
+                <a href="{{ url_for('get_terms') }}" class="col s4 offset-m2 btn btn-large waves-effect waves-light amber accent-3 center-align">Cancel</a>
             </div>
             <div class="row">
                 <div class="col s12">
