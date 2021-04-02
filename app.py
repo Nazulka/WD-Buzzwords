@@ -138,10 +138,17 @@ def edit_term(term_id):
             "added_by": session["user"]
         }
         mongo.db.terms.update({"_id": ObjectId(term_id)}, submit)
-        flash("Term successfully updated!")
+        flash("Entry successfully updated!")
         
     term = mongo.db.terms.find_one({"_id": ObjectId(term_id)})
     return render_template("edit_term.html", term=term)
+
+
+@app.route("/delete_term/<term_id>")
+def delete_term(term_id):
+    mongo.db.terms.remove({"_id": ObjectId(term_id)})
+    flash("Entry Successfully Deleted")
+    return redirect(url_for("get_terms"))
 
 
 if __name__ == "__main__":
