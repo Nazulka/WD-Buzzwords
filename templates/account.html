@@ -2,13 +2,41 @@
 {% block content %}
 
 <div class="row">
-    <div class="col s12 m8 offset-m2">
-        <div class="card-panel">
-            <h3 class="center-align">
-                {{ username }}'s Account
-            </h3>
-        </div>
+    <div class="col s12 m10 offset-m1">
+        <h3 class="center-align">
+            {{ username }}'s Account
+        </h3>
     </div>
 </div>
 
+<!-- Terms added by the user -->
+<div class="row">
+    <div class="col s12 m10 offset-m1">
+        <h3 class="left-align">
+            My Added Words
+        </h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col s12 m10 offset-m1">
+        
+            {% for term in terms %}
+            {% if session.user|lower == term.added_by|lower %}
+            
+            <div class="row">
+                <a href="{{ url_for('add_term', term_name=term._id) }}"></a>
+                <div class="section left-align">
+                    <h5><strong>{{ term.term_name }}</strong></h5>
+                    <p>{{ term.term_description }}</p>
+                    <p><em>Added by: {{term.added_by }}</em></p>
+                </div>
+                <div class="divider"></div>
+            </div>
+             {% endif %}
+            {% endfor %}
+    </div>    
+</div>
+
 {% endblock %}
+
+ 

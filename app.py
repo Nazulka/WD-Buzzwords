@@ -30,7 +30,7 @@ def home():
 @app.route("/get_terms")
 def get_terms():
     terms = list(mongo.db.terms.find())
-    return render_template("terms.html", terms=terms)
+    return render_template("glossary.html", terms=terms)
 
 
 @app.route("/sign_up", methods=["GET", "POST"])
@@ -96,8 +96,11 @@ def account(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
+    # get the session user's added terms from the database
+    terms = list(mongo.db.terms.find())
+
     if session["user"]:
-        return render_template("account.html", username=username)
+        return render_template("account.html", username=username, terms=terms)
 
     return redirect(url_for("login"))
 
