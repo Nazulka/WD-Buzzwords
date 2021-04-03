@@ -1,14 +1,15 @@
- $(document).ready(function(){
+$(document).ready(function () {
     $('.sidenav').sidenav({ edge: "right" });
-    $('.fixed-action-btn').floatingActionButton();
     $('input#term_name, textarea#term_description').characterCounter();
-  });
+});
 
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: 'left'
-    });
-  });
-    
+// Slider
+const slider = document.querySelector('.slider');
+MSAssertion.Slider.init(slider, {
+    indicators: false,
+    height: 500,
+    transition: 500,
+    interval: 600
+});
+
+// Autocomplete

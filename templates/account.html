@@ -17,6 +17,27 @@
         </h3>
     </div>
 </div>
+<!-- Search field -->
+<div class="row">
+    <form class="col s12" action="{{ url_for('search') }}" method="post">
+        <div class="row valign-wrapper left-align">
+            <div class="input-field col s12 m10 offset-m1">
+                <i class="fas fa-search prefix light-grey-text text-darken-4"></i>
+                <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                <label for="query">Search Terms</label>
+            </div>
+            <div class="col s12 m4">
+                <a href="{{ url_for('get_terms') }}" class="pink darken-2 btn text-shadow">
+                    <i class="fas fa-redo center-align"></i>
+                </a>
+                <button type="submit" class="btn waves-effect waves-light amber accent-3">
+                    <i class="fas fa-search center-align"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+{% if terms|length > 0 %}
 <div class="row">
     <div class="col s12 m10 offset-m1">
         {% for term in terms %}
@@ -42,6 +63,9 @@
         {% endfor %}
     </div>
 </div>
+{% else %}
+    <h3 class="red-text left-align">No Results Found</h3>
+{% endif %}
 
 {% endblock %}
 
