@@ -18,13 +18,9 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 auto;
-    padding: 0;
 }
-.social-items {
-    margin: auto;
-    font-size: 1.6rem;
-    padding: 0;
+.social-links .fa-3x {
+    margin: 5px 10px;    
 }
 .copyright {
     width: 100%;
