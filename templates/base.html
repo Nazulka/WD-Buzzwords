@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     {% block styles %}
     {% endblock %}
@@ -13,8 +16,8 @@
     <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='img/dictionary.png') }}" />
 </head>
 <body>
+
     <header>
-        
         <!-- Main navbar -->
         <nav class="nav-extended teal lighten-2">
             <div class="nav-wrapper">
@@ -24,31 +27,31 @@
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('get_terms') }}">Glossary</a></li>
                     {% if session.user %}
-                        <li><a href="{{ url_for('account', username=session['user']) }}">Account</a></li>
-                        <li><a href="{{ url_for('add_term') }}">Add Term</a></li>
-                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                    <li><a href="{{ url_for('account', username=session['user']) }}">Account</a></li>
+                    <li><a href="{{ url_for('add_term') }}">Add Term</a></li>
+                    <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
-                        <li><a href="{{ url_for('login') }}">Log In</a></li>
-                        <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
+                    <li><a href="{{ url_for('login') }}">Log In</a></li>
+                    <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
                     {% endif %}
                 </ul>
             </div>
         </nav>
-    
+
         <!-- Mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('get_terms') }}">Glossary</a></li>
             {% if session.user %}
-                <li><a href="{{ url_for('account', username=session['user']) }}">Account</a></li>
-                <li><a href="{{ url_for('add_term') }}">Add Term</a></li>
-                <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+            <li><a href="{{ url_for('account', username=session['user']) }}">Account</a></li>
+            <li><a href="{{ url_for('add_term') }}">Add Term</a></li>
+            <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
-                <li><a href="{{ url_for('login') }}">Log In</a></li>
-                <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
+            <li><a href="{{ url_for('login') }}">Log In</a></li>
+            <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
             {% endif %}
         </ul>
-    
+
     </header>
 
     <section>
@@ -74,13 +77,15 @@
         <div class="container social-links">
             <div class="row">
                 <div class="col s4 center-align social-items">
-                    <a href="https://www.facebook.com/" rel="noopener" target="_blank"></a><i class="fab fa-facebook"></i>
+                    <a href="https://www.facebook.com/" rel="noopener" target="_blank"></a><i
+                        class="fab fa-facebook"></i>
                 </div>
                 <div class="col s4 center-align social-items">
                     <a href="https://www.twitter.com/" rel="noopener" target="_blank"></a><i class="fab fa-twitter"></i>
                 </div>
                 <div class="col s4 center-align social-items">
-                    <a href="https://www.instagram.com/" rel="noopener" target="_blank"></a><i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/" rel="noopener" target="_blank"></a><i
+                        class="fab fa-instagram"></i>
                 </div>
             </div>
         </div>
@@ -93,11 +98,12 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     {% block scripts %}
     {% endblock %}
 </body>
-</html>
 
+</html>

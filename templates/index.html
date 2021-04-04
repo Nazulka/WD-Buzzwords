@@ -1,27 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
-
-<!-- Slider Section -->
-<section class="slider">
-    <ul class="slides">
-        <li>
-            <img src="{{ url_for('static', filename='img/hero-image.jpg') }}">
-            <div class="caption center-align">
-                <h3 class="grey-text text-darken-3">Complete WD Buzzwords' Glossary of Web Design Terminology
+<div class="parallax-container">
+      <div class="parallax">
+          <img src="{{ url_for('static', filename='img/hero-image.jpg') }}">
+          <div class="caption center-align">
+                <h3 class="grey-text text-darken-3">Complete WD Buzzwords' Glossary of Web Design
+                    Terminology
                 </h3>
                 <h5 class="grey-text text-darken-3 hide-on-small-only">Here's our small slogan.</h5>
             </div>
-        </li>
-        <li>
-            <img src="{{ url_for('static', filename='img/hero-image2.jpg') }}">
-            <div class="caption left-align">
-                <h3>Learn a New Term</h3>
-                <h5 class="light grey-text text-lighten-3 hide-on-small-only">Here's our small slogan.</h5>
-            </div>
-        </li>
-    </ul>
-</section>
+        </div>
+    </div>
+
+
 
 <!-- Search Section -->
 <section id="search" class="section section-search teal darken-1 white-text center scrollspy">

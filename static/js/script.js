@@ -1,15 +1,19 @@
 $(document).ready(function () {
     $('.sidenav').sidenav({ edge: "right" });
     $('input#term_name, textarea#term_description').characterCounter();
-});
-
-// Slider
-const slider = document.querySelector('.slider');
-MSAssertion.Slider.init(slider, {
-    indicators: false,
-    height: 500,
-    transition: 500,
-    interval: 600
+    $('.parallax').parallax({ full_width: true });
 });
 
 // Autocomplete
+const ac = document.querySelector('.autocomplete');
+M.Autocomplete.init(ac, {
+    data: {
+        "API": null,
+        "Bootstrap": null,
+        "Cache": null,
+    }
+});
+
+// ScrollSpy
+const ss = document.querySelectorAll('.scrollspy');
+M.ScrollSpy.init(ss, {});

@@ -36,6 +36,9 @@ main {
     margin: 5px;
 }
 
+.parallax-container {
+    height: 300px;
+}
 
 /*-- Search input --*/
 .section-search input {
