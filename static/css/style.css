@@ -36,10 +36,6 @@ main {
     margin: 5px;
 }
 
-.parallax-container {
-    height: 300px;
-}
-
 /*-- Search input --*/
 .section-search input {
     padding: 5px !important;
@@ -47,3 +43,6 @@ main {
     width: 90% !important;
     border: #f4f4f4 3px solid !important;
 }
+
+
+
