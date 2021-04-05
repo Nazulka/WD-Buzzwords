@@ -12,6 +12,10 @@ main {
     flex: 1 0 auto;
 }
 
+.brand-logo {
+    margin-left: 8px; 
+}
+
 .social-links {
     width: 100%;
     list-style-type: none;

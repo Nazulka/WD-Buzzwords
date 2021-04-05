@@ -7,28 +7,8 @@
     </div>
 </div>
 
-
-<!-- Icon Boxes Section -->
-<section class="section section-icons grey lighten-4 center">
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <div class="card-panel">
-                    <h2>Welcome tp the WD Buzzwords Glossary</h2>
-                    <p>Web technologies contain long lists of jargon and abbreviations that are used in documentation and coding.
-                        From Java to JavaScript, frontend to backend and apps to APIs, it’s normal to feel overwhelmed by the seemingly
-                        endless stream of new terminology. This
-                        glossary provides definitions of words and abbreviations you need to know to successfully understand and build
-                        for the web.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Search Section -->
-<section id="search" class="full-width section section-search teal darken-1 white-text center scrollspy">
+<section id="search" class="section section-search teal darken-1 white-text center scrollspy" action="{{ url_for('search') }}" method="POST">
     <div class="container container-slider">
         <div class="row">
             <div class="col s12">
@@ -37,7 +17,26 @@
                     <input type="text" class="white grey-text autocomplete" id="autocomplete-input"
                     placeholder="Agile, Bootstrap, etc...">
                 </div>
-                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Welcome Section -->
+<section class="section section-icons grey lighten-4 center">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2>Welcome to the WD Buzzwords Glossary</h2>
+                <p>Web technologies contain long lists of jargon and abbreviations that are used in documentation and
+                    coding.
+                    From Java to JavaScript, frontend to backend and apps to APIs, it’s normal to feel overwhelmed by
+                    the seemingly
+                    endless stream of new terminology. This
+                    glossary provides definitions of words and abbreviations you need to know to successfully understand
+                    and build
+                    for the web.
+                </p>
             </div>
         </div>
     </div>
@@ -47,6 +46,19 @@
 <section class="section section-icons grey lighten-4 center">
     <div class="container">
         <div class="row">
+            <div class="col s12 m6">
+                <div class="card-panel">
+                    <i class="fas fa-book-reader fa-3x teal-text"></i>
+                    <h4>Join our online community</h4>
+                    <p>This glossary is a never-ending work in progress. You can help improve it by writing new entries
+                        or by making the existing ones better. </p>
+                    <div class="row">
+                        <a class="col s4 offset-s4 btn btn-large waves-effect waves-light amber accent-3" type="submit"
+                            href="{{ url_for('sign_up') }}">Sign Up
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="col s12 m6">
                 <div class="card-panel">
                     <i class="fas fa-chalkboard-teacher fa-3x teal-text"></i>
@@ -56,26 +68,12 @@
                         documents. Some its behaviors are left to the implementation to determine how to handle.
                     </p>
                     <div class="row">
-                        <button class="col s4 offset-m4 btn btn-large waves-effect waves-light amber accent-3" type="submit"
-                            name="action">Learn More
-                        </button>
+                        <a class="col s4 offset-s4 btn btn-large waves-effect waves-light amber accent-3" type="submit"
+                            href="{{ url_for('get_terms') }}">See all
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col s12 m6">
-                <div class="card-panel">
-                    <i class="fas fa-info-circle fa-3x teal-text"></i>
-                    <h4>Join the WD Buzzwords community</h4>
-                    <p>This glossary is a never-ending work in progress. You can help improve it by writing new entries
-                        or by making the existing ones better. </p>
-                    <div class="row">
-                        <button class="col s4 offset-m4 btn btn-large waves-effect waves-light amber accent-3" type="submit"
-                            name="action">Sign Up
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </div>
 </section>
@@ -83,18 +81,14 @@
 <div class="container">
     <div class="row">
         <div class="col s12">
-            <div class="card-panel">
-                <i class="fas fa-book fa-3x teal-text center-align"></i>
-                <h4 class="center-align">Prefer a book?</h4>
-                <p>If you'd prefer a web development glossary in book form, check out <a class="book-link"
-                        aria-label="Book Link" href="https://meiert.com/en/blog/the-web-development-glossary/"
-                        target="_blank" rel="noopener">The Web Development Glossary (EPUB, MOBI, PDF)</a>. It’s a
-                    third-party glossary that
-                    includes the entries found here, and also adds a wide range of additional entries.
-                </p>
-            </div>
+            <h4 class="center-align">Prefer a book?</h4>
+            <p>If you'd prefer a web development glossary in book form, check out <a class="book-link"
+                    aria-label="Book Link" href="https://meiert.com/en/blog/the-web-development-glossary/"
+                    target="_blank" rel="noopener">The Web Development Glossary (EPUB, MOBI, PDF)</a>. It’s a
+                third-party glossary that includes the entries found here, and also adds a wide range of additional
+                entries.
+            </p>
         </div>
-
     </div>
 </div>
 
