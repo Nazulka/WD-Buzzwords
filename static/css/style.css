@@ -18,13 +18,14 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: center;
 }
 .social-links .fa-3x {
-    margin: 5px 10px;    
+    display: inline-block;
+    margin: 5px 10px; 
+    float: none !important;   
 }
-.copyright {
-    width: 100%;
-}
+
 .flashes h4{
     line-height: 2;
 }
@@ -40,5 +41,8 @@ main {
     border: #f4f4f4 3px solid !important;
 }
 
-
+.full-width {
+    width: 100%;
+    max-width: initial;
+}
 
