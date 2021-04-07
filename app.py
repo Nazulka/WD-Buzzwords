@@ -40,13 +40,6 @@ def search():
     return render_template("account.html", terms=terms)
 
 
-@app.route("/search_autocomplete", methods=["GET", "POST"])
-def search_autocomplete():
-    autocompleteInput = request.form.get("autocomplete-input")
-    terms = list(mongo.db.terms.find({"$text": {
-        "$search_autocomplete": autocompleteInput}}))
-    return render_template("index.html", terms=terms)
-
 
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():
@@ -111,7 +104,7 @@ def account(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
-    # get the session user's added terms from the database
+    # get the session user's added entries from the database
     terms = list(mongo.db.terms.find())
 
     if session["user"]:

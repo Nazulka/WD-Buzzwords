@@ -12,9 +12,7 @@ M.Autocomplete.init(ac, {
         "API": null,
         "Bootstrap": null,
         "Cache": null,
-    }
+    },
+    limit: 5
 });
 
-// ScrollSpy
-const ss = document.querySelectorAll('.scrollspy');
-M.ScrollSpy.init(ss, {});
