@@ -44,6 +44,12 @@ main {
     width: 90% !important;
     border: #f4f4f4 3px solid !important;
 }
+.search-button {
+    padding: 5px !important;
+    font-size: 18px !important;
+    height: 32px !important;
+    border: #f4f4f4 3px solid !important;
+}
 
 .full-width {
     width: 100%;

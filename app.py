@@ -40,6 +40,14 @@ def search():
     return render_template("account.html", terms=terms)
 
 
+@app.route("/search_autocomplete", methods=["GET", "POST"])
+def search_autocomplete():
+    autocompleteInput = request.form.get("autocomplete-input")
+    terms = list(mongo.db.terms.find({"$text": {
+        "$search_autocomplete": autocompleteInput}}))
+    return render_template("index.html", terms=terms)
+
+
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():
     if request.method == "POST":
