@@ -43,7 +43,7 @@ main {
 .brand-logo {
     margin-left: 1.2em; 
     font-family: 'Special Elite', cursive;
-    height: 3em;
+    font-size: 2.5em !important;
 }
 
 .sidenav {
@@ -76,7 +76,16 @@ main {
     margin: 5px 10px; 
     float: none !important;   
 }
-
+.social-links a i {
+    color: white;
+    transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+  }
+.social-links a i:hover {
+    color: #616161; 
+}
 .btn-small {
     margin: 5px;
 }
@@ -85,12 +94,14 @@ main {
 .section-search input {
     padding: 5px !important;
     font-size: 18px !important;
-    width: 100% !important;
+    width: 90% !important;
     border: #f4f4f4 3px solid !important;
     background-color: #f4f4f4 !important;
 }
-.search-btn {
-    height: 100%;
+
+.btn-large {
     margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
 

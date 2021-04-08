@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="center-align">{{ term.term_name }}</h3>
+    
+    <!-- Card Panel -->
+    <div class="row card-panel grey lighten-5">
+        <form class="col m8 offset-m2 s12" method="POST" action="{{ url_for('edit_term', term_id=term._id) }}">
+            
+            <!-- Card Panel Input Term Name -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-pen-alt prefix"></i>
+                    <input id="term_name" name="term_name" minlength="3" maxlength="50" value="{{ term.term_name }}" type="text" class="validate"
+                        required>
+                    <label for="term_name">What's your word?</label>
+                </div>
+            </div>
+            
+            <!-- Edit Button -->
+            <div class="row">
+                <button class="col s4 offset-m2 btn btn-large waves-effect waves-light amber accent-3 center-align"
+                    type="submit">Edit
+                </button>
+                <!-- Cancel changes Button-->
+                <a href="{{ url_for('get_terms') }}" class="col s4 offset-m2 btn btn-large waves-effect waves-light amber accent-3 center-align">Cancel</a>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="center-align">
+                        Thank you for helping us keep WD Buzzwords up to date!
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
