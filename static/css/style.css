@@ -7,15 +7,41 @@ body {
     flex-direction: column;
     font-family: 'Open-Sans', sans-serif;
 }
+h1, h2, h3 , h4, h5, h6 {
+    font-family: 'Roboto-Slab', sans-serif;
+}
 
 main {
     flex: 1 0 auto;
 }
-
-.brand-logo {
-    margin-left: 8px; 
+.full-width {
+    width: 100%;
+    max-width: initial;
+}
+.flashes h4{
+    line-height: 2;
 }
 
+/*-- Navbar --*/
+.nav-extended {
+    font-size: 20px;
+}
+.brand-logo {
+    margin-left: 18px; 
+    font-weight: 600;
+}
+.sidenav {
+    width: 60%;
+    padding-top: 50px;
+    text-align: center;
+}
+.sidenav li>a {
+    color: rgba(36, 35, 35, 0.87);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+  /* -- Footer -- */
 .social-links {
     width: 100%;
     list-style-type: none;
@@ -30,9 +56,6 @@ main {
     float: none !important;   
 }
 
-.flashes h4{
-    line-height: 2;
-}
 .btn-small {
     margin: 5px;
 }
@@ -41,12 +64,12 @@ main {
 .section-search input {
     padding: 5px !important;
     font-size: 18px !important;
-    width: 90% !important;
+    width: 100% !important;
     border: #f4f4f4 3px solid !important;
+    background-color: #f4f4f4 !important;
 }
-
-.full-width {
-    width: 100%;
-    max-width: initial;
+.search-btn {
+    height: 100%;
+    margin: 0 auto;
 }
 

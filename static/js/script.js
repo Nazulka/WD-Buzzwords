@@ -5,14 +5,4 @@ $(document).ready(function () {
      $('.modal').modal();
 });
 
-// Autocomplete
-const ac = document.querySelector('.autocomplete');
-M.Autocomplete.init(ac, {
-    data: {
-        "API": null,
-        "Bootstrap": null,
-        "Cache": null,
-    },
-    limit: 5
-});
 

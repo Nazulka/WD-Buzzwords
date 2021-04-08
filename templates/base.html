@@ -20,7 +20,7 @@
     <header>
         <!-- Main navbar -->
         <nav class="nav-extended teal lighten-2">
-            <div class="nav-wrapper">
+            <div class="navbar nav-wrapper">
                 <a href="{{ url_for('home') }}" class="left brand-logo">WD Buzzwords</a>
                 <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
@@ -39,7 +39,7 @@
         </nav>
 
         <!-- Mobile sidenav -->
-        <ul class="sidenav" id="mobile-demo">
+        <ul class="sidenav navbar" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('get_terms') }}">Glossary</a></li>
             {% if session.user %}
