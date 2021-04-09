@@ -37,7 +37,7 @@ def get_terms():
 def search():
     query = request.form.get("query")
     terms = list(mongo.db.terms.find({"$text": {"$search": query}}))
-    return render_template("account.html", terms=terms)
+    return render_template("glossary.html", terms=terms)
 
 
 @app.route("/sign_up", methods=["GET", "POST"])
@@ -134,12 +134,6 @@ def add_term():
         return redirect(url_for("get_terms"))
 
     return render_template("add_term.html")
-
-
-@app.route("/view_term/<term_name>")
-def view_term(term_name):
-    term = mongo.db.terms.find_one({"_id": ObjectId(term_name)})
-    return render_template("view_term.html", term=term)
 
 
 @app.route("/edit_term/<term_id>", methods=["GET", "POST"])
