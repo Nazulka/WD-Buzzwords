@@ -8,15 +8,15 @@
     </div>
 </div>
 
-<!-- Search Autocomplete Section -->
+<!-- Search Section -->
 <section id="search" class="section section-search teal darken-1 white-text center">
     <div class="container">
-        <div class="row valign-wrapper center-align">
-            <div class="col s12 center-align" action="{{ url_for('search') }}" method="POST">
+        <div class="row center-align">
+            <form action="{{ url_for('search') }}" method="POST" class="col s12 center-align">
                 <h3>Search WD Buzzwords</h3>
                 <div class="col s10">
-                    <input type="text" name="query" id="query" minlength="3" class="validate"
-                        placeholder="API, Bootstrap, etc..." required>
+                    <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                        <label for="query">API, Bootstrap, etc...</label>
                 </div>
                 <div class="col s1">
                     <a href="{{ url_for('home') }}" class="pink waves-effect waves-light btn btn-large darken-2">
@@ -28,7 +28,7 @@
                         <i class="fas fa-search center-align"></i>
                     </button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </section>
@@ -40,7 +40,7 @@
         <div class="row">
             <div class="col s12">
                 <h2 class="pt">Welcome to the WD Buzzwords Glossary</h2>
-                <p>Web technologies contain long lists of jargon and abbreviations that are used in documentation and
+                <p class="special">Web technologies contain long lists of jargon and abbreviations that are used in documentation and
                     coding.
                     From Java to JavaScript, frontend to backend and apps to APIs, it’s normal to feel overwhelmed by
                     the seemingly
@@ -62,7 +62,7 @@
                 <div class="card-panel">
                     <i class="fas fa-book-reader fa-3x teal-text pt"></i>
                     <h4>Join our online community</h4>
-                    <p>This glossary is a never-ending work in progress.<br>
+                    <p class="special">This glossary is a never-ending work in progress.<br>
                         You can help improve it by writing new entries
                         or by making the existing ones better. </p>
                     <div class="row">
@@ -76,7 +76,7 @@
                 <div class="card-panel">
                     <i class="fas fa-chalkboard-teacher fa-3x teal-text pt"></i>
                     <h4>Learn a new Buzzword</h4>
-                    <p>
+                    <p class="special">
                         <b>GPU (Graphics Processing Unit)</b> is a computer component similar to the CPU (Central Processing Unit). 
                         It specializes in the drawing of graphics (both 2D and 3D) on your monitor.
                     </p>
@@ -95,7 +95,7 @@
     <div class="row">
         <div class="col s12">
             <h4 class="pt center-align">Prefer a book?</h4>
-            <p>If you'd prefer a web development glossary in book form, check out <a class="book-link"
+            <p class="special">If you'd prefer a web development glossary in book form, check out <a class="book-link"
                     aria-label="Book Link" href="https://meiert.com/en/blog/the-web-development-glossary/"
                     target="_blank" rel="noopener">The Web Development Glossary (EPUB, MOBI, PDF)</a>. It’s a
                 third-party glossary that includes the entries found here, and also adds a wide range of additional

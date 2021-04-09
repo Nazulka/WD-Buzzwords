@@ -40,7 +40,6 @@ def search():
     return render_template("account.html", terms=terms)
 
 
-
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():
     if request.method == "POST":
@@ -55,12 +54,12 @@ def sign_up():
         sign_up = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
-            # "confirm_password": generate_password_hash(request.form.get("password"))
         }
         mongo.db.users.insert_one(sign_up)
 
         # put the new user into "session" cookie
         session["user"] = request.form.get("username").lower()
+
         flash("Registration Successful")
         return redirect(url_for("account", username=session["user"]))
     return render_template("sign_up.html")
@@ -135,6 +134,12 @@ def add_term():
         return redirect(url_for("get_terms"))
 
     return render_template("add_term.html")
+
+
+@app.route("/view_term/<term_name>")
+def view_term(term_name):
+    term = mongo.db.terms.find_one({"_id": ObjectId(term_name)})
+    return render_template("view_term.html", term=term)
 
 
 @app.route("/edit_term/<term_id>", methods=["GET", "POST"])
