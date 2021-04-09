@@ -9,22 +9,22 @@
 </div>
 
 <!-- Search Section -->
-<section id="search" class="section section-search teal darken-1 white-text center">
+<section id="search" class="section section-search teal darken-1 white-text">
     <div class="container">
-        <div class="row center-align">
+        <div class="row">
             <form action="{{ url_for('search') }}" method="POST" class="col s12 center-align">
                 <h3>Search WD Buzzwords</h3>
                 <div class="col s10">
-                    <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                        <label for="query">API, Bootstrap, etc...</label>
+                    <input type="text" name="query" id="query" minlength="3" class="input-field validate" required>
+                    <label for="query">API, Bootstrap, etc...</label>
                 </div>
                 <div class="col s1">
-                    <a href="{{ url_for('home') }}" class="pink waves-effect waves-light btn btn-large darken-2">
+                    <a href="{{ url_for('home') }}" class="pink waves-effect waves-light btn btn-large darken-2 center-align">
                         <i class="fas fa-redo center-align"></i>
                     </a>
                 </div>
                 <div class="col s1">
-                    <button type="submit" class="btn waves-effect waves-light btn-large amber accent-3">
+                    <button type="submit" class="btn waves-effect waves-light btn-large amber accent-3 center-align">
                         <i class="fas fa-search center-align"></i>
                     </button>
                 </div>
@@ -81,7 +81,7 @@
                     </p>
                     <div class="row">
                         <a class="col s4 offset-s4 btn btn-large waves-effect waves-light amber accent-3" type="submit"
-                            href="{{ url_for('get_terms') }}">See all
+                            href="{{ url_for('get_terms') }}">Browse All
                         </a>
                     </div>
                 </div>

@@ -88,21 +88,24 @@ main {
     color: #616161; 
 }
 .btn-small {
-    margin: 5px;
+    margin: 10px;
 }
 
 /*-- Search input --*/
 .section-search input {
     padding: 5px !important;
     font-size: 18px !important;
-    width: 90% !important;
+    width: 100% !important;
     border: #f4f4f4 3px solid !important;
     background-color: #f4f4f4 !important;
 }
+.input-field {
+    padding: 0;
+}
 
 .btn-large {
-    margin: 0 auto;
     width: 100%;
     height: 100%;
 }
+
 

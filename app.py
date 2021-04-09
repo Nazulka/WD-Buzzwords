@@ -79,7 +79,7 @@ def login():
 
                 # Log the user in
                 session["user"] = request.form.get("username").lower()
-                flash("Welcome, {}".format(
+                flash("Welcome back, {}".format(
                     request.form.get("username")))
                 return redirect(url_for(
                     "account", username=session["user"]))
