@@ -10,7 +10,7 @@
             <div class="col s10 offset-s1">
                 <div class="card-panel grey lighten-5">
                     <h5>Filter Results</h5>
-                    <
+                    <span>A</span>
                 </div>
             </div>
         </div>
@@ -28,16 +28,6 @@
                     <p>{{ term.term_description }}</p>
                     <p><em>Added by: {{term.added_by }}</em></p>
                 </div>
-                <div class="row">
-                    {% if session.user|lower == term.added_by|lower %}
-                    <a href="{{ url_for('edit_term', term_id=term._id) }}"
-                        class="col s2 btn btn-small waves-effect waves-light amber accent-3" type="submit"
-                        name="action">Edit</a>
-                    <a href="{{ url_for('delete_term', term_id=term._id) }}"
-                        class="col s2 btn btn-small waves-effect waves-light amber accent-3" type="submit"
-                        name="action">Delete</a>
-                    {% endif %}
-                </div>
                 <div class="divider"></div>
             </div>
             {% endfor %}
@@ -47,7 +37,7 @@
     <div class="col s12 m6 offset-m3 pt">
         <h3 class="col s10 red-text left-align pt">No Matching Results Found</h3>
         <a href="{{ url_for('get_terms') }}"
-            class="col s2 btn btn-large left-align waves-effect waves-light amber accent-3">Go Back</a>
+            class="col s2 btn btn-large left-align waves-effect waves-light amber accent-3">Browse Terms</a>
     </div>
     {% endif %}
 

@@ -158,7 +158,9 @@ def edit_term(term_id):
 def delete_term(term_id):
     mongo.db.terms.remove({"_id": ObjectId(term_id)})
     flash("Entry Successfully Deleted")
-    return redirect(url_for("get_terms"))
+
+    return render_template("glossary.html")
+
 
 
 if __name__ == "__main__":
