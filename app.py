@@ -133,7 +133,7 @@ def logout():
 def add_term():
     if request.method == "POST":
         term = {
-            "term_name": request.form.get("term_name"),
+            "term_name": request.form.get("term_name").capitalize(),
             "term_description": request.form.get("term_description"),
             "added_by": session["user"]
         }

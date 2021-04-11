@@ -102,6 +102,15 @@ main {
 .input-field {
     padding: 0;
 }
+.search-btn {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 100%;
+}
+/*-- Parallax --*/
+.parallax-container {
+    object-fit: cover;
+}
 .modal-btn {
     margin: 8px !important;
 }
