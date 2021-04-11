@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+
 <div class="container">
     <div class="row">
         <div class="col s12 m10 offset-m1">
@@ -19,55 +20,55 @@
     </div>
 
     {% if terms|length > 0 %}
-    <div class="row">
-        {% for term in terms %}
-        <div class="col s12 m10 offset-m1">
-            <div class="row">
-                {% if session.user|lower == term.added_by|lower %}
-                <a href="{{ url_for('add_term', term_name=term._id) }}"></a>
-                <div class="section left-align">
-                    <h5><strong>{{ term.term_name }}</strong></h5>
-                    <p>{{ term.term_description }}</p>
-                    <p><em>Added by: {{term.added_by }}</em></p>
-                </div>
+        <div class="row">
+            {% for term in terms %}
+            <div class="col s12 m10 offset-m1">
                 <div class="row">
-                    <a href="{{ url_for('edit_term', term_id=term._id) }}"
-                        class="col s2 btn btn-small waves-effect waves-light amber accent-3">Edit</a>
-                    <button href="#delete_modal" type="submit"
-                        class="col s2 btn btn-small waves-effect waves-light amber accent-3 modal-trigger">Delete</button>
-                </div>
-                <div class="divider"></div>
-                {% endif %}
-            </div>
-        </div>
-
-        <!-- Delete Entry Modal -->
-        <div class="container">
-            <div class="row">
-                <div id="delete_modal" class="modal grey lighten-4">
-                    <div class="modal-content">
-                        <h5 class="center-align"><strong>Delete {{ term.term_name }}</strong> from the dictionary?</h5>
+                    {% if session.user|lower == term.added_by|lower %}
+                    <a href="{{ url_for('add_term', term_name=term._id) }}"></a>
+                    <div class="section left-align">
+                        <h5><strong>{{ term.term_name }}</strong></h5>
+                        <p>{{ term.term_description }}</p>
+                        <p><em>Added by: {{term.added_by }}</em></p>
                     </div>
-                    <div class="modal-footer">
-                        <a href="{{ url_for('account', username=session['user']) }}"
-                            class="col s2 btn btn-small waves-effect waves-light amber accent-3 modal-close center-align modal-btn">Cancel</a>
-                        <a href="{{ url_for('delete_term', term_id=term._id) }}"
-                            class="col s2 btn btn-small waves-effect waves-light amber accent-3 center-align modal-btn"
-                            type="submit" name="action">Delete</a>
+                    <div class="row">
+                        <a href="{{ url_for('edit_term', term_id=term._id) }}"
+                            class="col s2 btn btn-small waves-effect waves-light amber accent-3">Edit</a>
+                        <button href="#delete_modal_{{ term._id }}" type="submit"
+                            class="col s2 btn btn-small waves-effect waves-light amber accent-3 modal-trigger">Delete</button>
                     </div>
+                    <div class="divider"></div>
+                    {% endif %}
                 </div>
             </div>
+
+            <!-- Delete Entry Modal -->
+            <div class="container">
+                <div class="row">
+                    <div id="delete_modal_{{ term._id }}" class="modal grey lighten-4">
+                        <div class="modal-content">
+                            <h5 class="center-align">Delete {{ term.term_name }} from the dictionary?</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="{{ url_for('account', username=session['user']) }}"
+                                class="col s2 btn btn-small waves-effect waves-light amber accent-3 modal-close center-align modal-btn">Cancel</a>
+                            <a href="{{ url_for('delete_term', term_id=term._id) }}"
+                                class="col s2 btn btn-small waves-effect waves-light amber accent-3 center-align modal-btn"
+                                type="submit" name="action">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
         </div>
 
-        {% endfor %}
-    </div>
-
-    <!-- No Results Found -->
+        <!-- No Results Found -->
     {% else %}
-    <div class="col s12 m6 offset-m3">
-        <h3 class="red-text center-align">You haven't got any added words!</h3>
-    </div>
+        <div class="col s12 m6 offset-m3">
+            <h3 class="red-text center-align">You haven't got any added words!</h3>
+        </div>
+    {% endif %}
 </div>
-{% endif %}
 
 {% endblock %}

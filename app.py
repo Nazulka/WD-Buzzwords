@@ -32,7 +32,9 @@ def home():
 
 @app.route("/get_terms")
 def get_terms():
-    terms = list(mongo.db.terms.find())
+    ''' Sort results alphabetically'''
+    terms = list(mongo.db.terms.find().sort('term_name', 1))
+
     return render_template("glossary.html", terms=terms)
 
 
@@ -106,8 +108,11 @@ def account(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
-    # get the session user's added entries from the database
-    terms = list(mongo.db.terms.find())
+    ''' get the session user's added entries from the database
+    sorted alphabetically
+    '''
+
+    terms = list(mongo.db.terms.find().sort('term_name', 1))
 
     if session["user"]:
         return render_template("account.html", username=username, terms=terms)
@@ -158,8 +163,7 @@ def edit_term(term_id):
 def delete_term(term_id):
     mongo.db.terms.remove({"_id": ObjectId(term_id)})
     flash("Entry Successfully Deleted")
-
-    return render_template("glossary.html")
+    return redirect(url_for("account", username=session["user"]))
 
 
 if __name__ == "__main__":
