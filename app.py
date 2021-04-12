@@ -20,19 +20,16 @@ app.secret_key = os.environ.get("SECRET_KEY")
 # Set up an instance of PyMongo
 mongo = PyMongo(app)
 
-
 @app.route("/")
 @app.route("/home")
 def home():
-    if 'username' in session:
-        return 'Logged in as ' + session['username']
 
     return render_template("index.html")
 
 
 @app.route("/get_terms")
 def get_terms():
-    ''' Sort results alphabetically'''
+    # Sort results alphabetically
     terms = list(mongo.db.terms.find().sort('term_name', 1))
 
     return render_template("glossary.html", terms=terms)
