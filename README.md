@@ -23,26 +23,29 @@ WD Buzzwords is a crowdsourced dictionary where users can look up explanations t
 
 ### User Stories
 **Guest user**
-* As a guest user of WD Buzzwords I want to browse all web development terms and jargons and familiarize myself with their meanings. 
-* As a guest user of WD Buzzwords I want to be able to easily access all available website features from different screen size devices.
-* As a guest user of WD Buzzwords I want to be able to use the searchbox to search for terms that I would like to find out more about.
-* As a guest user of WD Buzzwords I want to be able to display the selected term and its description. 
-* As a guest user of WD Buzzwords I want to be able to filter the list of terms by their first letters using the alphabet filter buttons. 
-* As a guest user of WD Buzzwords I want to be able to register to the website.
+* As a guest user of WD Buzzwords, I want to browse all web development terms and jargons and familiarize myself with their meanings. 
+* As a guest user of WD Buzzwords, I want to be able to easily access all available website features from different screen size devices.
+* As a guest user of WD Buzzwords, I want to be able to use the searchbox to search for terms that I would like to find out more about.
+* As a guest user of WD Buzzwords, I want to be able to display the selected term and its description. 
+* As a guest user of WD Buzzwords, I want to be able to filter the list of terms by their first letters using the alphabet filter buttons. 
+* As a guest user of WD Buzzwords, I want to be able to register to the website.
 
 **Registered user**
-* As a guest user of WD Buzzwords I want to be able to log in to the website using my username and password. 
-* As a registered user of WD Buzzwords I want to be able to contribute to the dictionary by adding new terms and their description to the glossary.
-* As a guest user of WD Buzzwords I want to be able to edit the entries contributed by myself as well as their description.
-* As a guest user of WD Buzzwords I want to be able to view all my entries in my Account page.
-* As a guest user of WD Buzzwords I want to be able to delete the entries contributed by myself.
-* As a guest user of WD Buzzwords I want to be able to get a delete confirmation message before deleting my entries.
+* As a guest user of WD Buzzwords, I want to be able to log in to the website using my username and password. 
+* As a registered user of WD Buzzwords, I want to be able to contribute to the dictionary by adding new terms and their description to the glossary.
+* As a guest user of WD Buzzwords, I want to be able to edit the entries contributed by myself as well as their description.
+* As a guest user of WD Buzzwords, I want to be able to view all my entries in my Account page.
+* As a guest user of WD Buzzwords, I want to be able to delete the entries contributed by myself.
+* As a guest user of WD Buzzwords, I want to be able to get a delete confirmation message before deleting my entries.
 
-** 
+**Site owner / admin**
+* As a site owner of WD Buzzwords, I want to be able to monitor and update the website to meet the users' expectations.
+* As a site owner of WD Buzzwords, I want to be able to delete entries contributed by users if necessary.
 
 
 ### Strategy
-
+* To create a platform which contains key web development buzzwords, provides an introduction to the most common terms ranging from most basic to the more technical. 
+* To allow users to search the dictionary and for registered users to contribute as well as modify and delete their entries. 
 
 
 ### Scope
