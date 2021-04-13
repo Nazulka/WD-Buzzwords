@@ -2,11 +2,9 @@
 ___
 ___
 
-
-
 ## Demo
 ___
-Live Demo 
+[Live Demo]
 
 
 
@@ -20,10 +18,13 @@ ___
 
 
 ### Project Summary
+WD Buzzwords is a crowdsourced dictionary where users can look up explanations to some of the most important terms and abbreviations they will come accross when working in web development. It also allows users to contribute to the dictionary to benefit others staring out in the industry.
 
 
 ### User Stories
-
+**Guest user**
+* As a guest user of WD Buzzwords I want to browse all web development terms and jargons and familiarize myself with their meanings. 
+* As a guest user of WD Buzzwords I want to be able to access 
 
 ### Strategy
 
