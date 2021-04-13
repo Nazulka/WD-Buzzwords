@@ -24,14 +24,20 @@ WD Buzzwords is a crowdsourced dictionary where users can look up explanations t
 ### User Stories
 **Guest user**
 * As a guest user of WD Buzzwords I want to browse all web development terms and jargons and familiarize myself with their meanings. 
-* As a guest user of WD Buzzwords I want to be able to access 
+* As a guest user of WD Buzzwords I want to be able to easily access all available website features from different screen size devices.
+* As a guest user of WD Buzzwords I want to be able to use the searchbox to search for terms that I would like to find out more about.
+* As a guest user of WD Buzzwords I want to be able to display the selected term and its description. 
+* As a guest user of WD Buzzwords I want to be able to filter the list of terms by their first letters using the alphabet filter buttons. 
+
+**Registered user**
+* As a registered user of WD Buzzwords I want to
 
 ### Strategy
 
 
 
 ### Scope
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 ### Structure
 
