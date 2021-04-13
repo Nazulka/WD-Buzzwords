@@ -9,7 +9,7 @@
 </div>
 
 <!-- Search Section -->
-<section id="search" class="section section-search teal darken-1 white-text">
+<section id="search" class="section section-search teal white-text">
     <div class="container">
         <div class="row">
             <form action="{{ url_for('search') }}" method="POST" class="col s12 center-align">
@@ -19,12 +19,12 @@
                     <label for="query">API, Bootstrap, etc...</label>
                 </div>
                 <div class="col s1">
-                    <a href="{{ url_for('home') }}" class="pink waves-effect waves-light btn btn-large darken-2 center-align search-btn">
+                    <a href="{{ url_for('home') }}" class="btn btn-large pink darken-2 waves-effect waves-light center-align search-btn">
                         <i class="fas fa-redo center-align"></i>
                     </a>
                 </div>
                 <div class="col s1">
-                    <button type="submit" class="btn waves-effect waves-light btn-large amber accent-3 center-align search-btn">
+                    <button type="submit" class="btn btn-large waves-effect waves-light amber accent-3 center-align search-btn">
                         <i class="fas fa-search center-align"></i>
                     </button>
                 </div>

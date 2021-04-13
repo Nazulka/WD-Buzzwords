@@ -23,11 +23,12 @@ WD Buzzwords is a crowdsourced dictionary where users can look up explanations t
 
 ### User Stories
 **Guest user**
-* As a guest user of WD Buzzwords, I want to browse all web development terms and jargons and familiarize myself with their meanings. 
+* As a guest user of WD Buzzwords, I want to browse all web development terms and jargons and familiarize myself with their exact meanings without needing to register to the website. 
 * As a guest user of WD Buzzwords, I want to be able to easily access all available website features from different screen size devices.
 * As a guest user of WD Buzzwords, I want to be able to use the searchbox to search for terms that I would like to find out more about.
 * As a guest user of WD Buzzwords, I want to be able to display the selected term and its description. 
-* As a guest user of WD Buzzwords, I want to be able to filter the list of terms by their first letters using the alphabet filter buttons. 
+* As a guest user of WD Buzzwords, I want to be able to browse terms alphabetically using the alphabet filter buttons. 
+* As a guest user of WD Buzzwords, I want to be able to learn one of the latest entries to the website.
 * As a guest user of WD Buzzwords, I want to be able to register to the website.
 
 **Registered user**
@@ -39,32 +40,65 @@ WD Buzzwords is a crowdsourced dictionary where users can look up explanations t
 * As a guest user of WD Buzzwords, I want to be able to get a delete confirmation message before deleting my entries.
 
 **Site owner / admin**
-* As a site owner of WD Buzzwords, I want to be able to monitor and update the website to meet the users' expectations.
+* As a site owner of WD Buzzwords, I want to be able to monitor and regularly update the website to keep up-to-date and to meet users' expectations.
 * As a site owner of WD Buzzwords, I want to be able to delete entries contributed by users if necessary.
 
 
 ### Strategy
-* To create a platform which contains key web development buzzwords, provides an introduction to the most common terms ranging from most basic to the more technical. 
-* To allow users to search the dictionary and for registered users to contribute as well as modify and delete their entries. 
+**Project Goals**
+* To create an easy to access platform which contains key web development buzzwords, ranging from most basic to the more technical.
+* To provide users with an introduction to the most common terms in web development with clear and comprehensive definitions. 
+* To allow users to quickly look up words in the dictionary and for registered users to add new terms as well as modify and delete their previous entries. 
 
 
 ### Scope
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-
+* To create a user friendly website using HTML, CSS, JavaScript, Python, Flask and MongoDB that ensures continuous, intuitive and fluid experience for the users. 
+* To provide a learning aid that promotes understanding of web development terms and abbreviations and stimulates a desire to learn independently.
+                                                                                              
 ### Structure
+This website offers users the option to choose between the following two to accomodate their individual preferences:
+
+* **Guest users** - (unauthenticated site visitors) can access selected functions in the navigation panel: Home, Glossary, Log In and Sign Up Pages.
+* **Registered users** - once users decide to register to the website, they will be able to access full functionality and additionally access Account, Add Term and Log Out pages. 
 
 
 ### Skeleton
+* [Desktop wireframes]()
+* [Tablet and Mobile wireframes]()
+* The wireframes have been changed quite a bit:
 
+* Database Diagram
 
 ### Surface
+* The color palette has been created using [Coolors](https://coolors.co/4db6ac-ffc400-c2185b-e0e0e0-eeeeee).
+* I have chosen complimentary colors, orange and teal to create contrast to the site and add depth. By using this bold combination, I aimed to create an inviting and relaxing design for the users. A splash of pink has been added for a contrast and light grey has been used to display the flash messages. 
 
 ## Technologies Used
 ___
+### Languages Used
+* HTML5
+* CSS3
+* JavaScript
+* Python
 
 ### Languages, Frameworks, Libraries and tools Used
+#### Front-end
+* [Materialize CSS v1.0.0](https://materializecss.com/) - a front-end framework, used to create sleek, consistent, functional website that is responsive on all screen sized devices. 
+The components used: navbar, sidenav, parallax, cards, modal, buttons, footer. 
+* **jQuery** - required to ensure proper rendering of the Materialize components listed above.
 
 
+
+#### Back-end
+
+
+
+
+
+#### Deployment
+
+* **Git** - used for version control and to keep track of the changes made to the repository.
+* **Gitpod** - open source development platform, allowed me to add, commit and push files to GitHub. 
 
 ## Features
 ___
