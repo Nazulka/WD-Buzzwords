@@ -115,5 +115,7 @@ main {
 }
 
 /*-- Alphabetical Filter --*/
-
+.filter-card {
+    width: 80%;
+}
 

@@ -4,47 +4,16 @@
 <div class="container">
     <h2>Glossary of Terms</h2>
     <div class="divider"></div>
-
-    <div class="row">
-        <div class="col s12 left card-filter">
-            {% set letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
-            {% for letter in letters %}
-            <div class="card-panel grey lighten-5">
-                <h5 class="center-align filter-header"><strong>Filter Results</strong></h5>
-                <div class="row center-align">
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">A</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">B</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">C</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">D</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">E</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">F</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">G</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">H</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">I</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">J</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">K</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">L</button>
-                </div>
-                <div class="row center-align">
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">M</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">N</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">O</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">P</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">Q</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">R</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">S</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">T</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">U</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">V</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">W</button>
-                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">X</button>
-                </div>
-                <div class="row center-align">
-                    <button class="col s1 term-letter waves-effectwaves-light btn-small amber accent-3 z-depth-2">Y</button>
-                    <button class="col s1 term-letter waves-effectwaves-light btn-small amber accent-3 z-depth-2">Z</button>
-                </div>
+    <div class="container card card-panel filter-card center-align grey lighten-5">
+        <div class="row">
+            <div class="col s12">
+                    <h5 class="center-align filter-header"><strong>Filter Results</strong></h5>
+                    {% set letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
+                    {% for letter in letters %}
+                    <button class="col s1 term-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">{{ letter
+                        }}</button>
+                    {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
     {% if terms|length > 0 %}
