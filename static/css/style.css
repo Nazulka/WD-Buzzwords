@@ -119,3 +119,27 @@ main {
     width: 80%;
 }
 
+/*--Media Queries--*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+    body p {
+        line-height: 1.6;
+    }
+    .brand-logo {
+        margin-left: 0.7em; 
+        font-size: 1.8em !important;
+    }
+    .sidenav {
+        width: 80%;
+        padding-top: 50px;
+    }
+    .filter-card {
+        width: 100%;
+        padding: 0;
+    }
+}
