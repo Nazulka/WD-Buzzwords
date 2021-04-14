@@ -4,7 +4,7 @@ ___
 
 ## Demo
 ___
-[Live Demo]
+[Live Demo]()
 
 
 
@@ -70,8 +70,9 @@ This website offers users the option to choose between the following two to acco
 * Database Diagram
 
 ### Surface
-* The color palette has been created using [Coolors](https://coolors.co/4db6ac-ffc400-c2185b-e0e0e0-eeeeee).
-* I have chosen complimentary colors, orange and teal to create contrast to the site and add depth. By using this bold combination, I aimed to create an inviting and relaxing design for the users. A splash of pink has been added for a contrast and light grey has been used to display the flash messages. 
+* Color palette has been created using [Coolors](https://coolors.co/4db6ac-ffc400-c2185b-e0e0e0-eeeeee) and materialize color classes have been used in this project.
+* I have chosen a base color of teal and a complimentary color orange to create contrast to the site and add depth. By using this bold combination, I aimed to create an inviting and relaxing design for the users. A splash of pink has been added for a contrast and light grey has been used to display the flash messages. 
+![color palette](static/img/color-palette.jpg)
 
 ## Technologies Used
 ___
@@ -83,8 +84,8 @@ ___
 
 ### Languages, Frameworks, Libraries and tools Used
 #### Front-end
-* [Materialize CSS v1.0.0](https://materializecss.com/) - a front-end framework, used to create sleek, consistent, functional website that is responsive on all screen sized devices. 
-The components used: navbar, sidenav, parallax, cards, modal, buttons, footer. 
+* [Materialize CSS v1.0.0](https://materializecss.com/) - a front-end framework, used to create sleek, consistent, functional and responsive website. 
+The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.  
 * **jQuery** - required to ensure proper rendering of the Materialize components listed above.
 
 
@@ -99,6 +100,8 @@ The components used: navbar, sidenav, parallax, cards, modal, buttons, footer.
 
 * **Git** - used for version control and to keep track of the changes made to the repository.
 * **Gitpod** - open source development platform, allowed me to add, commit and push files to GitHub. 
+* **GitHub** - used as a hosting service for version control and future collaborations.
+* **Heroku** - 
 
 ## Features
 ___
