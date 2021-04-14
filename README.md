@@ -110,7 +110,26 @@ The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.
 ## Features
 ___
 
-### Existing Features
+### Implemented Features
+
+##### Features accessible for all users and admin
+**Navigation Bar** 
+* Responsive Navigation Bar is created using Materialize Navbar class. It displays the website's logo on the left and on the right navigation links to the "Home", "Glossary", "Log In" and "Sign Up" Pages when the user is not logged in. 
+* Brand Logo also serves Home Page link, which is particularly convenient when accessing the site on smaller screen size devices. 
+* On screen sizes below 992px navbar is hidden and slide out menu comes into effect, which collapses into a hamburger menu bar when closed. 
+
+**Parallax Section**
+* 
+
+**Search WD Buzzwords** 
+* This section's design has been inspired by this YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). However, it has been completely adapted and I have modified classes as well as adding "Search" and "Refresh" buttons. 
+
+**Welcome Section**
+* This section consists of a title and a paragraph text that explains the concept of the website. 
+
+**Icon Boxes Section** 
+* This section is made of two Materialize card-panels, with added Font Awesome Icons and call to action buttons. The first panel invites users to sign-up to the website and the second one  users to the Glossary Page
+
 
 
 

@@ -53,6 +53,7 @@ main {
     text-align: center;
     background-color: #4db6ac;
 }
+
 .sidenav li>a {
     font-size: 1.2em;
     text-transform: uppercase;
@@ -123,6 +124,8 @@ main {
 @media (max-width: 1200px) {
 }
 
+@media (max-width: 992px) {
+}
 @media (max-width: 768px) {
 }
 
