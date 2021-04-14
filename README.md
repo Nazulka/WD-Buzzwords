@@ -84,24 +84,28 @@ ___
 
 ### Languages, Frameworks, Libraries and tools Used
 #### Front-end
-* [Materialize CSS v1.0.0](https://materializecss.com/) - a front-end framework, used to create sleek, consistent, functional and responsive website. 
+* **[Materialize CSS v1.0.0]**(https://materializecss.com/) - a front-end framework, used to create sleek, consistent, functional and responsive website. I wanted to familiarize myself better with Materialize as my previous two projects used Bootstrap. 
 The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.  
 * **jQuery** - required to ensure proper rendering of the Materialize components listed above.
-
-
+* **[Google Fonts]**(https://fonts.google.com/) *Special Elite* font had been used for the website logo, *Monserrat* for headings and *Average* for the all other elements. 
+* **[Font Awesome v5.15.3]**(https://fontawesome.com/icons?d=gallery&p=2) for icons in icons section, some buttons and social icons.
+* **[Tinypng.com]**(https://tinypng.com/) - to reduce size and compress the images used in this project.
+* **[RandomKeygen]**(https://randomkeygen.com/) - to create Fort Knox Password.
+* **[Balsamiq]**(https://balsamiq.com/wireframes/desktop/) - to generate digital sketches for the project concept for better planning of the layout of the website.
 
 #### Back-end
-
-
-
+* **Flask** - a lightweight micro web framework written in Python used for simple, clean code and to reduce development time.
+* **[MongoDB]**(https://www.mongodb.com/2) - non-relational database, used to store and retrieve data.
+* **[Werkzeug]**(https://werkzeug.palletsprojects.com/en/1.0.x/) - used with Flask to securely store passwords with salted hashes and verify user passwords to authenticate users.
+* **Flask Jinja** - a part of a Flask package, it's a templating language for Python that allows template inheritance.
 
 
 #### Deployment
-
 * **Git** - used for version control and to keep track of the changes made to the repository.
 * **Gitpod** - open source development platform, allowed me to add, commit and push files to GitHub. 
 * **GitHub** - used as a hosting service for version control and future collaborations.
-* **Heroku** - 
+* **Heroku** - my GitHub repo for this project had been connected to Heroku app to enable management and deployment of this app.
+
 
 ## Features
 ___
