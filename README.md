@@ -100,9 +100,9 @@ The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.
 
 
 #### Deployment
-* **Git** - used for version control and to keep track of the changes made to the repository.
-* **Gitpod** - open source development platform, allowed me to add, commit and push files to GitHub. 
-* **GitHub** - used as a hosting service for version control and future collaborations.
+* **Git** - used to keep track of the changes made to the repository and for version control.
+* **Gitpod** - I used CI full template as an IDE to develop, commit and push files to GitHub. 
+* **GitHub** - used as a hosting service and for future collaborations.
 * **Heroku** - my GitHub repo for this project had been connected to Heroku app to enable management and deployment of this app.
 
 
@@ -135,7 +135,6 @@ ___
 * Designed using Materialize Sticky Footer component, it's responsive and always stays on the bottom the page unless there is a lot of content, when it gets pushed down. Contains hoverable Social Media icons to let users know they are clickable. Icons are linked to the external websites and open in new tabs when clicked. 
 * Copyright section is directly below the Footer and contains Copyright information.
 
-
 ###### Glossary Page
 **All results**
 * By default, the Glossary page displays all terms in the dictionary sorted in an alphabetical order allowing users to scroll down to browse.
@@ -160,9 +159,6 @@ ___
 ###### Log Out
 * Enables users to log out of their account deletes session cookies. 
 
-
-
-
 #### CRUD Functionality
 
 
@@ -173,8 +169,11 @@ ___
 
 ## Testing
 ___
-### Create Testing.md
-
+### Code Validity
+* HTML Markup Validation
+* CSS Validation
+* JavaScript Code Quality Tool JSHint 
+* PEP8 
 
 ### Issues and Solutions
 
@@ -190,7 +189,6 @@ ___
 * A parallax image for the Home Page is taken from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY)
 * A new entry submission chart is taken from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) 
 * Favicon icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com
-
 
 ### Code
 

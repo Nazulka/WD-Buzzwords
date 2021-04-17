@@ -7,6 +7,7 @@
             <h3 class="center-align">
                 {{ username }}'s Account
             </h3>
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
         </div>
     </div>
 
@@ -24,7 +25,7 @@
         <div class="row">
             {% for term in terms %}
                 <div class="col s12 m10 offset-m1">
-                    {% if session.user|lower == term.added_by|lower %}
+                    {% if session.user == 'admin' or session.user|lower == term.added_by|lower %}
                     <a href="{{ url_for('add_term', term_name=term._id) }}"></a>
                     <div class="section left-align">
                         <h5><strong>{{ term.term_name }}</strong></h5>
@@ -32,10 +33,12 @@
                         <p><em>Added by: {{term.added_by }}</em></p>
                     </div>
                     <div class="row">
-                        <a href="{{ url_for('edit_term', term_id=term._id) }}"
-                            class="col s2 btn btn-small waves-effect waves-light amber accent-3">Edit</a>
                         <button href="#delete_modal_{{ term._id }}" type="submit"
                             class="col s2 btn btn-small waves-effect waves-light amber accent-3 modal-trigger">Delete</button>
+                            {% if session.user|lower == term.added_by|lower %}
+                            <a href="{{ url_for('edit_term', term_id=term._id) }}"
+                            class="col s2 btn btn-small waves-effect waves-light amber accent-3">Edit</a>
+                            {% endif %}
                     </div>
                     <div class="divider"></div>
                     {% endif %}
