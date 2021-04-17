@@ -111,7 +111,7 @@ ___
 
 ### Implemented Features
 
-##### Features accessible for all users and admin
+##### Features available for all users and admin
 ###### Home Page
 **Navigation Bar** 
 * Responsive Navigation Bar is created using Materialize Navbar class. It displays the website's logo on the left and on the right navigation links to the "Home", "Glossary", "Log In" and "Sign Up" Pages when the user is not logged in. 
@@ -137,8 +137,30 @@ ___
 
 
 ###### Glossary Page
+**All results**
+* By default, the Glossary page displays all terms in the dictionary sorted in an alphabetical order allowing users to scroll down to browse.
 **Filter Results Section**
-* Contains letters of the alphabet so users can click and select
+* Located on top of the page, it helps users to narrow down the results by clicking on the buttons with the letter they require. This will be particularly useful as the site expands and more definitions will be added. 
+
+###### Log In Page
+* Contains a Materialize card with the required input fields for Username and Password. It allows registered users to log in to the account and to access additional features. 
+* The page also contains a link to the Sign Up page. 
+
+###### Sign Up
+* Similar to the page above it contains a card with the Username and Password input fields and enables new users to create a personalized account and to be able to contribute to the dictionary. 
+* There is a link below the card to direct already registered users to the Log In page. 
+
+##### Features available for registered users and admin
+###### Account Page
+* Enables registered users to view the terms added by themselves to the dictionary. It provides an option to edit or delete these terms. Users get a pop-up delete confirmation modal to eliminate accidental removal of entries.
+
+###### Add Term
+* The form allows users to add new entries and their description. It features a check-before-adding chart [credit: Macmillan Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) to help users to decide whether to add their word to the dictionary.
+
+###### Log Out
+* Enables users to log out of their account deletes session cookies. 
+
+
 
 
 #### CRUD Functionality
