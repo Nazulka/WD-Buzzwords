@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="col s12 m6 offset-m3 pt">
+        <h3 class="col s10 red-text left-align pt">Internal Server Error</h3>
+        <p class="col s10 grey-text left-align pt">We are working hard to fix this problem. Why not try to reload or return to our homepage?</p>
+        <a href="{{ url_for('home') }}"
+            class="col s2 btn btn-large left-align waves-effect waves-light amber accent-3">Home</a>
+    </div>
+{% endblock %}
