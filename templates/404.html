@@ -1,10 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="col s12 m6 offset-m3 pt">
-        <h3 class="col s10 red-text left-align pt">The Page you were looking for doesn't exist.</h3>
-        <p class="col s10 grey-text left-align pt">Return to our homepage</p>
-        <a href="{{ url_for('home') }}"
-            class="col s2 btn btn-large left-align waves-effect waves-light amber accent-3">Home</a>
+<section class="container error-card">
+    <div class="row">
+        <div class="col s12 l10 offset-l1">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/error.jpg') }}"
+                        alt="A man with a mask over his head that reads Error">
+                    <span class="card-title">Oops!</span>
+                </div>
+                <div class="card-content">
+                    <p>We can't seem to find the page that you are looking for.</p>
+                  </div>
+                <div class="card-action">
+                    <a href="{{ url_for('home') }}">Return to Home Page</a>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+
 {% endblock %}

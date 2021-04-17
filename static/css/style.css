@@ -119,6 +119,12 @@ main {
 .filter-card {
     width: 80%;
 }
+/*-- Error Handler --*/
+.error-card {
+    margin-top: 3em;
+}
+
+
 
 /*--Media Queries--*/
 @media (max-width: 1200px) {
@@ -148,5 +154,9 @@ main {
     .pt {
         padding-top: 0.3em;
     }
+    .error-card {
+        min-width: 80%;
+    }
+    
     
 }
