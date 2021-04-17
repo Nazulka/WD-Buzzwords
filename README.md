@@ -46,7 +46,6 @@ ___
                                                                                               
 ### Structure
 This website offers users the option to choose between the following two to accomodate their individual preferences:
-
 * **Guest users** - (unauthenticated site visitors) can access selected functions in the navigation panel: Home, Glossary, Log In and Sign Up Pages.
 * **Registered users** - once users decide to register to the website, they will be able to access full functionality and additionally access Account, Add Term and Log Out pages. 
 
@@ -72,6 +71,7 @@ This website offers users the option to choose between the following two to acco
 
 **Imagery**
 * The Home page supporting image added to enchance the overall experience and is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY).
+
 
 ## Technologies Used
 ___
@@ -122,7 +122,7 @@ ___
 * A Materialize parallax image has been added to visually support the content and for added user interactivity.  
 
 **Search WD Buzzwords** 
-* The Search box's design has been inspired by this YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). However, it has been completely adapted and I have modified classes and added "Search" and "Refresh" buttons. 
+* The Search box's design has been inspired by this YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). However, the code has been modified and adapted to the site's needs. I also have modified classes and added "Search" and "Refresh" buttons. 
 
 **Welcome Section**
 * This section consists of a title and a paragraph text that explains the concept of the website. 
@@ -131,7 +131,14 @@ ___
 * This section is made of two Materialize card-panels, with added Font Awesome Icons and call to action buttons. The first panel invites users to sign-up to the website and the second one guides users to the Glossary Page to browsw all terms. 
 * The bottom part of the section is for users who would like to purchase a Glossary in a book form and includes a link to an external third-party site that opens up in a new tab. 
 
+**Footer**
+* Designed using Materialize Sticky Footer component, it's responsive and always stays on the bottom the page unless there is a lot of content, when it gets pushed down. Contains hoverable Social Media icons to let users know they are clickable. Icons are linked to the external websites and open in new tabs when clicked. 
+* Copyright section is directly below the Footer and contains Copyright information.
 
+
+###### Glossary Page
+**Filter Results Section**
+* Contains letters of the alphabet so users can click and select
 
 
 #### CRUD Functionality
