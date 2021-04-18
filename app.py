@@ -133,7 +133,7 @@ def logout():
 # Adds new terms
 @app.route("/add_term")
 def add_term():
-    return render_template("add_term.html")
+    return render_template("add_term.html", terms=mongo.db.terms.find())
 
 
 # Inserts new unique terms into the db
@@ -143,28 +143,17 @@ def insert_term():
     terms = mongo.db.terms
 
     if terms.count_documents({'term_name': new_term}, limit=1) == 0:
-        terms.insert_one(new_term).upper()
+        terms.insert_one(
+        {
+            "term_name": request.form.get("term_name").upper(),
+            "term_description": request.form.get("term_description"),
+            "added_by": session["user"]
+        })
+        flash("Your entry successfully added!")
+
     else:
         flash("This term already exists in the dictionary!")
     return redirect(url_for('add_term'))
-
-
-
-
-# @app.route("/add_term", methods=["GET", "POST"])
-# def add_term():
-#     if request.method == "POST":
-#         term = {
-#             "term_name": request.form.get("term_name").upper(),
-#             "term_description": request.form.get("term_description"),
-#             "added_by": session["user"]
-#         }
-#         mongo.db.terms.insert_one(term)
-#         flash("Your entry successfully added!")
-#         # Return to view all terms in the Glossary Page
-#         return redirect(url_for("get_terms"))
-
-#     return render_template("add_term.html")
 
 
 # Edits terms if added_by the user
