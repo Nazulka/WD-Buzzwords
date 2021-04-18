@@ -133,29 +133,20 @@ def logout():
 # Adds new terms into a db
 @app.route("/add_term", methods=["GET", "POST"])
 def add_term():
-    terms = list(mongo.db.terms.find())
-    term_name = request.form.get("term_name")
-
     if request.method == "POST":
         term = {
             "term_name": request.form.get("term_name").capitalize(),
             "term_description": request.form.get("term_description"),
             "added_by": session["user"]
         }
-        # If terms already in the db
-        if term_name in terms:
-            flash("Sorry, this term already exists!")
-            # Return to Glossary Page
-            return redirect(url_for("get_terms"))
-
-        # Add term if not in the db
-        if term_name not in terms:
             mongo.db.terms.insert_one(term)
             flash("Your entry successfully added!")
             # Return to view all terms in the Glossary Page
             return redirect(url_for("get_terms"))
 
     return render_template("add_term.html")
+
+
 
 
 # Edits terms if added_by the user
