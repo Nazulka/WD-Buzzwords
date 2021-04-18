@@ -20,28 +20,31 @@ app.secret_key = os.environ.get("SECRET_KEY")
 # Set up an instance of PyMongo
 mongo = PyMongo(app)
 
+# Home Page 
 @app.route("/")
 @app.route("/home")
 def home():
-
     return render_template("index.html")
 
 
+# Returns all terms from db 
 @app.route("/get_terms")
 def get_terms():
-    # Sort results alphabetically
+    # Sorts results alphabetically
     terms = list(mongo.db.terms.find().sort('term_name', 1))
-
     return render_template("glossary.html", terms=terms)
 
 
+# Returns search results
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
     terms = list(mongo.db.terms.find({"$text": {"$search": query}}))
+    # Displays results on Glossary Page
     return render_template("glossary.html", terms=terms)
 
 
+# Sign up function
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():
     if request.method == "POST":
@@ -67,6 +70,7 @@ def sign_up():
     return render_template("sign_up.html")
 
 
+# Log in function
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -99,16 +103,14 @@ def login():
     return render_template("login.html")
 
 
+# Returns User Profile page
 @app.route("/account/<username>", methods=["GET", "POST"])
 def account(username):
     # grab the session user's username from the database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
-    ''' get the session user's added entries from the database
-    sorted alphabetically
-    '''
-
+    # Get the session user's added entries from the db sorted alphabetically
     terms = list(mongo.db.terms.find().sort('term_name', 1))
 
     if session["user"]:
@@ -117,30 +119,46 @@ def account(username):
     return redirect(url_for("login"))
 
 
+# Log out function
 @app.route("/logout")
 def logout():
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
 
+    # return to Log in Page
     return redirect(url_for("login"))
 
 
+# Adds new terms into a db
 @app.route("/add_term", methods=["GET", "POST"])
 def add_term():
+    terms = list(mongo.db.terms.find())
+    term_name = request.form.get("term_name")
+
     if request.method == "POST":
         term = {
             "term_name": request.form.get("term_name").capitalize(),
             "term_description": request.form.get("term_description"),
             "added_by": session["user"]
         }
-        mongo.db.terms.insert_one(term)
-        flash("Your entry successfully added!")
-        return redirect(url_for("get_terms"))
+        # If terms already in the db
+        if term_name in terms:
+            flash("Sorry, this term already exists!")
+            # Return to Glossary Page
+            return redirect(url_for("get_terms"))
+
+        # Add term if not in the db
+        if term_name not in terms:
+            mongo.db.terms.insert_one(term)
+            flash("Your entry successfully added!")
+            # Return to view all terms in the Glossary Page
+            return redirect(url_for("get_terms"))
 
     return render_template("add_term.html")
 
 
+# Edits terms if added_by the user
 @app.route("/edit_term/<term_id>", methods=["GET", "POST"])
 def edit_term(term_id):
     if request.method == "POST":
@@ -149,6 +167,7 @@ def edit_term(term_id):
             "term_description": request.form.get("term_description"),
             "added_by": session["user"]
         }
+        # Update the db
         mongo.db.terms.update({"_id": ObjectId(term_id)}, submit)
         flash("Entry successfully updated!")
 
@@ -156,10 +175,12 @@ def edit_term(term_id):
     return render_template("edit_term.html", term=term)
 
 
+# Removes term from the db if added_by user
 @app.route("/delete_term/<term_id>")
 def delete_term(term_id):
     mongo.db.terms.remove({"_id": ObjectId(term_id)})
     flash("Entry Successfully Deleted")
+    # Returns to the Profile Page
     return redirect(url_for("account", username=session["user"]))
 
 
