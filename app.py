@@ -130,33 +130,41 @@ def logout():
     return redirect(url_for("login"))
 
 
+# Adds new terms
+@app.route("/add_term")
+def add_term():
+    return render_template("add_term.html")
+
+
 # Inserts new unique terms into the db
 @app.route("/insert_term", methods=['POST'])
 def insert_term():
-    new_term = request.term.get("term_name")
-    dict = mongo.db.terms
-    if dict.count_documents({'term_name': new_term}, limit=1) == 0:
-        dict.insert_one(request.form.to_dict())
+    new_term = request.form.get("term_name")
+    terms = mongo.db.terms
+
+    if terms.count_documents({'term_name': new_term}, limit=1) == 0:
+        terms.insert_one(new_term).upper()
     else:
         flash("This term already exists in the dictionary!")
     return redirect(url_for('add_term'))
 
 
-# Adds new terms
-@app.route("/add_term", methods=["GET", "POST"])
-def add_term():
-    if request.method == "POST":
-        term = {
-            "term_name": request.form.get("term_name").upper(),
-            "term_description": request.form.get("term_description"),
-            "added_by": session["user"]
-        }
-        mongo.db.terms.insert_one(term)
-        flash("Your entry successfully added!")
-        # Return to view all terms in the Glossary Page
-        return redirect(url_for("get_terms"))
 
-    return render_template("add_term.html")
+
+# @app.route("/add_term", methods=["GET", "POST"])
+# def add_term():
+#     if request.method == "POST":
+#         term = {
+#             "term_name": request.form.get("term_name").upper(),
+#             "term_description": request.form.get("term_description"),
+#             "added_by": session["user"]
+#         }
+#         mongo.db.terms.insert_one(term)
+#         flash("Your entry successfully added!")
+#         # Return to view all terms in the Glossary Page
+#         return redirect(url_for("get_terms"))
+
+#     return render_template("add_term.html")
 
 
 # Edits terms if added_by the user
