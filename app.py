@@ -142,6 +142,7 @@ def insert_term():
     new_term = request.form.get("term_name")
     terms = mongo.db.terms
 
+    # Add unique term into the database
     if terms.count_documents({'term_name': new_term}, limit=1) == 0:
         terms.insert_one(
         {
@@ -150,10 +151,12 @@ def insert_term():
             "added_by": session["user"]
         })
         flash("Your entry successfully added!")
+        return redirect(url_for("account", username=session["user"]))
 
     else:
+        # Display flash message if already in the db
         flash("This term already exists in the dictionary!")
-    return redirect(url_for('add_term'))
+    return render_template("add_term.html")
 
 
 # Edits terms if added_by the user
