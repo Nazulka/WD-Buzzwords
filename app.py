@@ -56,6 +56,13 @@ def sign_up():
             flash("Username already exists")
             return redirect(url_for("sign_up"))
 
+        confirm_password = request.form.get("confirm_password")
+        password = request.form.get("password")
+
+        if password != confirm_password:
+            flash("Passwords don't match!")
+            return redirect(url_for("sign_up"))
+
         sign_up = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
@@ -137,13 +144,16 @@ def add_term():
 
 
 # Inserts new unique terms into the db
+# Credit to Tim from Tutor Support for the function template
 @app.route("/insert_term", methods=['POST'])
 def insert_term():
     new_term = request.form.get("term_name")
     terms = mongo.db.terms
+    existing_term = terms.count_documents({
+        'term_name': new_term.upper()}, limit=1)
 
     # Add unique term into the database
-    if terms.count_documents({'term_name': new_term}, limit=1) == 0:
+    if existing_term == 0:
         terms.insert_one(
         {
             "term_name": request.form.get("term_name").upper(),

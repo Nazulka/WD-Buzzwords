@@ -53,8 +53,6 @@ This website offers users the option to choose between the following two to acco
 ### Skeleton
 * [Desktop wireframes]()
 * [Tablet and Mobile wireframes]()
-* The wireframes have been changed quite a bit:
-
 * Database Diagram
 
 ### Surface
@@ -111,7 +109,7 @@ ___
 
 ### Implemented Features
 
-##### Features available for all users and admin
+##### Features available to all users and admin
 ###### Home Page
 **Navigation Bar** 
 * Responsive Navigation Bar is created using Materialize Navbar class. It displays the website's logo on the left and on the right navigation links to the "Home", "Glossary", "Log In" and "Sign Up" Pages when the user is not logged in. 
@@ -149,15 +147,16 @@ ___
 * Similar to the page above it contains a card with the Username and Password input fields and enables new users to create a personalized account and to be able to contribute to the dictionary. 
 * There is a link below the card to direct already registered users to the Log In page. 
 
-##### Features available for registered users and admin
+##### Features available to registered users and admin
 ###### Account Page
 * Enables registered users to view the terms added by themselves to the dictionary. It provides an option to edit or delete these terms. Users get a pop-up delete confirmation modal to eliminate accidental removal of entries.
 
 ###### Add Term
 * The form allows users to add new entries and their description. It features a check-before-adding chart [credit: Macmillan Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) to help users to decide whether to add their word to the dictionary.
+* When users try to add new term, it gets checked if the entry already exists in the dictionary and users get a flash notification if so. If this is a unique entry it then gets added to the dictionary and users see a flash message to confirm the successful entry. This entry is then displayed in the users' Account Page.  
 
 ###### Log Out
-* Enables users to log out of their account deletes session cookies. 
+* Enables users to log out of their account and deletes their session cookies. 
 
 #### CRUD Functionality
 
@@ -191,7 +190,7 @@ ___
 * Favicon icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com
 
 ### Code
-
+* 
 ## Acknowledgements
 ___
 
