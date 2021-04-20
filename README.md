@@ -59,7 +59,7 @@ This website offers users the option to choose between the following two to acco
 #### Design
 **Color Scheme**
 * The color palette has been created using [Coolors](https://coolors.co/4db6ac-ffc400-c2185b-e0e0e0-eeeeee) and materialize color classes have been used in this project.
-* I have chosen a base color of teal and a complimentary color orange to create contrast to the site and add depth. By using this bold combination, I aimed to create an inviting and relaxing design for the users. A splash of pink has been added for a contrast and light grey has been used to display the flash messages. 
+* I have chosen a base color of teal and a complimentary color orange to create contrast to the site and add depth. By using this bold combination, I aimed to create an inviting and relaxing design for the users. Light grey has been used to display the flash messages. 
 ![color palette](static/img/color-palette.jpg)
 
 **Typography**

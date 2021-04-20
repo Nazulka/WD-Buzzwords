@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Average&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Special+Elite&display=swap');
 
-/* font-family: 'Average', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Special Elite', cursive; */
-
-
-
 /*-- Body + Sticky footer from Materialize --*/
 body {
     display: flex;
@@ -117,7 +111,10 @@ main {
 
 /*-- Alphabetical Filter --*/
 .filter-card {
-    width: 80%;
+    width: 100%;
+}
+.card-panel {
+    margin: 0 auto;
 }
 /*-- Error Handler --*/
 .error-card {
@@ -156,6 +153,9 @@ main {
     }
     .error-card {
         min-width: 80%;
+    }
+    .card-panel {
+        padding-bottom: 1em;
     }
     
     
