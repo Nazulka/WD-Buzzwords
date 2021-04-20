@@ -27,18 +27,20 @@ def home():
     return render_template("index.html")
 
 
-# Returns all terms from db 
+# Returns all terms from db
 @app.route("/get_terms")
 def get_terms():
     # Sorts results alphabetically
     terms = list(mongo.db.terms.find().sort('term_name', 1))
     return render_template("glossary.html", terms=terms)
 
-    # Filter results by first letter
-    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    for letter in letters:
-        filter = mongo.db.terms.find({'term_name':{'$regex':'index[0]'}})
-        print(filter)
+
+# Filter results by first letter
+@app.route("/filter_terms")
+def filter_terms():
+    filter = list(mongo.db.terms.find({'term_name': {'$regex': 'index[0]'}}))
+    print("helloa")
+    return render_template("glossary.html", letter=filter)
 
 
 # Returns search results
