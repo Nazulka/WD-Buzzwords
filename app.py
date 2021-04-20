@@ -34,6 +34,12 @@ def get_terms():
     terms = list(mongo.db.terms.find().sort('term_name', 1))
     return render_template("glossary.html", terms=terms)
 
+    # Filter results by first letter
+    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    for letter in letters:
+        filter = mongo.db.terms.find({'term_name':{'$regex':'index[0]'}})
+        print(filter)
+
 
 # Returns search results
 @app.route("/search", methods=["GET", "POST"])
@@ -56,6 +62,7 @@ def sign_up():
             flash("Username already exists")
             return redirect(url_for("sign_up"))
 
+        # check if password and confirm_password inputs match
         confirm_password = request.form.get("confirm_password")
         password = request.form.get("password")
 
@@ -144,7 +151,7 @@ def add_term():
 
 
 # Inserts new unique terms into the db
-# Credit to Tim from Tutor Support for the function template
+# Credit to Tutor Support for providing a template for this function
 @app.route("/insert_term", methods=['POST'])
 def insert_term():
     new_term = request.form.get("term_name")
