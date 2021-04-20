@@ -98,6 +98,7 @@ main {
     padding: 0;
 }
 .search-btn {
+    height: 58px;
     margin: 0 auto;
     max-width: 100%;
 }
