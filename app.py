@@ -36,11 +36,24 @@ def get_terms():
 
 
 # Filter results by first letter
+# @app.route("/filter_terms/first_letter")
+# def filter_terms(first_letter):
+#     filter = list(mongo.db.terms.find({'term_name': {'$regex': 'index[0]'}}))
+#     print("hello")
+#     return render_template("glossary.html", first_letter=filter)
+
+
+# Filter results by first letter
 @app.route("/filter_terms")
-def filter_terms():
-    filter = list(mongo.db.terms.find({'term_name': {'$regex': 'index[0]'}}))
-    print("helloa")
-    return render_template("glossary.html", letter=filter)
+def filter_terms(letter):
+    result = {}
+    for term in result:
+        if letter in result:
+            result[letter].append(term)
+        else:
+            result[letter] = [term]
+            print("hello")
+    return render_template("glossary.html", result=result)
 
 
 # Returns search results
