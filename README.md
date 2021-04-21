@@ -135,7 +135,7 @@ ___
 
 ###### Glossary Page
 **All results**
-* By default, the Glossary page displays all terms in the dictionary sorted in an alphabetical order allowing users to scroll down to browse.
+* By default, the Glossary page displays all terms in the dictionary sorted in alphabetical order allowing all users to scroll down to browse.
 **Filter Results Section**
 * Located on top of the page, it helps users to narrow down the results by clicking on the buttons with the letter they require. This will be particularly useful as the site expands and more definitions will be added. 
 

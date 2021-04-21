@@ -41,8 +41,8 @@ def filter_terms(letter):
 
     letter = mongo.db.terms.find(
         {"letter": term_name[0]})["letter"]
-    results = mongo.db.terms.find({
-        "term_name": {"$regex": '^letter'}})
+
+    results = mongo.db.terms.find({"term_name": {"$regex": '^letter'}})
     return render_template("glossary.html", letter=letter, results=results)
 
 

@@ -9,7 +9,7 @@
                     <h5 class="center-align filter-header"><strong>Filter Results</strong></h5>
                     {% set letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
                     {% for letter in letters %}
-                    <button method="POST" action="{{ url_for('filter_terms', letter=letter) }}" class="col s1 first-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">{{ letter
+                    <button method="POST" href="{{ url_for('filter_terms', letter=letter) }}" class="col s1 first-letter waves-effect waves-light btn-small amber accent-3 z-depth-2">{{ letter
                         }}</button>
                     {% endfor %}
             </div>
