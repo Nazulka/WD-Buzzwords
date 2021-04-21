@@ -36,24 +36,14 @@ def get_terms():
 
 
 # Filter results by first letter
-# @app.route("/filter_terms/first_letter")
-# def filter_terms(first_letter):
-#     filter = list(mongo.db.terms.find({'term_name': {'$regex': 'index[0]'}}))
-#     print("hello")
-#     return render_template("glossary.html", first_letter=filter)
-
-
-# Filter results by first letter
-@app.route("/filter_terms")
+@app.route("/filter_terms/<letter>")
 def filter_terms(letter):
-    result = {}
-    for term in result:
-        if letter in result:
-            result[letter].append(term)
-        else:
-            result[letter] = [term]
-            print("hello")
-    return render_template("glossary.html", result=result)
+
+    letter = mongo.db.terms.find(
+        {"letter": term_name[0]})["letter"]
+    results = mongo.db.terms.find({
+        "term_name": {"$regex": '^letter'}})
+    return render_template("glossary.html", letter=letter, results=results)
 
 
 # Returns search results
@@ -166,9 +156,9 @@ def add_term():
 
 
 # Inserts new unique terms into the db
-# Credit to Tutor Support for providing a template for this function
 @app.route("/insert_term", methods=['POST'])
 def insert_term():
+    # Credit to Tutor Support for this function template
     new_term = request.form.get("term_name")
     terms = mongo.db.terms
     existing_term = terms.count_documents({

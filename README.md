@@ -35,7 +35,7 @@ ___
 * As a guest user of WD Buzzwords, I want to be able to get a delete confirmation message before deleting my entries.
 
 **Site owner / admin**
-* * As a site owner of WD Buzzwords, I want to create an online educational resource, to promote understanding of web development terms and abbreviations, as well as crowdsource new terms and definitions to benefit users who are new to the sector.
+* As a site owner of WD Buzzwords, I want to create an online educational resource, to promote understanding of web development terms and abbreviations, as well as crowdsource new terms and definitions to benefit users who are new to the sector.
 * As a site owner of WD Buzzwords, I want to be able to monitor and regularly update the website to keep up-to-date and to meet users' expectations.
 * As a site owner of WD Buzzwords, I want to be able to delete entries contributed by users if necessary.
 
