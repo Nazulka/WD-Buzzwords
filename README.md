@@ -163,7 +163,7 @@ CRUD Functionality
 ### Future Features 
 * Add an _autocomplete_ attribute to the search box input field to allow the browser to predict terms and display options to fill in the field.
 * Expand the glossary by adding _part of speech_, _synonyms_ and _pronunciation_ features. 
-* Add _Table of Contents_ section with term names that can be clicked to display term description in a new page. 
+* Allow users to edit their passwords and delete their accounts. 
 
 ## Testing
 ___
@@ -178,8 +178,14 @@ ___
 ## Deployment
 ___
 ### Project Creation
-This project has been created using th CI Gitpod Full Template 
+This project was created using the CI recommended [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
+* Click on **_Use this template_** button and enter a short and memorable name of your choice for your repo and select **_Create repository from template_**. 
+* Once created, click on green **_Gitpod_** button to open your new workspace. 
+
 ### Deployment to Heroku
+
+
+
 ### Run Locally
 ### Fork Project
 

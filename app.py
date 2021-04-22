@@ -36,14 +36,33 @@ def get_terms():
 
 
 # Filter results by first letter
+# @app.route("/filter_terms/<letter>")
+# def filter_terms(letter):
+
+#     letter = mongo.db.terms.find(
+#         {"letter": term_name[0]})["letter"]
+
+#     results = mongo.db.terms.find({"term_name": {"$regex": '^letter'}})
+#     return render_template("glossary.html", letter=letter, results=results)
+
+
 @app.route("/filter_terms/<letter>")
 def filter_terms(letter):
+    terms = list(mongo.db.terms.find().sort('term_name', 1))
+    first_let = []
+    print(terms)
 
-    letter = mongo.db.terms.find(
-        {"letter": term_name[0]})["letter"]
+    for x in range(0, len(terms)):
+        print(terms[x][0])
 
-    results = mongo.db.terms.find({"term_name": {"$regex": '^letter'}})
-    return render_template("glossary.html", letter=letter, results=results)
+    letter = terms[x][0]
+    print(letter)
+    return render_template("glossary.html", letter=letter, terms=terms)
+
+
+
+
+
 
 
 # Returns search results
