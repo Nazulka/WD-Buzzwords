@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="container">
+<div id="filter_results" class="container">
     <h2>Glossary of Terms</h2>
     <div class="container card card-panel filter-card grey lighten-5 pt">
         <div class="row"> 
@@ -38,6 +38,11 @@
                 class="col s2 btn btn-large left-align waves-effect waves-light amber accent-3">Browse Terms</a>
         </div>
     {% endif %}
+</div>
+<div class="fixed-action-btn">
+    <a href="#filter_results" class="btn-floating btn-large waves-effect waves-light amber accent-3 click-to-toggle">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true">T</i>
+    </a>    
 </div>
 
 {% endblock %}

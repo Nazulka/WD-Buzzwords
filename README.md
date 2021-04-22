@@ -162,8 +162,8 @@ CRUD Functionality
 
 ### Future Features 
 * Add an _autocomplete_ attribute to the search box input field to allow the browser to predict terms and display options to fill in the field.
-* Expand the glossary by adding _parts of speech_ and _text to speech pronunciation_ features. 
-* Add _Table of Contents_ section/ page so users can view a page with term names that can be clicked to view the term description and open in a new page. 
+* Expand the glossary by adding _part of speech_, _synonyms_ and _pronunciation_ features. 
+* Add _Table of Contents_ section with term names that can be clicked to display term description in a new page. 
 
 ## Testing
 ___
@@ -177,7 +177,11 @@ ___
 
 ## Deployment
 ___
-
+### Project Creation
+This project has been created using th CI Gitpod Full Template 
+### Deployment to Heroku
+### Run Locally
+### Fork Project
 
 
 ## Credits
