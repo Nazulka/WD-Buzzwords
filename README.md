@@ -123,7 +123,7 @@ ___
 * The Search box's design has been inspired by this YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). However, the code has been modified and adapted to the site's needs. I also have modified classes and added "Search" and "Refresh" buttons. 
 
 **Welcome Section**
-* This section consists of a title and a paragraph text that explains the concept of the website. 
+* This section consists of a title and a paragraph text that explains the purpose of the website. 
 
 **Icon Boxes Section** 
 * This section is made of two Materialize card-panels, with added Font Awesome Icons and call to action buttons. The first panel invites users to sign-up to the website and the second one guides users to the Glossary Page to browsw all terms. 
@@ -134,7 +134,7 @@ ___
 * Copyright section is directly below the Footer and contains Copyright information.
 
 ###### Glossary Page
-**All results**
+**Browse All Results**
 * By default, the Glossary page displays all terms in the dictionary sorted in alphabetical order allowing all users to scroll down to browse.
 **Filter Results Section**
 * Located on top of the page, it helps users to narrow down the results by clicking on the buttons with the letter they require. This will be particularly useful as the site expands and more definitions will be added. 
@@ -144,27 +144,26 @@ ___
 * The page also contains a link to the Sign Up page. 
 
 ###### Sign Up
-* Similar to the page above it contains a card with the Username and Password input fields and enables new users to create a personalized account and to be able to contribute to the dictionary. 
-* There is a link below the card to direct already registered users to the Log In page. 
+* Similar to the page above it contains a card with the Username, Password and Confirm password input fields and enables new users to create a personalized account and to be able to contribute to the dictionary. 
+* There is a link below the card to re-direct already registered users to the Log In page. 
 
 ##### Features available to registered users and admin
-###### Account Page
-* Enables registered users to view the terms added by themselves to the dictionary. It provides an option to edit or delete these terms. Users get a pop-up delete confirmation modal to eliminate accidental removal of entries.
-
+CRUD Functionality
 ###### Add Term
-* The form allows users to add new entries and their description. It features a check-before-adding chart [credit: Macmillan Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) to help users to decide whether to add their word to the dictionary.
+* The form allows users to add (**_Create function_**) new entries and their description. It features a check-before-adding chart [credit: Macmillan Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) to help users to decide whether to add their word to the dictionary.
 * When users try to add new term, it gets checked if the entry already exists in the dictionary and users get a flash notification if so. If this is a unique entry it then gets added to the dictionary and users see a flash message to confirm the successful entry. This entry is then displayed in the users' Account Page.  
+###### Account Page
+* Enables registered users to view (**_Read function_**) the terms added by themselves to the dictionary. 
+* Materialize buttons are placed below each word, providing an option to edit (**_Update function_**) or delete (**_Delete function_**) the term. If delete button is clicked, users see a pop-up delete confirmation modal to eliminate accidental removal of entries.
+* Admin user has the highest level of access to the website and an authorisation to delete irrelevant or inapropriate entries made by other users.
 
 ###### Log Out
 * Enables users to log out of their account and deletes their session cookies. 
 
-#### CRUD Functionality
-
-
-
-
 ### Future Features 
-
+* Add an _autocomplete_ attribute to the search box input field to allow the browser to predict terms and display options to fill in the field.
+* Expand the glossary by adding _parts of speech_ and _text to speech pronunciation_ features. 
+* Add _Table of Contents_ section/ page so users can view a page with term names that can be clicked to view the term description and open in a new page. 
 
 ## Testing
 ___
@@ -185,7 +184,7 @@ ___
 ___
 
 ### Media 
-* A parallax image for the Home Page is taken from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY)
+* A parallax image for the Home Page is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY)
 * A new entry submission chart is taken from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) 
 * Favicon icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com
 
