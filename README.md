@@ -69,6 +69,7 @@ This website offers users the option to choose between the following two to acco
 
 **Imagery**
 * The Home page supporting image added to enchance the overall experience and is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY).
+* A chart in Add Term page is from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html).
 
 
 ## Technologies Used
@@ -81,19 +82,19 @@ ___
 
 ### Languages, Frameworks, Libraries and tools Used
 #### Front-end
-* **[Materialize CSS v1.0.0]**(https://materializecss.com/) - a front-end framework, used to create sleek, consistent, functional and responsive website. I wanted to familiarize myself better with Materialize as my previous two projects used Bootstrap. 
+* **[Materialize CSS v1.0.0](https://materializecss.com/)** - a front-end framework, used to create sleek, consistent, functional and responsive website. I wanted to familiarize myself better with Materialize as my previous two projects used Bootstrap. 
 The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.  
 * **jQuery** - required to ensure proper rendering of the Materialize components listed above.
-* **[Google Fonts]**(https://fonts.google.com/) for typography. 
-* **[Font Awesome v5.15.3]**(https://fontawesome.com/icons?d=gallery&p=2) for icons in icons section, social icons and some of the buttons.
-* **[Tinypng.com]**(https://tinypng.com/) - to reduce size and compress the images used in this project.
-* **[RandomKeygen]**(https://randomkeygen.com/) - to create Fort Knox Password.
-* **[Balsamiq]**(https://balsamiq.com/wireframes/desktop/) - to generate digital sketches for the project concept for better planning of the layout of the website.
+* **[Google Fonts](https://fonts.google.com/)** for typography. 
+* **[Font Awesome v5.15.3](https://fontawesome.com/icons?d=gallery&p=2)** for icons in icons section, social icons and some of the buttons.
+* **[Tinypng.com](https://tinypng.com/)** - to reduce size and compress the images used in this project.
+* **[RandomKeygen](https://randomkeygen.com/)** - to create Fort Knox Password.
+* **[Balsamiq](https://balsamiq.com/wireframes/desktop/)** - to generate digital sketches for the project concept for better planning of the layout of the website.
 
 #### Back-end
 * **Flask** - a lightweight micro web framework written in Python used to create a simple, clean code and to reduce development time.
-* **[MongoDB]**(https://www.mongodb.com/2) - non-relational database, used to store, manipulate and retrieve data.
-* **[Werkzeug]**(https://werkzeug.palletsprojects.com/en/1.0.x/) - used with Flask to securely store passwords with salted hashes and verify user passwords to authenticate users.
+* **[MongoDB](https://www.mongodb.com/2)** - non-relational database, used to store, manipulate and retrieve data.
+* **[Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)** - used with Flask to securely store passwords with salted hashes and verify user passwords to authenticate users.
 * **Flask Jinja** - used as it's a part of a Flask package and to allow template inheritance.
 
 
@@ -150,11 +151,11 @@ ___
 ##### Features available to registered users and admin
 CRUD Functionality
 ###### Add Term
-* The form allows users to add (**_Create function_**) new entries and their description. It features a check-before-adding chart [credit: Macmillan Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) to help users to decide whether to add their word to the dictionary.
+* The form allows users to add new entries and their description. It features a check-before-adding chart [credit: Macmillan Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) to help users to decide whether to add their word to the dictionary.
 * When users try to add new term, it gets checked if the entry already exists in the dictionary and users get a flash notification if so. If this is a unique entry it then gets added to the dictionary and users see a flash message to confirm the successful entry. This entry is then displayed in the users' Account Page.  
 ###### Account Page
-* Enables registered users to view (**_Read function_**) the terms added by themselves to the dictionary. 
-* Materialize buttons are placed below each word, providing an option to edit (**_Update function_**) or delete (**_Delete function_**) the term. If delete button is clicked, users see a pop-up delete confirmation modal to eliminate accidental removal of entries.
+* Enables registered users to view the terms added by themselves to the dictionary. 
+* Materialize buttons are placed below each word, providing an option to edit or delete the term. If delete button is clicked, users see a pop-up delete confirmation modal to eliminate accidental removal of entries.
 * Admin user has the highest level of access to the website and an authorisation to delete irrelevant or inapropriate entries made by other users.
 
 ###### Log Out
@@ -228,14 +229,15 @@ To run this project on your device using the IDE of your choice follow these ste
 ```pip3 install -r requirements.txt```
 * Navigate to [MongoDB](https://www.mongodb.com)
     * Create an account and sign in. 
-    * Click on **_Create New Cluster_** and then ***_+ Create Database_* to create a database.
+    * Click on **_Create New Cluster_** and then **_+ Create Database_** to create a database.
     * Create **terms** and **users** collections in the database.
-    * 
+    * Add string values for these collections:
 
+* Create the environment variables:   
+    * Type ```touch env.py``` in the terminal to create the file in the root directory. This file is used to store sensitive data and should never be pushed to GitHub.
+    * To ignore it create .gitignore file by typing ```touch .gitignore``` and add env.py into this file.
+    * You can now run the app, just type in the IDE terminal: ```python3 app.py```. 
 
-```touch env.py```
-This file is used to store sensitive data and should never be pushed to GitHub, so to ignore it, 
-```touch .gitignore``` and add env.py and auto-generated 
 
 ## Credits
 ___
