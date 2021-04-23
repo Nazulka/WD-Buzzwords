@@ -188,7 +188,7 @@ Heroku cloud platform has been used to deploy and host this app.
 * Navigate to [Heroku](https://www.heroku.com/home) website and create an account.
 * Once logged in, click on the **_New_** button and select **_Create New App_**
 * Create a name for your app and select region closest to your location.
-* In Deployment method, select ![GitHub]()
+* In Deployment method, select ![GitHub](https://github.com/Nazulka/WD-Buzzwords/blob/master/static/img/readme/heroku1.png)
 
 ### Run Locally
 ### Fork Project
