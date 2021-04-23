@@ -136,7 +136,8 @@ ___
 
 ###### Glossary Page
 **Browse All Results**
-* By default, the Glossary page displays all terms in the dictionary sorted in alphabetical order allowing all users to scroll down to browse.
+* By default, the Glossary page displays all terms in the dictionary sorted in alphabetical order allowing all users to scroll down to browse. A Materialize Floating Action Button has been added to create a shortcut button, so users can easily navigate back to the top of the page from any part of the page. 
+
 **Filter Results Section**
 * Located on top of the page, it helps users to narrow down the results by clicking on the buttons with the letter they require. This will be particularly useful as the site expands and more definitions will be added. 
 
@@ -190,7 +191,7 @@ Heroku cloud platform has been used to deploy and host this app.
 * In the terminal window of your IDE, create a requirements.txt file to contain all applications and dependencies required to run our app.
 ``` pip3 freeze --local . requirements.txt```
 * Create a Procfile (always with a capital P and no file extension!) - required by Heroku, to know which file runs the app.
-``` echo web: python app.py . Procfile```
+``` echo web: python app.py > Procfile```
 
 #### Create application in Heroku
 * Navigate to [Heroku](https://www.heroku.com/home) website and create an account.
@@ -206,10 +207,10 @@ Heroku cloud platform has been used to deploy and host this app.
 os.environ.setdefault("IP", "0.0.0.0")
 os.environ.setdefault("PORT", "5000")
 os.environ.setdefault("SECRET_KEY", "paste_your_secret_key_from_env.py")
-os.environ.setdefault("MONGO_URI", "mongo_uri")
+os.environ.setdefault("MONGO_URI", "obtained_from_your MongoDB_account")
 os.environ.setdefault("MONGO_DBNAME", "your_db_name")
 ```
-* Push the two new files to the GitHub repository:
+* In the IDE terminal, push the two new files to the GitHub repository:
 ```git add requirements.txt
 git commit -m "Add requirements.txt"
 ```
@@ -222,6 +223,16 @@ git push
 * The app is now connected and Heroku will receive the code from GitHub and automatically update whenever we push changes to the GitHub repository. You should be able to see "Your app was successfully deployed!". Click on **_View_** to launch your app.
 
 
+### Clone the project
+Steps required to **_Clone_** a repository from GitHub to your local machine:
+* Navigate to the repository in GitHub.
+* Click on the **_Code_** dropdown menu button.
+* Click on **_Open with GitHub Desktop_** and follow the prompts to complete the cloning process.
+
+### Fork the project
+* To create a personal copy of this repository, click on **_Fork_** button on the top right corner of the repository page in GitHub.
+
+
 ### Run Locally
 To run this project on your device using the IDE of your choice follow these steps:
 * Install the requirements by typing in your IDE: 
@@ -230,6 +241,7 @@ To run this project on your device using the IDE of your choice follow these ste
     * Create an account and sign in. 
     * Click on **_Create New Cluster_** and then **_+ Create Database_** to create a database.
     * Create **terms** and **users** collections in the database as shown below:
+
     **_terms_**
     ```
     _id: <ObjectId>
@@ -238,23 +250,19 @@ To run this project on your device using the IDE of your choice follow these ste
     added_by:<string>
     ```
     **_users_**
+    ```
     _id: <ObjectId>
     username:<string>
     password:<string>
     ```
 
-* Create the environment variables:   
+* In your IDE terminal, create the environment variables:   
     * Type ```touch env.py``` in the terminal to create the file in the root directory. This file is used to store sensitive data (see environment variables above) and should never be pushed to GitHub.
     * To ignore it, create .gitignore file by typing 
     ```touch .gitignore``` 
     and add env.py into this file.
 * You can now run the app, just type in the IDE terminal: 
 ```python3 app.py```. 
-
-### Clone the project
-Steps required to create a **_Clone_** to enable running the code locally:
-* Navigate to the repository in GitHub by clicking in this [link](https://github.com/Nazulka/WD-Buzzwords).
-* Click on the **_Code_** button on the dashboard.
 
 
 ## Credits
