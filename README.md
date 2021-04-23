@@ -3,7 +3,7 @@ ___
 ___
 WD Buzzwords is a crowdsourced dictionary where users can look up explanations to some of the most important terms and abbreviations they will come accross when working in web development. Members can also contribute to the dictionary to benefit others staring out in the industry. 
 
-## Live website can be found [here](https://wd-buzzwords.herokuapp.com/).
+## :point_right: [Live demo can be found here](https://wd-buzzwords.herokuapp.com/).
 
 ## Table of Contents
 ___
@@ -123,13 +123,14 @@ ___
 * A Materialize parallax image has been added to visually support the content and for added user interactivity.  
 
 **Search WD Buzzwords** 
-* The Search box's design has been inspired by this YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). However, the code has been modified and adapted to the site's needs. I also have modified classes and added "Search" and "Refresh" buttons. 
+* The Search box features an input field and a Search button, allows users to look up the terms and jargons they would like to learn more about. 
+* If the term exists in the dictionary, the search result is displayed in the Glossary page. Otherwise, users see a message "No matching results found". 
 
 **Welcome Section**
 * This section consists of a title and a paragraph text that explains the purpose of the website. 
 
 **Icon Boxes Section** 
-* This section is made of two Materialize card-panels, with added Font Awesome Icons and call to action buttons. The first panel invites users to sign-up to the website and the second one guides users to the Glossary Page to browsw all terms. 
+* This section is made of two Materialize card-panels with added Font Awesome Icons and call to action buttons. The first panel invites users to sign-up to the website and the second one guides users to the Glossary Page to browse all terms. 
 * The bottom part of the section is for users who would like to purchase a Glossary in a book form and includes a link to an external third-party site that opens up in a new tab. 
 
 **Footer**
@@ -154,7 +155,7 @@ ___
 ##### Features available to registered users and admin
 CRUD Functionality
 ###### Add Term
-* The form allows users to add new entries and their description. It features a check-before-adding chart [credit: Macmillan Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) to help users to decide whether to add their word to the dictionary.
+* The form allows users to add new entries and their description. It features a check-before-adding chart to help users to decide whether to add their word to the dictionary.
 * If users try to add a term that already exists in the dictionary, they get a flash notification. Unique entries are added to the dictionary and users see a flash message to confirm the successful entry. This entry is then displayed in the users' Account Page.  
 ###### Account Page
 * The Account page displays the entries made by the user. 
@@ -165,7 +166,7 @@ CRUD Functionality
 * Enables users to log out of their account and deletes their session cookies. 
 
 ### Future Features 
-* Add an _autocomplete_ attribute to the search box input field to allow the browser to predict terms and display options to fill in the field.
+* Add an _autocomplete_ attribute to the search box input field to allow the search form to predict terms and display options to fill in the field.
 * Expand the glossary by adding _part of speech_, _synonyms_ and _pronunciation_ features. 
 * Allow users to edit their passwords and delete their accounts. 
 
@@ -178,6 +179,7 @@ ___
 * PEP8 
 
 ### Issues and Solutions
+
 
 ## Deployment
 ___
@@ -269,6 +271,12 @@ To run this project on your device using the IDE of your choice follow these ste
 
 ## Credits
 ___
+### Glossary sources:
+* [CareerFoundry](https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/)
+* [Wood Street Journal](https://www.woodst.com/web-design-development/70-web-design-and-development-terms-we-wish-you-knew-part-one/)
+* [Cactus](https://www.castus.co.uk/blog/glossary-of-web-design-terminology/#technology%20&%20web%20development)
+* A link to a glossary in a book form: [Web Development Glossary](https://meiert.com/en/blog/the-web-development-glossary/)
+
 
 ### Media 
 * A parallax image for the Home Page is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY)
@@ -276,7 +284,8 @@ ___
 * Favicon icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com
 
 ### Code
-* 
+* The Search box's design has been inspired by this YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). However, the code has been modified and adapted to the site's needs. I also have modified classes and added the "Search" button. 
+
 ## Acknowledgements
 ___
 
