@@ -183,16 +183,59 @@ This project was created using the CI recommended [Gitpod Full Template](https:/
 * Click on **_Use this template_** button and enter a short and memorable name of your choice for your repo and select **_Create repository from template_**. 
 * Once created, click on green **_Gitpod_** button to open your new workspace. 
 
+
 ### Deployment to Heroku
 Heroku cloud platform has been used to deploy and host this app. 
+#### Set up workspace for Heroku
+* In the terminal window of your IDE, create a requirements.txt file to contain all applications and dependencies required to run our app.
+``` pip3 freeze --local . requirements.txt```
+* Create a Procfile (always with a capital P and no file extension!) - required by Heroku, to know which file runs the app.
+``` echo web: python app.py . Procfile```
+
+#### Create application in Heroku
 * Navigate to [Heroku](https://www.heroku.com/home) website and create an account.
 * Once logged in, click on the **_New_** button and select **_Create New App_**
-* Create a name for your app and select region closest to your location.
-* In Deployment method, select ![GitHub](https://github.com/Nazulka/WD-Buzzwords/blob/master/static/img/readme/heroku1.png)
+* Create a name for your app and select the region closest to your location.
+
+#### Connect your app to GitHub repository
+* On the **_Deploy_** page, select GitHub as your **_Deplyment method_**.
+* You will then be prompted to find the github repository, click on **_Connect_** button to connect.
+* Click on the **_Settings_** tab and and select **_Config Vars_** and **_Reveal Config Vars_**.
+* Add the following variables:
+```
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", "paste_your_secret_key_from_env.py")
+os.environ.setdefault("MONGO_URI", "mongo_uri")
+os.environ.setdefault("MONGO_DBNAME", "your_db_name")
+```
+* Push the two new files to the GitHub repository:
+```git add requirements.txt
+git commit -m "Add requirements.txt"
+```
+``` 
+git add Procfile
+git commit -m "Add Procfile"
+git push
+```
+* Now go back to Heroku and click on **_Enable Automatic Deployment_** and **_Deploy Branch_**.
+* The app is now connected and Heroku will receive the code from GitHub and automatically update whenever we push changes to the GitHub repository. You should be able to see "Your app was successfully deployed!". Click on **_View_** to launch your app.
+
 
 ### Run Locally
-### Fork Project
+To run this project on your device using the IDE of your choice follow these steps:
+* Install the requirements by typing in your IDE: 
+```pip3 install -r requirements.txt```
+* Navigate to [MongoDB](https://www.mongodb.com)
+    * Create an account and sign in. 
+    * Click on **_Create New Cluster_** and then ***_+ Create Database_* to create a database.
+    * Create **terms** and **users** collections in the database.
+    * 
 
+
+```touch env.py```
+This file is used to store sensitive data and should never be pushed to GitHub, so to ignore it, 
+```touch .gitignore``` and add env.py and auto-generated 
 
 ## Credits
 ___
