@@ -1,7 +1,9 @@
 # WD Buzzwords
 ___
 ___
-WD Buzzwords is a crowdsourced dictionary where users can look up explanations to some of the most important terms and abbreviations they will come accross when working in web development. Members can also contribute to the dictionary to benefit others staring out in the industry. The live website can be found [here]().
+WD Buzzwords is a crowdsourced dictionary where users can look up explanations to some of the most important terms and abbreviations they will come accross when working in web development. Members can also contribute to the dictionary to benefit others staring out in the industry. 
+
+## Live website can be found [here](https://wd-buzzwords.herokuapp.com/).
 
 ## Table of Contents
 ___
