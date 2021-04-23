@@ -93,14 +93,17 @@ main {
     width: 100% !important;
     border: #f4f4f4 3px solid !important;
     background-color: #f4f4f4 !important;
+    margin: 0 auto;
+    position: absolute i !important;
 }
 .input-field {
     padding: 0;
 }
 .search-btn {
-    height: 58px;
+    height: 60px;
     margin: 0 auto;
     max-width: 100%;
+    padding: 0 15px;
 }
 /*-- Parallax --*/
 .parallax-container {
@@ -158,5 +161,10 @@ main {
     }
     .card-panel {
         padding-bottom: 1em;
+    }
+    .search-btn {
+        height: 58px;
+        margin-right: 6px;
+        max-width: 100%;
     }
 }

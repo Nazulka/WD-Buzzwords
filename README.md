@@ -178,13 +178,17 @@ ___
 ## Deployment
 ___
 ### Project Creation
+
 This project was created using the CI recommended [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
 * Click on **_Use this template_** button and enter a short and memorable name of your choice for your repo and select **_Create repository from template_**. 
 * Once created, click on green **_Gitpod_** button to open your new workspace. 
 
 ### Deployment to Heroku
-
-
+Heroku cloud platform has been used to deploy and host this app. 
+* Navigate to [Heroku](https://www.heroku.com/home) website and create an account.
+* Once logged in, click on the **_New_** button and select **_Create New App_**
+* Create a name for your app and select region closest to your location.
+* In Deployment method, select ![GitHub]()
 
 ### Run Locally
 ### Fork Project
