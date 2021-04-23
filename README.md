@@ -183,6 +183,15 @@ ___
 
 ## Deployment
 ___
+### Requirements:
+* **Python3** to write the code and run the application
+* **PIP** to install packages
+* **Git** for version control
+* **GitPod** powered by VS Code was used for this project (or any IDE of your choice)
+* **MongoDB** - to create and manipulate the database
+* **Heroku** - to deploy and manage the app
+
+
 ### Project Creation
 
 This project was created using the CI recommended [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
@@ -271,7 +280,7 @@ To run this project on your device using the IDE of your choice follow these ste
 
 ## Credits
 ___
-### Glossary sources:
+### All terms and their descriptions have been taken from following websites: 
 * [CareerFoundry](https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/)
 * [Wood Street Journal](https://www.woodst.com/web-design-development/70-web-design-and-development-terms-we-wish-you-knew-part-one/)
 * [Cactus](https://www.castus.co.uk/blog/glossary-of-web-design-terminology/#technology%20&%20web%20development)
@@ -284,7 +293,9 @@ ___
 * Favicon icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com
 
 ### Code
-* The Search box's design has been inspired by this YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). However, the code has been modified and adapted to the site's needs. I also have modified classes and added the "Search" button. 
+* The project was inspired by the CI Task Manager walkthrough project
+* The Home Page Search box's design was inspired by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). However, the code has been modified and adapted to the site's needs. I also have modified classes and added the "Search" button.
+* Tim from Tutor Support suggested a for-loop for Filter Results by letter buttons.
 
 ## Acknowledgements
 ___
