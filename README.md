@@ -152,11 +152,11 @@ ___
 CRUD Functionality
 ###### Add Term
 * The form allows users to add new entries and their description. It features a check-before-adding chart [credit: Macmillan Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) to help users to decide whether to add their word to the dictionary.
-* When users try to add new term, it gets checked if the entry already exists in the dictionary and users get a flash notification if so. If this is a unique entry it then gets added to the dictionary and users see a flash message to confirm the successful entry. This entry is then displayed in the users' Account Page.  
+* If users try to add a term that already exists in the dictionary, they get a flash notification. Unique entries are added to the dictionary and users see a flash message to confirm the successful entry. This entry is then displayed in the users' Account Page.  
 ###### Account Page
-* Enables registered users to view the terms added by themselves to the dictionary. 
-* Materialize buttons are placed below each word, providing an option to edit or delete the term. If delete button is clicked, users see a pop-up delete confirmation modal to eliminate accidental removal of entries.
-* Admin user has the highest level of access to the website and an authorisation to delete irrelevant or inapropriate entries made by other users.
+* The Account page displays the entries made by the user. 
+* Materialize buttons are placed below each entry, providing an option to edit or delete the term. If delete button is clicked, users see a pop-up delete confirmation modal to eliminate accidental removal of entries.
+* Admin user has the highest level of access to the website and an authorisation to delete entries made by other users, if they are deemed  irrelevant or inapropriate.
 
 ###### Log Out
 * Enables users to log out of their account and deletes their session cookies. 
@@ -184,7 +184,6 @@ This project was created using the CI recommended [Gitpod Full Template](https:/
 * Click on **_Use this template_** button and enter a short and memorable name of your choice for your repo and select **_Create repository from template_**. 
 * Once created, click on green **_Gitpod_** button to open your new workspace. 
 
-
 ### Deployment to Heroku
 Heroku cloud platform has been used to deploy and host this app. 
 #### Set up workspace for Heroku
@@ -202,7 +201,7 @@ Heroku cloud platform has been used to deploy and host this app.
 * On the **_Deploy_** page, select GitHub as your **_Deplyment method_**.
 * You will then be prompted to find the github repository, click on **_Connect_** button to connect.
 * Click on the **_Settings_** tab and and select **_Config Vars_** and **_Reveal Config Vars_**.
-* Add the following variables:
+* Add the following variables (as stored in env.py):
 ```
 os.environ.setdefault("IP", "0.0.0.0")
 os.environ.setdefault("PORT", "5000")
@@ -230,13 +229,32 @@ To run this project on your device using the IDE of your choice follow these ste
 * Navigate to [MongoDB](https://www.mongodb.com)
     * Create an account and sign in. 
     * Click on **_Create New Cluster_** and then **_+ Create Database_** to create a database.
-    * Create **terms** and **users** collections in the database.
-    * Add string values for these collections:
+    * Create **terms** and **users** collections in the database as shown below:
+    **_terms_**
+    ```
+    _id: <ObjectId>
+    term_name:<string>
+    term_description:<string>
+    added_by:<string>
+    ```
+    **_users_**
+    _id: <ObjectId>
+    username:<string>
+    password:<string>
+    ```
 
 * Create the environment variables:   
-    * Type ```touch env.py``` in the terminal to create the file in the root directory. This file is used to store sensitive data and should never be pushed to GitHub.
-    * To ignore it create .gitignore file by typing ```touch .gitignore``` and add env.py into this file.
-    * You can now run the app, just type in the IDE terminal: ```python3 app.py```. 
+    * Type ```touch env.py``` in the terminal to create the file in the root directory. This file is used to store sensitive data (see environment variables above) and should never be pushed to GitHub.
+    * To ignore it, create .gitignore file by typing 
+    ```touch .gitignore``` 
+    and add env.py into this file.
+* You can now run the app, just type in the IDE terminal: 
+```python3 app.py```. 
+
+### Clone the project
+Steps required to create a **_Clone_** to enable running the code locally:
+* Navigate to the repository in GitHub by clicking in this [link](https://github.com/Nazulka/WD-Buzzwords).
+* Click on the **_Code_** button on the dashboard.
 
 
 ## Credits
