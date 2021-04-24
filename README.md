@@ -170,15 +170,15 @@ CRUD Functionality
 * Expand the glossary by adding _part of speech_, _synonyms_ and _pronunciation_ features. 
 * Allow users to edit their passwords and delete their accounts. 
 
-## Testing
-___
 ### Code Validity
 * HTML Markup Validation
 * CSS Validation
 * JavaScript Code Quality Tool JSHint 
 * PEP8 
 
-### Issues and Solutions
+## Testing
+___
+You can find the testing documentation [here](TESTING.md)
 
 
 ## Deployment
@@ -199,7 +199,7 @@ This project was created using the CI recommended [Gitpod Full Template](https:/
 * Once created, click on green **_Gitpod_** button to open your new workspace. 
 
 ### Deployment to Heroku
-Heroku cloud platform has been used to deploy and host this app. 
+Heroku cloud platform was used to deploy and host this app. 
 #### Set up workspace for Heroku
 * In the terminal window of your IDE, create a requirements.txt file to contain all applications and dependencies required to run our app.
 ``` pip3 freeze --local . requirements.txt```
