@@ -277,6 +277,8 @@ To run this project on your device using the IDE of your choice follow these ste
 * You can now run the app, just type in the IDE terminal: 
 ```python3 app.py```. 
 
+## Known bugs
+
 
 ## Credits
 ___
