@@ -293,7 +293,7 @@ ___
 * Favicon icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com
 
 ### Code
-* The project was inspired by the CI Task Manager walkthrough project
+* The project was inspired by the CI Task Manager walkthrough project.
 * The Home Page design was inspired by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). It has been modified and adapted to the site's needs. 
 * Tim from Tutor Support suggested a for-loop for Filter Results by letter buttons.
 
