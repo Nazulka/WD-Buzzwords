@@ -155,11 +155,11 @@ ___
 ##### Features available to registered users and admin
 CRUD Functionality
 ###### Add Term
-* The form allows users to add new entries and their description. It features a check-before-adding chart to help users to decide whether to add their word to the dictionary.
+* The form allows users to add new entries (Create functionality) and their description. It features a check-before-adding chart to help users to decide whether to add their word to the dictionary.
 * If users try to add a term that already exists in the dictionary, they get a flash notification. Unique entries are added to the dictionary and users see a flash message to confirm the successful entry. This entry is then displayed in the users' Account Page.  
 ###### Account Page
-* The Account page displays the entries made by the user. 
-* Materialize buttons are placed below each entry, providing an option to edit or delete the term. If delete button is clicked, users see a pop-up delete confirmation modal to eliminate accidental removal of entries.
+* The Account page displays the entries made by the user (Read functionality). 
+* Materialize buttons are placed below each entry, providing an option to edit (Update functionality) or delete the term (Delete functionality). If delete button is clicked, users see a pop-up delete confirmation modal to eliminate accidental removal of entries.
 * Admin user has the highest level of access to the website and an authorisation to delete entries made by other users, if they are deemed  irrelevant or inapropriate.
 
 ###### Log Out
@@ -288,15 +288,19 @@ ___
 
 
 ### Media 
-* A parallax image for the Home Page is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY)
+* A parallax image is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY)
 * A new entry submission chart is taken from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) 
 * Favicon icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com
 
 ### Code
 * The project was inspired by the CI Task Manager walkthrough project
-* The Home Page Search box's design was inspired by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). However, the code has been modified and adapted to the site's needs. I also have modified classes and added the "Search" button.
+* The Home Page design was inspired by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). It has been modified and adapted to the site's needs. 
 * Tim from Tutor Support suggested a for-loop for Filter Results by letter buttons.
 
 ## Acknowledgements
 ___
+* I would like to thank my mentor Excellence Ilesanmi for his continuous support throughout this course and insights.
+* A big thank you to tutors from Tutor Support for always pointing me to the right direction.
+* Thanks to the wonderful Slack community for inspiring me stay positive no matter how hard it gets!
+
 
