@@ -1,6 +1,8 @@
 # WD Buzzwords
 ___
 ___
+![responsive image]()
+
 WD Buzzwords is a crowdsourced dictionary where users can look up explanations to some of the most important terms and abbreviations they will come accross when working in web development. Members can also contribute to the dictionary to benefit others staring out in the industry. 
 
 ### :point_right: [Live demo](https://wd-buzzwords.herokuapp.com/).
@@ -14,8 +16,8 @@ ___
     + [Wireframing](#wireframing)
     + [Design Choices](#design-choices)
   * [Technologies Used](#technologies-used)
-    + [Languages Used](#languages-used)
-    + [Frameworks, Libraries and Tools Used](#frameworks--libraries-and-tools-used)
+    + [Languages](#languages)
+    + [Frameworks, Libraries and Tools](#frameworks--libraries-and-tools)
   * [Features](#features)
     + [Implemented Features](#implemented-features)
     + [Future Features](#future-features)
@@ -36,7 +38,7 @@ ___
 
 ### User Stories
 
-**Guest user**
+-[x] **Guest user**
 * As a guest user of WD Buzzwords, I want to browse all web development terms and jargons and familiarize myself with their exact meanings without needing to register to the website. 
 * As a guest user of WD Buzzwords, I want to be able to easily access all available website features from different screen size devices.
 * As a guest user of WD Buzzwords, I want to be able to use the searchbox to search for terms that I would like to find out more about.
@@ -45,7 +47,7 @@ ___
 * As a guest user of WD Buzzwords, I want to be able to learn one of the latest entries to the website.
 * As a guest user of WD Buzzwords, I want to be able to register to the website.
 
-**Registered user**
+-[x] **Registered user**
 * As a guest user of WD Buzzwords, I want to be able to log in to the website using my username and password. 
 * As a registered user of WD Buzzwords, I want to be able to contribute to the dictionary by adding new terms and their description to the glossary.
 * As a guest user of WD Buzzwords, I want to be able to edit the entries contributed by myself as well as their description.
@@ -53,7 +55,7 @@ ___
 * As a guest user of WD Buzzwords, I want to be able to delete the entries contributed by myself if necessary.
 * As a guest user of WD Buzzwords, I want to be able to get a delete confirmation message before deleting my entries.
 
-**Site owner / admin**
+-[x] **Site owner / admin**
 * As a site owner of WD Buzzwords, I want to create an online educational resource, to promote understanding of web development terms and abbreviations, as well as crowdsource new terms and definitions to benefit users who are new to the sector.
 * As a site owner of WD Buzzwords, I want to be able to monitor and regularly update the website to keep up-to-date and to meet users' expectations.
 * As a site owner of WD Buzzwords, I want to be able to delete entries contributed by users if necessary.
@@ -93,13 +95,13 @@ This website offers users the option to choose between the following two to acco
 
 ## Technologies Used
 ___
-### Languages Used
+### Languages
 * HTML5
 * CSS3
 * JavaScript
 * Python
 
-### Frameworks, Libraries and Tools Used
+### Frameworks, Libraries and Tools
 #### Front-end
 * **[Materialize CSS v1.0.0](https://materializecss.com/)** - a front-end framework, used to create sleek, consistent, functional and responsive website. I wanted to familiarize myself better with Materialize as my previous two projects used Bootstrap. 
 The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.  
@@ -130,7 +132,7 @@ ___
 
 ### Implemented Features
 
-#### Features available to all users and admin
+-[x] **Features available to all users and admin**
 **Home Page**
 
 Navigation Bar 
@@ -174,7 +176,7 @@ Filter Results Section
 
 
 
-#### Features available to registered users and admin
+-[x] **Features available to registered users and admin**
 
 CRUD Functionality
 
