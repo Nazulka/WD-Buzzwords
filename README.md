@@ -71,9 +71,9 @@ This website offers users the option to choose between the following two to acco
 * **Registered users** - once users decide to register to the website, they will be able to access full functionality and additionally access Account, Add Term and Log Out pages. 
 
 
-### Skeleton
+### Wireframing
 * [Desktop wireframes](static/docs/desktop-wf.png)
-* [Tablet and Mobile wireframes](static/docs/tablet-wf)
+* [Tablet and Mobile wireframes](static/docs/tablet-wf.png)
 * Database Diagram
 
 ### Design Choices
