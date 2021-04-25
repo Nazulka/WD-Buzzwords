@@ -38,7 +38,7 @@ ___
 
 ### User Stories
 
--[x] **Guest user**
+- [x] **Guest user**
 * As a guest user of WD Buzzwords, I want to browse all web development terms and jargons and familiarize myself with their exact meanings without needing to register to the website. 
 * As a guest user of WD Buzzwords, I want to be able to easily access all available website features from different screen size devices.
 * As a guest user of WD Buzzwords, I want to be able to use the searchbox to search for terms that I would like to find out more about.
@@ -47,7 +47,7 @@ ___
 * As a guest user of WD Buzzwords, I want to be able to learn one of the latest entries to the website.
 * As a guest user of WD Buzzwords, I want to be able to register to the website.
 
--[x] **Registered user**
+- [x] **Registered user**
 * As a guest user of WD Buzzwords, I want to be able to log in to the website using my username and password. 
 * As a registered user of WD Buzzwords, I want to be able to contribute to the dictionary by adding new terms and their description to the glossary.
 * As a guest user of WD Buzzwords, I want to be able to edit the entries contributed by myself as well as their description.
@@ -55,7 +55,7 @@ ___
 * As a guest user of WD Buzzwords, I want to be able to delete the entries contributed by myself if necessary.
 * As a guest user of WD Buzzwords, I want to be able to get a delete confirmation message before deleting my entries.
 
--[x] **Site owner / admin**
+- [x] **Site owner / admin**
 * As a site owner of WD Buzzwords, I want to create an online educational resource, to promote understanding of web development terms and abbreviations, as well as crowdsource new terms and definitions to benefit users who are new to the sector.
 * As a site owner of WD Buzzwords, I want to be able to monitor and regularly update the website to keep up-to-date and to meet users' expectations.
 * As a site owner of WD Buzzwords, I want to be able to delete entries contributed by users if necessary.
