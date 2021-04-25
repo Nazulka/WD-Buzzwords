@@ -72,8 +72,8 @@ This website offers users the option to choose between the following two to acco
 
 
 ### Wireframing
-* [Desktop wireframes](static/docs/desktop-wf.png)
-* [Tablet and Mobile wireframes](static/docs/tablet-wf.png)
+* [Desktop wireframes](static/docs/desktop-wf1.png)
+* [Tablet and Mobile wireframes](static/docs/tablet-wf1.png)
 * Database Diagram
 
 ### Design Choices
@@ -322,7 +322,7 @@ To run this project on your device using the IDE of your choice follow these ste
 ## Credits
 ___
 
-### The glossary content is taken from following websites:
+### The glossary content was obtained from following websites:
 * [CareerFoundry](https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/)
 * [Wood Street Journal](https://www.woodst.com/web-design-development/70-web-design-and-development-terms-we-wish-you-knew-part-one/)
 * [Cactus](https://www.castus.co.uk/blog/glossary-of-web-design-terminology/#technology%20&%20web%20development)
@@ -331,12 +331,12 @@ ___
 
 ### Media 
 * A parallax image is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY)
-* A new entry submission chart is taken from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) 
-* Favicon icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com
+* A new entry submission chart was taken from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) 
+* Favicon icon was made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com
 
 ### Code
 * The project was inspired by the CI Task Manager walkthrough project.
-* The Home Page design was designed following recommendations by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). It has been modified and adapted to the site's needs. 
+* The Home Page design was designed following recommendations by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). It was modified and adapted to the site's needs. 
 * Tim Nelson from Tutor Support suggested a for-loop for Filter Results By Letter buttons.
 * Table of contents generated with [markdown-toc](http://ecotrust-canada.github.io/markdown-toc).
 
