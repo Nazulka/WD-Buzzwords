@@ -72,8 +72,8 @@ This website offers users the option to choose between the following two to acco
 
 
 ### Wireframing
-* [Desktop wireframes](static/docs/desktop-wf1.png)
-* [Tablet and Mobile wireframes](static/docs/tablet-wf1.png)
+* [Desktop wireframes](static/docs/desktop-wf.pdf)
+* [Tablet and Mobile wireframes](static/docs/tablet-wf.pdf)
 * Database Diagram
 
 ### Design Choices
