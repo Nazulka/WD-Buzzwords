@@ -7,17 +7,16 @@ WD Buzzwords is a crowdsourced dictionary where users can look up explanations t
 
 ## Table of Contents
 ___
-- [WD Buzzwords](#wd-buzzwords)
+  - [WD Buzzwords](#wd-buzzwords)
   * [:point_right: [Live demo can be found here](https://wd-buzzwords.herokuapp.com/).](#-point-right---live-demo-can-be-found-here--https---wd-buzzwordsherokuappcom--)
   * [Table of Contents](#table-of-contents)
   * [UX](#ux)
-    + [Strategy](#strategy)
-      - [User Stories](#user-stories)
+    + [Project Goals](#project-goals)
+    + [User Stories](#user-stories)
     + [Scope](#scope)
     + [Structure](#structure)
-    + [Skeleton](#skeleton)
-    + [Surface](#surface)
-      - [Design](#design)
+    + [Wireframing](#wireframing)
+    + [Design Choices](#design-choices)
   * [Technologies Used](#technologies-used)
     + [Languages Used](#languages-used)
     + [Languages, Frameworks, Libraries and tools Used](#languages--frameworks--libraries-and-tools-used)
@@ -26,18 +25,11 @@ ___
       - [Deployment](#deployment)
   * [Features](#features)
     + [Implemented Features](#implemented-features)
-        * [Features available to all users and admin](#features-available-to-all-users-and-admin)
-          + [Home Page](#home-page)
-          + [Glossary Page](#glossary-page)
-          + [Log In Page](#log-in-page)
-          + [Sign Up](#sign-up)
-        * [Features available to registered users and admin](#features-available-to-registered-users-and-admin)
-          + [Add Term](#add-term)
-          + [Account Page](#account-page)
-          + [Log Out](#log-out)
+      - [Features available to all users and admin](#features-available-to-all-users-and-admin)
+      - [Features available to registered users and admin](#features-available-to-registered-users-and-admin)
     + [Future Features](#future-features)
-    + [Code Validity](#code-validity)
   * [Testing](#testing)
+    + [Code Validity](#code-validity)
   * [Deployment](#deployment-1)
     + [Requirements:](#requirements-)
     + [Project Creation](#project-creation)
@@ -55,19 +47,16 @@ ___
     + [Code](#code)
   * [Acknowledgements](#acknowledgements)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-
+[back to top](#wd-buzzwords)
 ## UX
 ___
-### Strategy
-
-**Project Goals**
+### Project Goals
 * To create an easy to access platform which contains key web development buzzwords, ranging from most basic to the more technical.
 * To provide users with an introduction to the most common terms in web development with clear and comprehensive definitions. 
 * To allow users to quickly look up words in the dictionary and for registered users to add new terms as well as modify and delete their previous entries. 
 
-#### User Stories
+### User Stories
 **Guest user**
 * As a guest user of WD Buzzwords, I want to browse all web development terms and jargons and familiarize myself with their exact meanings without needing to register to the website. 
 * As a guest user of WD Buzzwords, I want to be able to easily access all available website features from different screen size devices.
@@ -101,13 +90,12 @@ This website offers users the option to choose between the following two to acco
 * **Registered users** - once users decide to register to the website, they will be able to access full functionality and additionally access Account, Add Term and Log Out pages. 
 
 
-### Skeleton
+### Wireframing
 * [Desktop wireframes]()
 * [Tablet and Mobile wireframes]()
 * Database Diagram
 
-### Surface
-#### Design
+### Design Choices
 **Color Scheme**
 * The color palette has been created using [Coolors](https://coolors.co/4db6ac-ffc400-c2185b-e0e0e0-eeeeee) and materialize color classes have been used in this project.
 * I have chosen a base color of teal and a complimentary color orange to create contrast to the site and add depth. By using this bold combination, I aimed to create an inviting and relaxing design for the users. Light grey has been used to display the flash messages. 
@@ -122,6 +110,7 @@ This website offers users the option to choose between the following two to acco
 * The Home page supporting image added to enchance the overall experience and is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY).
 * A chart in Add Term page is from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html).
 
+[back to top](#wd-buzzwords)
 
 ## Technologies Used
 ___
@@ -155,80 +144,89 @@ The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.
 * **GitHub** - used as a hosting service and for future collaborations.
 * **Heroku** - my GitHub repo for this project had been connected to Heroku app to enable management and deployment of this app.
 
+[back to top](#wd-buzzwords)
 
 ## Features
 ___
 
 ### Implemented Features
 
-##### Features available to all users and admin
-###### Home Page
-**Navigation Bar** 
+#### Features available to all users and admin
+**Home Page**
+
+Navigation Bar 
 * Responsive Navigation Bar is created using Materialize Navbar class. It displays the website's logo on the left and on the right navigation links to the "Home", "Glossary", "Log In" and "Sign Up" Pages when the user is not logged in. 
 * Brand Logo also serves Home Page link, which is particularly convenient when accessing the site on smaller screen size devices. 
 * On screen sizes below 992px navbar is hidden and slide out menu comes into effect, which collapses into a hamburger menu bar when closed. 
 
-**Parallax**
+Parallax
 * A Materialize parallax image has been added to visually support the content and for added user interactivity.  
 
-**Search WD Buzzwords** 
+Search WD Buzzwords
 * The Search box features an input field and a Search button, allows users to look up the terms and jargons they would like to learn more about. 
 * If the term exists in the dictionary, the search result is displayed in the Glossary page. Otherwise, users see a message "No matching results found". 
 
-**Welcome Section**
+Welcome Section
 * This section consists of a title and a paragraph text that explains the purpose of the website. 
 
-**Icon Boxes Section** 
+Icon Boxes Section
 * This section is made of two Materialize card-panels with added Font Awesome Icons and call to action buttons. The first panel invites users to sign-up to the website and the second one guides users to the Glossary Page to browse all terms. 
 * The bottom part of the section is for users who would like to purchase a Glossary in a book form and includes a link to an external third-party site that opens up in a new tab. 
 
-**Footer**
+Footer
 * Designed using Materialize Sticky Footer component, it's responsive and always stays on the bottom the page unless there is a lot of content, when it gets pushed down. Contains hoverable Social Media icons to let users know they are clickable. Icons are linked to the external websites and open in new tabs when clicked. 
 * Copyright section is directly below the Footer and contains Copyright information.
 
-###### Glossary Page
-**Browse All Results**
+**Glossary Page**
+
+Browse All Results
 * By default, the Glossary page displays all terms in the dictionary sorted in alphabetical order allowing all users to scroll down to browse. A Materialize Floating Action Button has been added to create a shortcut button, so users can easily navigate back to the top of the page from any part of the page. 
 
-**Filter Results Section**
+Filter Results Section
 * Located on top of the page, it helps users to narrow down the results by clicking on the buttons with the letter they require. This will be particularly useful as the site expands and more definitions will be added. 
 
-###### Log In Page
+**Log In Page**
 * Contains a Materialize card with the required input fields for Username and Password. It allows registered users to log in to the account and to access additional features. 
 * The page also contains a link to the Sign Up page. 
 
-###### Sign Up
+**Sign Up**
 * Similar to the page above it contains a card with the Username, Password and Confirm password input fields and enables new users to create a personalized account and to be able to contribute to the dictionary. 
 * There is a link below the card to re-direct already registered users to the Log In page. 
 
-##### Features available to registered users and admin
+
+
+#### Features available to registered users and admin
+
 CRUD Functionality
-###### Add Term
+
+**Add Term**
 * The form allows users to add new entries (Create functionality) and their description. It features a check-before-adding chart to help users to decide whether to add their word to the dictionary.
-* If users try to add a term that already exists in the dictionary, they get a flash notification. Unique entries are added to the dictionary and users see a flash message to confirm the successful entry. This entry is then displayed in the users' Account Page.  
-###### Account Page
+* If users try to add a term that already exists in the dictionary, they get a flash notification. Unique entries are added to the dictionary and users see a flash message to confirm the successful entry. This entry is then displayed in the users' Account Page. 
+
+**Account Page**
 * The Account page displays the entries made by the user (Read functionality). 
 * Materialize buttons are placed below each entry, providing an option to edit (Update functionality) or delete the term (Delete functionality). If delete button is clicked, users see a pop-up delete confirmation modal to eliminate accidental removal of entries.
 * Admin user has the highest level of access to the website and an authorisation to delete entries made by other users, if they are deemed  irrelevant or inapropriate.
 
-###### Log Out
+**Log Out**
 * Enables users to log out of their account and deletes their session cookies. 
 
 ### Future Features 
 * Add an _autocomplete_ attribute to the search box input field to allow the search form to predict terms and display options to fill in the field.
 * Expand the glossary by adding _part of speech_, _synonyms_ and _pronunciation_ features. 
 * Allow users to edit their passwords and delete their accounts. 
-
-### Code Validity
-* HTML Markup Validation
-* CSS Validation
-* JavaScript Code Quality Tool JSHint 
-* PEP8 
+ 
+[back to top](#wd-buzzwords)
 
 ## Testing
 ___
 You can find the testing documentation [here](TESTING.md)
 
+### Code Validity
+* HTML Markup Validation
+* CSS Validation
+* JavaScript Code Quality Tool JSHint 
+* PEP8
 
 ## Deployment
 ___
@@ -334,8 +332,10 @@ To run this project on your device using the IDE of your choice follow these ste
 
 ```python3 app.py```. 
 
-## Known bugs
+[back to top](#wd-buzzwords)
 
+## Known bugs
+There are no known bugs at the time of submitting this project.
 
 ## Credits
 ___
@@ -355,6 +355,7 @@ ___
 * The project was inspired by the CI Task Manager walkthrough project.
 * The Home Page design was designed following recommendations by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). It has been modified and adapted to the site's needs. 
 * Tim Nelson from Tutor Support suggested a for-loop for Filter Results By Letter buttons.
+* Table of contents generated with [markdown-toc](http://ecotrust-canada.github.io/markdown-toc)
 
 ## Acknowledgements
 ___
@@ -362,4 +363,4 @@ ___
 * A big thank you to tutors from Tutor Support for always pointing me to the right direction.
 * Thanks to the wonderful Slack community for inspiring me stay positive no matter how hard it gets!
 
-
+[back to top](#wd-buzzwords)
