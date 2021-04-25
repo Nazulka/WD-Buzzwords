@@ -7,6 +7,55 @@ WD Buzzwords is a crowdsourced dictionary where users can look up explanations t
 
 ## Table of Contents
 ___
+- [WD Buzzwords](#wd-buzzwords)
+  * [:point_right: [Live demo can be found here](https://wd-buzzwords.herokuapp.com/).](#-point-right---live-demo-can-be-found-here--https---wd-buzzwordsherokuappcom--)
+  * [Table of Contents](#table-of-contents)
+  * [UX](#ux)
+    + [Strategy](#strategy)
+      - [User Stories](#user-stories)
+    + [Scope](#scope)
+    + [Structure](#structure)
+    + [Skeleton](#skeleton)
+    + [Surface](#surface)
+      - [Design](#design)
+  * [Technologies Used](#technologies-used)
+    + [Languages Used](#languages-used)
+    + [Languages, Frameworks, Libraries and tools Used](#languages--frameworks--libraries-and-tools-used)
+      - [Front-end](#front-end)
+      - [Back-end](#back-end)
+      - [Deployment](#deployment)
+  * [Features](#features)
+    + [Implemented Features](#implemented-features)
+        * [Features available to all users and admin](#features-available-to-all-users-and-admin)
+          + [Home Page](#home-page)
+          + [Glossary Page](#glossary-page)
+          + [Log In Page](#log-in-page)
+          + [Sign Up](#sign-up)
+        * [Features available to registered users and admin](#features-available-to-registered-users-and-admin)
+          + [Add Term](#add-term)
+          + [Account Page](#account-page)
+          + [Log Out](#log-out)
+    + [Future Features](#future-features)
+    + [Code Validity](#code-validity)
+  * [Testing](#testing)
+  * [Deployment](#deployment-1)
+    + [Requirements:](#requirements-)
+    + [Project Creation](#project-creation)
+    + [Deployment to Heroku](#deployment-to-heroku)
+      - [Set up workspace for Heroku](#set-up-workspace-for-heroku)
+      - [Create application in Heroku](#create-application-in-heroku)
+      - [Connect your app to GitHub repository](#connect-your-app-to-github-repository)
+    + [Clone the project](#clone-the-project)
+    + [Fork the project](#fork-the-project)
+    + [Run Locally](#run-locally)
+  * [Known bugs](#known-bugs)
+  * [Credits](#credits)
+    + [The glossary content is taken from following websites:](#the-glossary-content-is-taken-from-following-websites-)
+    + [Media](#media)
+    + [Code](#code)
+  * [Acknowledgements](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 ## UX
@@ -202,8 +251,10 @@ This project was created using the CI recommended [Gitpod Full Template](https:/
 Heroku cloud platform was used to deploy and host this app. 
 #### Set up workspace for Heroku
 * In the terminal window of your IDE, create a requirements.txt file to contain all applications and dependencies required to run our app.
+
 ``` pip3 freeze --local . requirements.txt```
 * Create a Procfile (always with a capital P and no file extension!) - required by Heroku, to know which file runs the app.
+
 ``` echo web: python app.py > Procfile```
 
 #### Create application in Heroku
@@ -216,6 +267,7 @@ Heroku cloud platform was used to deploy and host this app.
 * You will then be prompted to find the github repository, click on **_Connect_** button to connect.
 * Click on the **_Settings_** tab and and select **_Config Vars_** and **_Reveal Config Vars_**.
 * Add the following variables (as stored in env.py):
+
 ```
 os.environ.setdefault("IP", "0.0.0.0")
 os.environ.setdefault("PORT", "5000")
@@ -249,6 +301,7 @@ Steps required to **_Clone_** a repository from GitHub to your local machine:
 ### Run Locally
 To run this project on your device using the IDE of your choice follow these steps:
 * Install the requirements by typing in your IDE: 
+
 ```pip3 install -r requirements.txt```
 * Navigate to [MongoDB](https://www.mongodb.com)
     * Create an account and sign in. 
@@ -270,11 +323,15 @@ To run this project on your device using the IDE of your choice follow these ste
     ```
 
 * In your IDE terminal, create the environment variables:   
-    * Type ```touch env.py``` in the terminal to create the file in the root directory. This file is used to store sensitive data (see environment variables above) and should never be pushed to GitHub.
+    * Type ```touch env.py``` 
+    in the terminal to create the file in the root directory. This file is used to store sensitive data (see environment variables above) and should never be pushed to GitHub.
     * To ignore it, create .gitignore file by typing 
+
     ```touch .gitignore``` 
+
     and add env.py into this file.
 * You can now run the app, just type in the IDE terminal: 
+
 ```python3 app.py```. 
 
 ## Known bugs
@@ -282,7 +339,7 @@ To run this project on your device using the IDE of your choice follow these ste
 
 ## Credits
 ___
-### All terms and their descriptions have been taken from following websites: 
+### The glossary content is taken from following websites: 
 * [CareerFoundry](https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/)
 * [Wood Street Journal](https://www.woodst.com/web-design-development/70-web-design-and-development-terms-we-wish-you-knew-part-one/)
 * [Cactus](https://www.castus.co.uk/blog/glossary-of-web-design-terminology/#technology%20&%20web%20development)
@@ -296,12 +353,12 @@ ___
 
 ### Code
 * The project was inspired by the CI Task Manager walkthrough project.
-* The Home Page design was inspired by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). It has been modified and adapted to the site's needs. 
-* Tim from Tutor Support suggested a for-loop for Filter Results by letter buttons.
+* The Home Page design was designed following recommendations by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). It has been modified and adapted to the site's needs. 
+* Tim Nelson from Tutor Support suggested a for-loop for Filter Results By Letter buttons.
 
 ## Acknowledgements
 ___
-* I would like to thank my mentor Excellence Ilesanmi for his continuous support throughout this course and insights.
+* I would like to thank my mentor Excellence Ilesanmi for his continuous support throughout this course, help and insights.
 * A big thank you to tutors from Tutor Support for always pointing me to the right direction.
 * Thanks to the wonderful Slack community for inspiring me stay positive no matter how hard it gets!
 
