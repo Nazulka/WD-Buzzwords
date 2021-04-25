@@ -3,7 +3,7 @@ ___
 ___
 WD Buzzwords is a crowdsourced dictionary where users can look up explanations to some of the most important terms and abbreviations they will come accross when working in web development. Members can also contribute to the dictionary to benefit others staring out in the industry. 
 
-## :point_right: [Live demo can be found here](https://wd-buzzwords.herokuapp.com/).
+### :point_right: [Live demo](https://wd-buzzwords.herokuapp.com/).
 
 ## Table of Contents
 ___
@@ -29,12 +29,13 @@ ___
 
 ## UX
 ___
-Project Goals
+**Project Goals**
 * To create an easy to access platform which contains key web development buzzwords, ranging from most basic to the more technical.
 * To provide users with an introduction to the most common terms in web development with clear and comprehensive definitions. 
 * To allow users to quickly look up words in the dictionary and for registered users to add new terms as well as modify and delete their previous entries. 
 
 ### User Stories
+
 **Guest user**
 * As a guest user of WD Buzzwords, I want to browse all web development terms and jargons and familiarize myself with their exact meanings without needing to register to the website. 
 * As a guest user of WD Buzzwords, I want to be able to easily access all available website features from different screen size devices.
@@ -68,9 +69,9 @@ This website offers users the option to choose between the following two to acco
 * **Registered users** - once users decide to register to the website, they will be able to access full functionality and additionally access Account, Add Term and Log Out pages. 
 
 
-### Wireframing
-* [Desktop wireframes]()
-* [Tablet and Mobile wireframes]()
+### Skeleton
+* [Desktop wireframes](static/docs/desktop-wf.png)
+* [Tablet and Mobile wireframes](static/docs/tablet-wf)
 * Database Diagram
 
 ### Design Choices
