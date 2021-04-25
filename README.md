@@ -74,7 +74,12 @@ This website offers users the option to choose between the following two to acco
 ### Wireframing
 * [Desktop wireframes](static/docs/desktop-wf.pdf)
 * [Tablet and Mobile wireframes](static/docs/tablet-wf.pdf)
-* Database Diagram
+
+As you have noticed, the project wireframes have changed slightly. 
+* I decided to move the _Search Box_ to the Home Page, to improve the UX for the users who just want to look up a term. The Home Page has more content now and is scrollable, compared to the original one-page design.
+* The Glossary Page Filter results box was replaced by _Filter Results by Letters_ section and now features buttons with all the letters of the alphabet. I thought this will will be a useful feature to have as more terms are added and dictionary expands in the future.
+
+* ![Database Diagram](static/docs/db-diagram.png)
 
 ### Design Choices
 **Color Scheme**
