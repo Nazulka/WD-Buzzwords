@@ -72,27 +72,29 @@ This website offers users the option to choose between the following two to acco
 
 
 ### Wireframing
-* [Desktop wireframes](static/docs/desktop-wf.pdf)
-* [Tablet and Mobile wireframes](static/docs/tablet-wf.pdf)
+- [x] [Desktop wireframes](static/docs/desktop-wf.pdf)
+- [x] [Tablet and Mobile wireframes](static/docs/tablet-wf.pdf)
 
-As you have noticed, the project wireframes have changed slightly. 
+Some changes were made to the original wireframes during development process for better user experience. 
 * I decided to move the _Search Box_ to the Home Page, to improve the UX for the users who just want to look up a term. The Home Page has more content now and is scrollable, compared to the original one-page design.
 * The Glossary Page Filter results box was replaced by _Filter Results by Letters_ section and now features buttons with all the letters of the alphabet. I thought this will will be a useful feature to have as more terms are added and dictionary expands in the future.
+* I also added 404 'Page Not Found' and 500 'Internal Server Error' pages, which were not in wireframes, to communicate to users what was the reason the page didn't render correctly and give instructions on what to do next. 
+- [x] Database Diagram
 
-* ![Database Diagram](static/docs/db-diagram.png)
+![Database Diagram](static/docs/db-diagram.png)
 
 ### Design Choices
-**Color Scheme**
+- [x] Color Scheme
 * The color palette has been created using [Coolors](https://coolors.co/4db6ac-ffc400-c2185b-e0e0e0-eeeeee) and materialize color classes have been used in this project.
 * I have chosen a base color of teal and a complimentary color orange to create contrast to the site and add depth. By using this bold combination, I aimed to create an inviting and relaxing design for the users. Light grey has been used to display the flash messages. 
 ![color palette](static/img/color-palette.jpg)
 
-**Typography**
+- [x] Typography
 * Google Fonts *Special Elite* used to give a vintage style typewriter feel to the website logo.
 * *Monserrat* used for headings to give the site less formal feel.
 * *Average* for the all other elements as I found it complemented well the above two fonts. 
 
-**Imagery**
+- [x] **Imagery**
 * The Home page supporting image added to enchance the overall experience and is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY).
 * A chart in Add Term page is from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html).
 
@@ -107,7 +109,7 @@ ___
 * Python
 
 ### Frameworks, Libraries and Tools
-#### Front-end
+- [x] Front-end
 * **[Materialize CSS v1.0.0](https://materializecss.com/)** - a front-end framework, used to create sleek, consistent, functional and responsive website. I wanted to familiarize myself better with Materialize as my previous two projects used Bootstrap. 
 The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.  
 * **jQuery** - required to ensure proper rendering of the Materialize components listed above.
@@ -117,14 +119,14 @@ The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.
 * **[RandomKeygen](https://randomkeygen.com/)** - to create Fort Knox Password.
 * **[Balsamiq](https://balsamiq.com/wireframes/desktop/)** - to generate digital sketches for the project concept for better planning of the layout of the website.
 
-#### Back-end
+- [x] Back-end
 * **Flask** - a lightweight micro web framework written in Python used to create a simple, clean code and to reduce development time.
 * **[MongoDB](https://www.mongodb.com/2)** - non-relational database, used to store, manipulate and retrieve data.
 * **[Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)** - used with Flask to securely store passwords with salted hashes and verify user passwords to authenticate users.
 * **Flask Jinja** - used as it's a part of a Flask package and to allow template inheritance.
 
 
-#### Deployment
+- [x] Deployment
 * **Git** - used to keep track of the changes made to the repository and for version control.
 * **Gitpod** - I used CI full template as an IDE to develop, commit and push files to GitHub. 
 * **GitHub** - used as a hosting service and for future collaborations.
@@ -137,16 +139,16 @@ ___
 
 ### Implemented Features
 
--[x] **Features available to all users and admin**
+- [x] Features available to all users and admin
 **Home Page**
 
 Navigation Bar 
-* Responsive Navigation Bar is created using Materialize Navbar class. It displays the website's logo on the left and on the right navigation links to the "Home", "Glossary", "Log In" and "Sign Up" Pages when the user is not logged in. 
+* Responsive Navigation Bar was created using Materialize Navbar class. It displays the website's logo on the left and on the right navigation links to the "Home", "Glossary", "Log In" and "Sign Up" Pages when the user is not logged in. 
 * Brand Logo also serves Home Page link, which is particularly convenient when accessing the site on smaller screen size devices. 
 * On screen sizes below 992px navbar is hidden and slide out menu comes into effect, which collapses into a hamburger menu bar when closed. 
 
 Parallax
-* A Materialize parallax image has been added to visually support the content and for added user interactivity.  
+* A Materialize parallax image was added to visually support the content and for added user interactivity.  
 
 Search WD Buzzwords
 * The Search box features an input field and a Search button, allows users to look up the terms and jargons they would like to learn more about. 
@@ -160,7 +162,7 @@ Icon Boxes Section
 * The bottom part of the section is for users who would like to purchase a Glossary in a book form and includes a link to an external third-party site that opens up in a new tab. 
 
 Footer
-* Designed using Materialize Sticky Footer component, it's responsive and always stays on the bottom the page unless there is a lot of content, when it gets pushed down. Contains hoverable Social Media icons to let users know they are clickable. Icons are linked to the external websites and open in new tabs when clicked. 
+* Designed using Materialize Sticky Footer component, it's responsive and always stays on the bottom of the page unless there is a lot of content, when it gets pushed down. Contains hoverable Social Media icons to let users know they are clickable. Icons are linked to the external websites and open in new tabs when clicked. Available accross all pages.
 * Copyright section is directly below the Footer and contains Copyright information.
 
 **Glossary Page**
@@ -180,10 +182,9 @@ Filter Results Section
 * There is a link below the card to re-direct already registered users to the Log In page. 
 
 
+- [x] Features available to registered users and admin
 
--[x] **Features available to registered users and admin**
-
-CRUD Functionality
+**CRUD Functionality**
 
 **Add Term**
 * The form allows users to add new entries (Create functionality) and their description. It features a check-before-adding chart to help users to decide whether to add their word to the dictionary.
@@ -214,9 +215,14 @@ You can find the testing documentation [here](TESTING.md)
 * JavaScript Code Quality Tool JSHint 
 * PEP8
 
+### Issues and Solutions
+* In the Search form, I initially used ```label for = " "``` to hint the value of the input field to the users but couldn't align it vertically within the box using Materialize classes and CSS. It was placed underneath the input field. After trying few things, I replaced it with ```placeholder = " "``` and it solved the issue. 
+* When I tried to sort all the terms displayed in the Glossary Page in alphabetical order using ```sort()``` function, I noticed it was sorting first capitalized items and then again items beginning with lower case letters. I was advised by Tutor Support to use ```upper()``` function. I used this function in my ```insert_term``` function so all charachters on a string are converted to uppercase before being stored in the database. 
+
+
 ## Deployment
 ___
-Requirements:
+- [x] Requirements:
 * **Python3** to write the code and run the application
 * **PIP** to install packages
 * **Git** for version control
