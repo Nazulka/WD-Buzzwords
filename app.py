@@ -195,7 +195,7 @@ def edit_term(term_id):
     return render_template("edit_term.html", term=term)
 
 
-# Removes term from the db if added_by user
+# Removes term from the db if added_by session.user
 @app.route("/delete_term/<term_id>")
 def delete_term(term_id):
     mongo.db.terms.remove({"_id": ObjectId(term_id)})

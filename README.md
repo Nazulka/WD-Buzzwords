@@ -5,7 +5,7 @@ ___
 
 WD Buzzwords is a crowdsourced dictionary where users can look up explanations to some of the most important terms and abbreviations they will come accross when working in web development. Members can also contribute to the dictionary to benefit others staring out in the industry. 
 
-### :point_right: [Live demo](https://wd-buzzwords.herokuapp.com/).
+### :point_right: [Live demo](https://wd-buzzwords.herokuapp.com/)
 
 ## Table of Contents
 ___
@@ -22,7 +22,7 @@ ___
     + [Implemented Features](#implemented-features)
     + [Future Features](#future-features)
   * [Testing](#testing)
-  * [Deployment](#deployment-1)
+  * [Deployment](#deployment)
   * [Credits](#credits)
   * [Acknowledgements](#acknowledgements)
 
@@ -39,26 +39,25 @@ ___
 ### User Stories
 
 - [x] **Guest user**
-* As a guest user of WD Buzzwords, I want to browse all web development terms and jargons and familiarize myself with their exact meanings without needing to register to the website. 
+* As a guest user of WD Buzzwords, I want to browse web development terms and jargons and look up meanings without needing to register to the website. 
 * As a guest user of WD Buzzwords, I want to be able to easily access all available website features from different screen size devices.
 * As a guest user of WD Buzzwords, I want to be able to use the searchbox to search for terms that I would like to find out more about.
-* As a guest user of WD Buzzwords, I want to be able to display the selected term and its description. 
-* As a guest user of WD Buzzwords, I want to be able to browse terms alphabetically using the alphabet filter buttons. 
+* As a guest user of WD Buzzwords, I want to be able to filter terms alphabetically using the alphabet filter buttons. 
 * As a guest user of WD Buzzwords, I want to be able to learn one of the latest entries to the website.
-* As a guest user of WD Buzzwords, I want to be able to register to the website.
+* As a guest user of WD Buzzwords, I want to be able to easily register to the website.
 
 - [x] **Registered user**
-* As a guest user of WD Buzzwords, I want to be able to log in to the website using my username and password. 
-* As a registered user of WD Buzzwords, I want to be able to contribute to the dictionary by adding new terms and their description to the glossary.
-* As a guest user of WD Buzzwords, I want to be able to edit the entries contributed by myself as well as their description.
-* As a guest user of WD Buzzwords, I want to be able to view all my stored entries in my Account page.
-* As a guest user of WD Buzzwords, I want to be able to delete the entries contributed by myself if necessary.
-* As a guest user of WD Buzzwords, I want to be able to get a delete confirmation message before deleting my entries.
+* As a registered user of WD Buzzwords, I want to be able to log in to the website using my username and password. 
+* As a registered user of WD Buzzwords, I want to be able to contribute to the dictionary by adding new terms and their description.
+* As a registered user of WD Buzzwords, I want to be able to update the entries contributed by myself if need be.
+* As a registered user of WD Buzzwords, I want to be able to view all my added entries in my Account page.
+* As a registered user of WD Buzzwords, I want to be able to delete the entries contributed by myself if necessary.
+* As a registered user of WD Buzzwords, I want to be able to confirm deletion before deleting my entries.
 
 - [x] **Site owner / admin**
-* As a site owner of WD Buzzwords, I want to create an online educational resource, to promote understanding of web development terms and abbreviations, as well as crowdsource new terms and definitions to benefit users who are new to the sector.
-* As a site owner of WD Buzzwords, I want to be able to monitor and regularly update the website to keep up-to-date and to meet users' expectations.
-* As a site owner of WD Buzzwords, I want to be able to delete entries contributed by users if necessary.
+* As a site owner of WD Buzzwords, I want to create an online educational resource, to promote understanding of web development terms and jargons, as well as crowdsource new terms and definitions to benefit users who are new to the industry.
+* As a site owner of WD Buzzwords, I want to be able to monitor and regularly update the website to keep it up-to-date and to meet users' expectations.
+* As a site owner of WD Buzzwords, I want to be able to delete entries contributed by registered users if inapropriate or irrelevant.
 
 
 ### Scope
@@ -209,12 +208,6 @@ Filter Results Section
 ___
 You can find the testing documentation [here](TESTING.md)
 
-### Code Validity
-* HTML Markup Validation
-* CSS Validation
-* JavaScript Code Quality Tool JSHint 
-* PEP8
-
 ### Issues and Solutions
 * In the Search form, I initially used ```label for = " "``` to hint the value of the input field to the users but couldn't align it vertically within the box using Materialize classes and CSS. It was placed underneath the input field. After trying few things, I replaced it with ```placeholder = " "``` and it solved the issue. 
 * When I tried to sort all the terms displayed in the Glossary Page in alphabetical order using ```sort()``` function, I noticed it was sorting first capitalized items and then again items beginning with lower case letters. I was advised by Tutor Support to use ```upper()``` function. I used this function in my ```insert_term``` function so all charachters on a string are converted to uppercase before being stored in the database. 
@@ -333,7 +326,8 @@ To run this project on your device using the IDE of your choice follow these ste
 ## Credits
 ___
 
-### The glossary content was obtained from following websites:
+### Content
+** _The glossary content was obtained from following websites:_**
 * [CareerFoundry](https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/)
 * [Wood Street Journal](https://www.woodst.com/web-design-development/70-web-design-and-development-terms-we-wish-you-knew-part-one/)
 * [Cactus](https://www.castus.co.uk/blog/glossary-of-web-design-terminology/#technology%20&%20web%20development)
@@ -348,7 +342,7 @@ ___
 ### Code
 * The project was inspired by the CI Task Manager walkthrough project.
 * The Home Page design was designed following recommendations by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). It was modified and adapted to the site's needs. 
-* Tim Nelson from Tutor Support suggested a for-loop for Filter Results By Letter buttons.
+* Tim Nelson from Tutor Support suggested a for-loop for Filter Results buttons.
 * Table of contents generated with [markdown-toc](http://ecotrust-canada.github.io/markdown-toc).
 
 
