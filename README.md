@@ -39,11 +39,11 @@ ___
 ### User Stories
 
 - [x] **Guest user**
+* As a guest user of WD Buzzwords, who is visiting the site for the first time, I want to understand easily what the site is about.
 * As a guest user of WD Buzzwords, I want to browse web development terms and jargons and look up meanings without needing to register to the website. 
 * As a guest user of WD Buzzwords, I want to be able to easily access all available website features from different screen size devices.
 * As a guest user of WD Buzzwords, I want to be able to use the searchbox to search for terms that I would like to find out more about.
 * As a guest user of WD Buzzwords, I want to be able to filter terms alphabetically using the alphabet filter buttons. 
-* As a guest user of WD Buzzwords, I want to be able to learn one of the latest entries to the website.
 * As a guest user of WD Buzzwords, I want to be able to easily register to the website.
 
 - [x] **Registered user**
