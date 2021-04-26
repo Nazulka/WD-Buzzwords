@@ -55,9 +55,8 @@ ___
 * As a registered user of WD Buzzwords, I want to be able to confirm deletion before deleting my entries.
 
 - [x] **Site owner / admin**
-* As a site owner of WD Buzzwords, I want to create an online educational resource, to promote understanding of web development terms and jargons, as well as crowdsource new terms and definitions to benefit users who are new to the industry.
-* As a site owner of WD Buzzwords, I want to be able to monitor and regularly update the website to keep it up-to-date and to meet users' expectations.
-* As a site owner of WD Buzzwords, I want to be able to delete entries contributed by registered users if inapropriate or irrelevant.
+* As a site owner of WD Buzzwords, I want to be able to monitor and regularly update the website.
+* As a site owner of WD Buzzwords, I want to be able to delete entries contributed by registered users if necessary.
 
 
 ### Scope
