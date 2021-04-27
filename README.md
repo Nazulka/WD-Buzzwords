@@ -225,7 +225,7 @@ ___
 
 ### Project Creation
 
-This project was created using the CI recommended [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
+Using the CI recommended [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
 * Click on **_Use this template_** button and enter a short and memorable name of your choice for your repo and select **_Create repository from template_**. 
 * Once created, click on green **_Gitpod_** button to open your new workspace. 
 
