@@ -57,6 +57,10 @@ main {
 .pt {
     padding-top: 0.6em;
 }
+.info {
+    margin-bottom: 8px;
+}
+
 
   /* -- Footer -- */
 .social-links {
@@ -116,8 +120,6 @@ main {
 /*-- Alphabetical Filter --*/
 .filter-card {
     width: 100%;
-}
-.card-panel {
     margin: 0 auto;
 }
 

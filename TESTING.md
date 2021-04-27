@@ -115,13 +115,16 @@ Social icons were tested by clicking on them, all links to the external websites
 * The _Log Out_ link on the navbar (sidenav on smaller screens) is working as expected and logs users out of their account when clicked.
 * Further tests verified that users are then redirected to the _Log In_ page where a flash message pops up to confirm they've been logged out. 
 
+- [x] **404 Error Page**
+
+
 ### Defensive Design Testing
 
 
 
 
-
-
+### Responsiveness
+The responsiveness of the website on all popular devices was tested using [Responsinator](https://www.responsinator.com/) and Google Dev Tools Device Mode  is fully responsive and fits and adapts well to the different viewport size devices.
 ### Usability Testing
 This website was tested for usability by my family and friends. They didn't experience any issues during the testing process and it was confirmed that the website was easy to use and navigate. They were able to intuitively use the interactive elements of the website, find the information they were looking for and easily understand the purpose of the website.
 
