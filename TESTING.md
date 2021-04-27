@@ -113,13 +113,23 @@ Social icons were tested by clicking on them, all links to the external websites
 
 - [x] **Log Out Page**
 * The _Log Out_ link on the navbar (sidenav on smaller screens) is working as expected and logs users out of their account when clicked.
-* Further tests verified that users then redirected to the _Log In_ page where a flash message pops up to confirm they've been logged out. 
+* Further tests verified that users are then redirected to the _Log In_ page where a flash message pops up to confirm they've been logged out. 
+
+### Defensive Design Testing
+
+
+
+
 
 
 ### Usability Testing
+This website was tested for usability by my family and friends. They didn't experience any issues during the testing process and it was confirmed that the website was easy to use and navigate. They were able to intuitively use the interactive elements of the website, find the information they were looking for and easily understand the purpose of the website.
+
 
 ### Performance Testing
 
-### Compatibility Testing
 
-### Defensive Design Testing
+
+### Browser Compatibility Testing
+
+
