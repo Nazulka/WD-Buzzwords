@@ -84,7 +84,7 @@ In both cases users see _Browse Terms_ button that refreshes the page and displa
 Social icons were tested by clicking on them, all links to the external websites are functioning as intended and open in new tabs.
 * Copyright section is center-aligned and located directly below the Footer as intended.
 
--[x] **Filter Results Buttons**
+- [x] **Filter Results Buttons**
 * Verified that by default the Glossary page displays all existing terms (including ones contributed by the users) in alphabetical order. 
 * The _Back to top_ Materialize FAB is working as intended, it floats on right bottom corner of the page and when clicked takes users to the top of the page. 
 * The _Filter Results Buttons_ 
@@ -94,18 +94,27 @@ Social icons were tested by clicking on them, all links to the external websites
 
 
 - [x] **Log In Page**
-* The Materialize card and input fields are displayed correctly.
 * Verified, the Flash message always pops up when users successfully log in to the website. 
 * Link below the card was clicked to test and is functioning as it should, redirecting users to the _Sign Up_ page.
 
 - [x] **Sign Up Page**
-* The Materialize card and input fields are displayed correctly.
-* The link below is fully functional, redirects users to the _Log In_ page.
 * Flash message pops up to confirm the successul registration.
+* The link below th ecard is fully functional, redirects users to the _Log In_ page.
 
 - [x] **Account Page**
-* The user's added words correctly displayed on the page.
-* 
+* The user's contributed words displayed on the page in an alphabetical order.
+* _Edit_ button is functioning as desired, allowing users to update the terms they contributed previuosly.
+* _Delete_ button is working as intended and _Confirm deletion_ modal pops up if users click on it. Clicking on the _Delete_ button again on the pop up modal will result in removal of the term from the glossary. Alternatively, if users clicked on it by mistake or changed mind, they can click on the _Cancel_ button. 
+
+- [x] **Add Term Page**
+* The image is rendered correctly.
+* The form was tested by entering a new term and description and is working as intended.
+* The flash message is correctly displayed after every successful contribution to the dictionary.
+
+- [x] **Log Out Page**
+* The _Log Out_ link on the navbar (sidenav on smaller screens) is working as expected and logs users out of their account when clicked.
+* Further tests verified that users then redirected to the _Log In_ page where a flash message pops up to confirm they've been logged out. 
+
 
 ### Usability Testing
 
