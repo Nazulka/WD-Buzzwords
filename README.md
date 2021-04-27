@@ -92,7 +92,7 @@ Some changes were made to the original wireframes during development process for
 * *Monserrat* used for headings to give the site less formal feel.
 * *Average* for the all other elements as I found it complemented well the above two fonts. 
 
-- [x] **Imagery**
+- [x] Imagery
 * The Home page supporting image added to enchance the overall experience and is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY).
 * A chart in Add Term page is from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html).
 
