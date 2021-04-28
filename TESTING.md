@@ -87,11 +87,7 @@ Social icons were tested by clicking on them, all links to the external websites
 - [x] **Filter Results Buttons**
 * Verified that by default the Glossary page displays all existing terms (including ones contributed by the users) in alphabetical order. 
 * The _Back to top_ Materialize FAB is working as intended, it floats on right bottom corner of the page and when clicked takes users to the top of the page. 
-* The _Filter Results Buttons_ 
-
-+++++++++++++++++++
-+++++++++++++++++++++
-
+* The _Filter Results Buttons_ are functioning as expected. When clicked by user it renders the filter results on the _filtered_results_ page. If there are no terms in the dictionary starting with the letter displayed on the button, the page displays a message: "No results found for the letter _(letter clicked by user)_" along with the _Browse Terms_ button to redirect users back to the Glossary Page. 
 
 - [x] **Log In Page**
 * Verified, the Flash message always pops up when users successfully log in to the website. 
@@ -129,7 +125,8 @@ Social icons were tested by clicking on them, all links to the external websites
 
 
 ### Responsiveness
-The responsiveness of the website on all popular devices, including iPhone eXpensive, Android Pixel 2, Samgung Galaxy S5, iPhone 6/7/8, iPad, iPad Pro, etc was tested using [Responsinator](https://www.responsinator.com/) and Google Dev Tools Device Mode. The tests have shown that site is fully responsive and fits and adapts well to the different viewport size devices.
+* The responsiveness of the website was tested on all popular devices, including iPhone 5/SE, Android Pixel 2, Samgung Galaxy S5, iPhone 6/7/8, iPad, iPad Pro, etc using [Responsinator](https://www.responsinator.com/) and Google Dev Tools Device Mode. 
+* It was tested on physical devices including iPhone XR and iPad. All tests have shown that site is fully responsive and fits and adapts well to the different viewport size devices.
 
 
 ### Usability Testing
