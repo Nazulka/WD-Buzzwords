@@ -118,13 +118,18 @@ Social icons were tested by clicking on them, all links to the external websites
 - [x] **404 Error Page**
 
 
+- [x] **500 Error Page**
+
+
 ### Defensive Design Testing
 
 
 
 
 ### Responsiveness
-The responsiveness of the website on all popular devices was tested using [Responsinator](https://www.responsinator.com/) and Google Dev Tools Device Mode  is fully responsive and fits and adapts well to the different viewport size devices.
+The responsiveness of the website on all popular devices, including iPhone eXpensive, Android Pixel 2, Samgung Galaxy S5, iPhone 6/7/8, iPad, iPad Pro, etc was tested using [Responsinator](https://www.responsinator.com/) and Google Dev Tools Device Mode. The tests have shown that site is fully responsive and fits and adapts well to the different viewport size devices.
+
+
 ### Usability Testing
 This website was tested for usability by my family and friends. They didn't experience any issues during the testing process and it was confirmed that the website was easy to use and navigate. They were able to intuitively use the interactive elements of the website, find the information they were looking for and easily understand the purpose of the website.
 
