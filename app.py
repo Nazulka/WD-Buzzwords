@@ -45,7 +45,7 @@ def filter_terms(letter):
         if term["term_name"][0] == letter:
             filtered_terms.append(term)
     return render_template(
-        "glossary.html", filtered_terms=filtered_terms)
+        "filtered_results.html", filtered_terms=filtered_terms)
 
 
 

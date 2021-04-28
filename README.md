@@ -116,6 +116,9 @@ The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.
 * **[Tinypng.com](https://tinypng.com/)** - to reduce size and compress the images used in this project.
 * **[RandomKeygen](https://randomkeygen.com/)** - to create Fort Knox Password.
 * **[Balsamiq](https://balsamiq.com/wireframes/desktop/)** - to generate digital sketches for the project concept for better planning of the layout of the website.
+* **[Markdown-toc](http://ecotrust-canada.github.io/markdown-toc)** - to generate the Table of contents.
+
+
 
 - [x] **Back-end**
 * **Flask** - a lightweight micro web framework written in Python used to create a simple, clean code and to reduce development time.
@@ -142,8 +145,8 @@ ___
 **Home Page**
 
 Navigation Bar 
-* Responsive Navigation Bar was created using Materialize Navbar class. It displays the website's logo on the left and on the right navigation links to the "Home", "Glossary", "Log In" and "Sign Up" Pages when the user is not logged in. 
-* Brand Logo also serves Home Page link, which is particularly convenient when accessing the site on smaller screen size devices. 
+* Responsive Navigation Bar was created using Materialize Navbar-extended class. It displays the website's logo on the left and on the right navigation links to the "Home", "Glossary", "Log In" and "Sign Up" Pages when the user is not logged in. 
+* Brand Logo also serves as link to the Home Page, which is particularly convenient when accessing the site on smaller screen size devices. 
 * On screen sizes below 992px navbar is hidden and slide out menu comes into effect, which collapses into a hamburger menu bar when closed. 
 
 Parallax
@@ -211,7 +214,7 @@ You can find the testing documentation [here](TESTING.md)
 
 ### Issues and Solutions
 * In the Search form, I initially used ```label for = " "``` to hint the value of the input field to the users but couldn't align it vertically within the box using Materialize classes and CSS. It was placed underneath the input field. After trying few things, I replaced it with ```placeholder = " "``` and it solved the issue. 
-* When I tried to sort all the terms displayed in the Glossary Page in alphabetical order using ```sort()``` function, I noticed it was sorting first capitalized items and then again items beginning with lower case letters. I was advised by Tutor Support to use ```upper()``` function. I used this function in my ```insert_term``` function so all charachters on a string are converted to uppercase before being stored in the database. 
+* When I tried to sort all the terms displayed in the Glossary Page in alphabetical order using ```sort()``` function, I noticed it was sorting first capitalized items and then again items beginning with lower case letters. I used ```upper()``` function in my ```insert_term``` functionality so all charachters on a string are converted to uppercase before being stored in the database. 
 
 
 ## Deployment
@@ -345,13 +348,13 @@ ___
 * The project was inspired by the CI Task Manager walkthrough project.
 * The Home Page design was designed following recommendations by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). It was modified and adapted to the site's needs. 
 * Tim Nelson from Tutor Support suggested a for-loop for Filter Results buttons.
-* Table of contents generated with [markdown-toc](http://ecotrust-canada.github.io/markdown-toc).
+* Igor for his help with the Filter Results function
 
 
 ## Acknowledgements
 ___
 * I would like to thank my mentor Excellence Ilesanmi for his continuous support throughout this course, help and insights.
-* A big thank you to tutors from Tutor Support for always pointing me to the right direction.
+* A big thank you to all tutors from Tutor Support for always pointing me to the right direction.
 * Thanks to the wonderful Slack community for inspiring me stay positive no matter how hard it gets!
 
 

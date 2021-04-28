@@ -9,34 +9,45 @@
                 <h5 class="center-align filter-header"><strong>Filter Results</strong></h5>
                 {% set letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
                 {% for letter in letters %}
-                <a href="{{ url_for('filter_terms', letter=letter) }}"
-                 id ="letter" class="btn btn-small col s1 first-letter waves-effect waves-light amber accent-3 z-depth-2">{{ letter }}</a>
+                <a href="{{ url_for('filter_terms', letter=letter) }}" id="letter"
+                    class="btn btn-small col s1 first-letter waves-effect waves-light amber accent-3 z-depth-2">{{
+                    letter }}</a>
                 {% endfor %}
             </div>
         </div>
     </div>
-    {% if terms|length > 0 %}
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <h3 class="center-align">
+                {{ letter }}
+            </h3>
+        </div>
+    </div>
+    {% if filtered_terms|length > 0 %}
         <div class="row">
             <div class="col s12 m10 offset-m1">
-                {% for term in terms %}
-                    <div class="row">
-                        <a href="{{ url_for('get_terms') }}"></a>
-                        <div class="section left-align">
-                            <h5><strong>{{ term.term_name }}</strong></h5>
-                            <p>{{ term.term_description }}</p>
-                            <p><em>Added by: {{term.added_by }}</em></p>
-                        </div>
-                        <div class="divider"></div>
+                {% for term in filtered_terms %}
+                <div class="row">
+                    <a href="{{ url_for('get_terms') }}"></a>
+                    <div class="section left-align">
+                        <h5><strong>{{ term.term_name }}</strong></h5>
+                        <p>{{ term.term_description }}</p>
+                        <p><em>Added by: {{term.added_by }}</em></p>
                     </div>
+                    <div class="divider"></div>
+                </div>
                 {% endfor %}
             </div>
         </div>
         <div class="fixed-action-btn">
-            <a href="#filter_results" class="btn btn-floating btn-large waves-effect waves-light amber accent-3 click-to-toggle">
+            <a href="#filter_results"
+                class="btn btn-floating btn-large waves-effect waves-light amber accent-3 click-to-toggle">
                 <i class="fa fa-arrow-up center-align" aria-hidden="true"></i>
-            </a>    
+            </a>
         </div>
-    {% else %}
+        {% else %}
         <div class="col s12 m6 offset-m3 pt no-results">
             <h3 class="col s10 red-text left-align pt">No Matching Results Found</h3>
             <a href="{{ url_for('get_terms') }}"
