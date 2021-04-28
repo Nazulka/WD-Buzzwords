@@ -77,22 +77,22 @@ Some changes were made to the original wireframes during development process for
 * I decided to move the _Search Box_ to the Home Page, to improve the UX for the users who just want to look up a term. The Home Page has more content now and is scrollable, compared to the original one-page design.
 * The Glossary Page Filter results box was replaced by _Filter Results by Letters_ section and now features buttons with all the letters of the alphabet. I thought this will will be a useful feature to have as more terms are added and dictionary expands in the future.
 * I also added 404 'Page Not Found' and 500 'Internal Server Error' pages, which were not in wireframes, to communicate to users what was the reason the page didn't render correctly and give instructions on what to do next. 
-- [x] Database Diagram
+- [x] **Database Diagram**
 
 ![Database Diagram](static/docs/db-diagram.png)
 
 ### Design Choices
-- [x] Color Scheme
+- [x] **Color Scheme**
 * The color palette has been created using [Coolors](https://coolors.co/4db6ac-ffc400-c2185b-e0e0e0-eeeeee) and materialize color classes have been used in this project.
 * I have chosen a base color of teal and a complimentary color orange to create contrast to the site and add depth. By using this bold combination, I aimed to create an inviting and relaxing design for the users. Light grey has been used to display the flash messages. 
 ![color palette](static/img/color-palette.jpg)
 
-- [x] Typography
+- [x] **Typography**
 * Google Fonts *Special Elite* used to give a vintage style typewriter feel to the website logo.
 * *Monserrat* used for headings to give the site less formal feel.
 * *Average* for the all other elements as I found it complemented well the above two fonts. 
 
-- [x] Imagery
+- [x] **Imagery**
 * The Home page supporting image added to enchance the overall experience and is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY).
 * A chart in Add Term page is from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html).
 
@@ -107,7 +107,7 @@ ___
 * Python
 
 ### Frameworks, Libraries and Tools
-- [x] Front-end
+- [x] **Front-end**
 * **[Materialize CSS v1.0.0](https://materializecss.com/)** - a front-end framework, used to create sleek, consistent, functional and responsive website. I wanted to familiarize myself better with Materialize as my previous two projects used Bootstrap. 
 The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.  
 * **jQuery** - required to ensure proper rendering of the Materialize components listed above.
@@ -117,14 +117,14 @@ The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.
 * **[RandomKeygen](https://randomkeygen.com/)** - to create Fort Knox Password.
 * **[Balsamiq](https://balsamiq.com/wireframes/desktop/)** - to generate digital sketches for the project concept for better planning of the layout of the website.
 
-- [x] Back-end
+- [x] **Back-end**
 * **Flask** - a lightweight micro web framework written in Python used to create a simple, clean code and to reduce development time.
 * **[MongoDB](https://www.mongodb.com/2)** - non-relational database, used to store, manipulate and retrieve data.
 * **[Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)** - used with Flask to securely store passwords with salted hashes and verify user passwords to authenticate users.
 * **Flask Jinja** - used as it's a part of a Flask package and to allow template inheritance.
 
 
-- [x] Deployment
+- [x] **Deployment**
 * **Git** - used to keep track of the changes made to the repository and for version control.
 * **Gitpod** - I used CI full template as an IDE to develop, commit and push files to GitHub. 
 * **GitHub** - used as a hosting service and for future collaborations.
@@ -137,7 +137,8 @@ ___
 
 ### Implemented Features
 
-- [x] Features available to all users and admin
+- [x] **Features available to all users and admin**
+
 **Home Page**
 
 Navigation Bar 
@@ -180,7 +181,7 @@ Filter Results Section
 * There is a link below the card to re-direct already registered users to the Log In page. 
 
 
-- [x] Features available to registered users and admin
+- [x] **Features available to registered users and admin**
 
 **CRUD Functionality**
 
@@ -205,6 +206,7 @@ Filter Results Section
 
 ## Testing
 ___
+
 You can find the testing documentation [here](TESTING.md)
 
 ### Issues and Solutions
@@ -214,7 +216,7 @@ You can find the testing documentation [here](TESTING.md)
 
 ## Deployment
 ___
-- [x] Requirements:
+- [x] **Requirements:**
 * **Python3** to write the code and run the application
 * **PIP** to install packages
 * **Git** for version control
@@ -225,7 +227,7 @@ ___
 
 ### Project Creation
 
-Using the CI recommended [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
+* This project was created using the CI recommended [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
 * Click on **_Use this template_** button and enter a short and memorable name of your choice for your repo and select **_Create repository from template_**. 
 * Once created, click on green **_Gitpod_** button to open your new workspace. 
 
@@ -326,7 +328,7 @@ To run this project on your device using the IDE of your choice follow these ste
 ___
 
 ### Content
-** _The glossary content was obtained from following websites:_**
+**_The glossary content was obtained from following websites:_**
 * [CareerFoundry](https://careerfoundry.com/en/blog/web-development/50-web-development-buzzwords-that-all-new-programmers-should-learn/)
 * [Wood Street Journal](https://www.woodst.com/web-design-development/70-web-design-and-development-terms-we-wish-you-knew-part-one/)
 * [Cactus](https://www.castus.co.uk/blog/glossary-of-web-design-terminology/#technology%20&%20web%20development)
@@ -336,7 +338,8 @@ ___
 ### Media 
 * A parallax image is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY)
 * A new entry submission chart was taken from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) 
-* Favicon icon was made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com
+* Favicon icon was made by Freepik from [Flaticon](https://www.flaticon.com)
+
 
 ### Code
 * The project was inspired by the CI Task Manager walkthrough project.
