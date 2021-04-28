@@ -40,12 +40,12 @@ def get_terms():
 def filter_terms(letter):
 
     filtered_terms = []
-    terms = list(mongo.db.terms.find())
+    terms = list(mongo.db.terms.find().sort('term_name', 1))
     for term in terms:
         if term["term_name"][0] == letter:
             filtered_terms.append(term)
     return render_template(
-        "filtered_results.html", filtered_terms=filtered_terms)
+        "filtered_results.html", filtered_terms=filtered_terms, letter=letter)
 
 
 

@@ -33,10 +33,10 @@
                     </div>
                     <div class="row">
                         <button href="#delete_modal_{{ term._id }}" type="submit"
-                            class="col s3 m2 btn btn-small waves-effect waves-light amber accent-3 modal-trigger">Delete</button>
+                            class="col s4 m2 btn btn-small waves-effect waves-light amber accent-3 modal-trigger">Delete</button>
                         {% if session.user|lower == term.added_by|lower %}
                         <a href="{{ url_for('edit_term', term_id=term._id) }}"
-                            class="col s3 m2 btn btn-small waves-effect waves-light amber accent-3">Edit
+                            class="col s4 m2 btn btn-small waves-effect waves-light amber accent-3">Edit
                         </a>
                         {% endif %}
                     </div>
@@ -51,9 +51,9 @@
                     </div>
                     <div class="modal-footer">
                         <a href="{{ url_for('account', username=session['user']) }}"
-                            class="col s3 m2 btn btn-small waves-effect waves-light amber accent-3 modal-close center-align modal-btn">Cancel</a>
+                            class="col s4 m2 btn btn-small waves-effect waves-light amber accent-3 modal-close center-align modal-btn">Cancel</a>
                         <a href="{{ url_for('delete_term', term_id=term._id) }}"
-                            class="col s3 m2 btn btn-small waves-effect waves-light amber accent-3 center-align modal-btn" type="submit"
+                            class="col s4 m2 btn btn-small waves-effect waves-light amber accent-3 center-align modal-btn" type="submit"
                             name="action">Delete</a>
                     </div>
                 </div>

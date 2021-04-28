@@ -10,7 +10,7 @@
                 {% set letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
                 {% for letter in letters %}
                 <a href="{{ url_for('filter_terms', letter=letter) }}" id="letter"
-                    class="btn btn-small col s1 first-letter waves-effect waves-light amber accent-3 z-depth-2">{{
+                    class="btn btn-small col s2 m1 first-letter waves-effect waves-light amber accent-3 z-depth-2">{{
                     letter }}</a>
                 {% endfor %}
             </div>
@@ -18,15 +18,9 @@
     </div>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="col s12 m10 offset-m1">
-            <h3 class="center-align">
-                {{ letter }}
-            </h3>
-        </div>
-    </div>
     {% if filtered_terms|length > 0 %}
-        <div class="row">
+        <div class="row pt">
+            <h4>Terms starting with <span class="filter-heading">{{ letter }}</span></h4>
             <div class="col s12 m10 offset-m1">
                 {% for term in filtered_terms %}
                 <div class="row">
@@ -49,9 +43,11 @@
         </div>
         {% else %}
         <div class="col s12 m6 offset-m3 pt no-results">
-            <h3 class="col s10 red-text left-align pt">No Matching Results Found</h3>
+            <div class="divider"></div>
+            <h3 class="col s10 red-text left-align pt">No results found for letter {{ letter }}</h3>
             <a href="{{ url_for('get_terms') }}"
-                class="col s2 btn btn-large left-align waves-effect waves-light amber accent-3">Browse Terms</a>
+                class="col s2 btn btn-large left-align waves-effect waves-light amber accent-3">Browse Terms
+            </a>
         </div>
     {% endif %}
 </div>

@@ -10,7 +10,7 @@
                 {% set letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
                 {% for letter in letters %}
                 <a href="{{ url_for('filter_terms', letter=letter) }}"
-                 id ="letter" class="btn btn-small col s1 first-letter waves-effect waves-light amber accent-3 z-depth-2">{{ letter }}</a>
+                 id ="letter" class="btn btn-small col s2 m1 first-letter waves-effect waves-light amber accent-3 z-depth-2">{{ letter }}</a>
                 {% endfor %}
             </div>
         </div>

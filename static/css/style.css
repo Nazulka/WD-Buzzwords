@@ -122,6 +122,11 @@ main {
     width: 100%;
     margin: 0 auto;
 }
+.filter-heading {
+    font-size: 120%;
+    font-weight: 500;
+    color: black;
+}
 
 /*-- Error Handler --*/
 .error-card {
