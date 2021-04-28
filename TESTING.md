@@ -116,10 +116,12 @@ Social icons were tested by clicking on them, all links to the external websites
 * Further tests verified that users are then redirected to the _Log In_ page where a flash message pops up to confirm they've been logged out. 
 
 - [x] **404 Error Page**
-
+* Confirmed that the page is displayed as expected if users navigate to the broken or dead links.
+* _Return to Home page_ link is working as intended and takes users back to the Home page. 
 
 - [x] **500 Error Page**
-
+* Confirmed that the page is rendered correctly if something has gone wrong on the web site's server.
+* _Return to Home Page_ link is functioning properly and redirects users back to the Home page. 
 
 ### Defensive Design Testing
 
