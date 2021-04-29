@@ -144,36 +144,36 @@ ___
 
 **Home Page**
 
-Navigation Bar 
-* Responsive Navigation Bar was created using Materialize Navbar-extended class. It displays the website's logo on the left and on the right navigation links to the "Home", "Glossary", "Log In" and "Sign Up" Pages when the user is not logged in. 
-* Brand Logo also serves as link to the Home Page, which is particularly convenient when accessing the site on smaller screen size devices. 
-* On screen sizes below 992px navbar is hidden and slide out menu comes into effect, which collapses into a hamburger menu bar when closed. 
+* Navigation Bar 
+  * Responsive Navigation Bar was created using Materialize Navbar-extended class. It displays the website's logo on the left and on the right navigation links to the "Home", "Glossary", "Log In" and "Sign Up" Pages when the user is not logged in. 
+  * Brand Logo also serves as link to the Home Page, which is particularly convenient when accessing the site on smaller screen size devices. 
+  * On screen sizes below 992px navbar is hidden and slide out menu comes into effect, which collapses into a hamburger menu bar when closed. 
 
-Parallax
-* A Materialize parallax image was added to visually support the content and for added user interactivity.  
+* Parallax
+  * A Materialize parallax image was added to visually support the content and for added user interactivity.  
 
-Search WD Buzzwords
-* The Search box features an input field and a Search button, allows users to look up the terms and jargons they would like to learn more about. 
-* If the term exists in the dictionary, the search result is displayed in the Glossary page. Otherwise, users see a message "No matching results found". 
+* Search WD Buzzwords
+  * The Search box features an input field and a Search button, allows users to look up the terms and jargons they would like to learn more about. 
+  * If the term exists in the dictionary, the search result is displayed in the Glossary page. Otherwise, users see a message "No matching results found". 
 
-Welcome Section
-* This section consists of a title and a paragraph text that explains the purpose of the website. 
+* Welcome Section
+  * This section consists of a title and a paragraph text that explains the purpose of the website. 
 
-Icon Boxes Section
-* This section is made of two Materialize card-panels with added Font Awesome Icons and call to action buttons. The first panel invites users to sign-up to the website and the second one guides users to the Glossary Page to browse all terms. 
-* The bottom part of the section is for users who would like to purchase a Glossary in a book form and includes a link to an external third-party site that opens up in a new tab. 
+* Icon Boxes Section
+  * This section is made of two Materialize card-panels with added Font Awesome Icons and call to action buttons. The first panel invites users to sign-up to the website and the second one guides users to the Glossary Page to browse all terms. 
+  * The bottom part of the section is for users who would like to purchase a Glossary in a book form and includes a link to an external third-party site that opens up in a new tab. 
 
-Footer
-* Designed using Materialize Sticky Footer component, it's responsive and always stays on the bottom of the page unless there is a lot of content, when it gets pushed down. Contains hoverable Social Media icons to let users know they are clickable. Icons are linked to the external websites and open in new tabs when clicked. Available accross all pages.
-* Copyright section is directly below the Footer and contains Copyright information.
+* Footer
+  * Designed using Materialize Sticky Footer component, it's responsive and always stays on the bottom of the page unless there is a lot of content, when it gets pushed down. Contains hoverable Social Media icons to let users know they are clickable. Icons are linked to the external websites and open in new tabs when clicked. Available accross all pages.
+  * Copyright section is directly below the Footer and contains Copyright information.
 
 **Glossary Page**
 
-Browse All Results
-* By default, the Glossary page displays all terms in the dictionary sorted in alphabetical order allowing all users to scroll down to browse. A Materialize Floating Action Button has been added to create a shortcut button, so users can easily navigate back to the top of the page from any part of the page. 
+* Browse All Results
+  * By default, the Glossary page displays all terms in the dictionary sorted in alphabetical order allowing all users to scroll down to browse. A Materialize Floating Action Button has been added to create a shortcut button, so users can easily navigate back to the top of the page from any part of the page. 
 
-Filter Results Section
-* Located on top of the page, it helps users to narrow down the results by clicking on the buttons with the letter they require. This will be particularly useful as the site expands and more definitions will be added. 
+* Filter Results Section
+  * Located on top of the page, it helps users to narrow down the results by clicking on the buttons with the letter they require. This will be particularly useful as the site expands and more definitions will be added. 
 
 **Log In Page**
 * Contains a Materialize card with the required input fields for Username and Password. It allows registered users to log in to the account and to access additional features. 
@@ -346,9 +346,10 @@ ___
 
 ### Code
 * The project was inspired by the CI Task Manager walkthrough project.
-* The Home Page design was designed following recommendations by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). It was modified and adapted to the site's needs. 
+* The Home Page design was designed following recommendations by YouTube tutorial video by [Traversy Media](https://www.youtube.com/watch?v=MaP3vO-vEsg&t=2677s). 
+It was modified and adapted to the site's needs. 
 * Tim Nelson from Tutor Support suggested a for-loop for Filter Results buttons.
-* Igor for his help with the Filter Results function
+* Igor for his help with the Filter Results function.
 
 
 ## Acknowledgements
