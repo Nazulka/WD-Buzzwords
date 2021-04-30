@@ -6,8 +6,8 @@
 
 ### Code Validity
 
-- HTML Markup Validation
-- CSS Validation
+- HTML Markup Validation 
+- CSS Validation - [pass](https://jigsaw.w3.org/css-validator/)
 - JavaScript Code Quality Tool JSHint - [pass](https://jshint.com/)
 - PEP8 - [pass](http://pep8online.com/)
 
