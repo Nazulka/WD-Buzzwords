@@ -1,182 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Average&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Special+Elite&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Average&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Special+Elite&display=swap");
 
 /*-- Body + Sticky footer from Materialize --*/
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    font-family: 'Average', serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Average", serif;
 }
 body p {
-    line-height: 1.8;
+  line-height: 1.8;
 }
 .special {
-    font-size: 120%;
+  font-size: 120%;
 }
-h1, h2, h3 , h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
 }
-
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 .full-width {
-    width: 100%;
-    max-width: initial;
+  width: 100%;
+  max-width: initial;
 }
-.flashes h4{
-    line-height: 2;
+
+/*-- Flash Messages --*/
+.flashes h4 {
+  line-height: 2;
 }
 
 /*-- Navbar --*/
-.nav-extended li>a {
-    text-transform: uppercase;
-    letter-spacing: .08em;
-    padding-right: 1em;
-    font-size: 1.2em;
+.nav-extended li > a {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-right: 1em;
+  font-size: 1.2em;
 }
 .brand-logo {
-    margin-left: 1.2em; 
-    font-family: 'Special Elite', cursive;
-    font-size: 2.5em !important;
+  margin-left: 1.2em;
+  font-family: "Special Elite", cursive;
+  font-size: 2.5em !important;
 }
-
 .sidenav {
-    width: 60%;
-    padding-top: 50px;
-    text-align: center;
-    background-color: #4db6ac;
+  width: 60%;
+  padding-top: 50px;
+  text-align: center;
+  background-color: #4db6ac;
+}
+.sidenav li > a {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #f4f4f4 !important;
 }
 
-.sidenav li>a {
-    font-size: 1.2em;
-    text-transform: uppercase;
-    color: #f4f4f4 !important;
-}
-/*-- Home Page --*/
-.pt {
-    padding-top: 0.6em;
-}
-.info {
-    margin-bottom: 8px;
-}
-
-
-  /* -- Footer -- */
+/* -- Footer -- */
 .social-links {
-    width: 100%;
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
+  width: 100%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
 }
 .social-links .fa-3x {
-    display: inline-block;
-    margin: 5px 10px; 
-    float: none !important;   
+  display: inline-block;
+  margin: 5px 10px;
+  float: none !important;
 }
 .social-links a i {
-    color: white;
-    transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-  }
-.social-links a i:hover {
-    color: #616161; 
+  color: white;
+  transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
-.btn-small {
-    margin: 10px;
+.social-links a i:hover {
+  color: #616161;
 }
 
-/*-- Search input --*/
+/*-- Home Page --*/
+.pt {
+  padding-top: 0.6em;
+}
+.info {
+  margin-bottom: 8px;
+}
+
+/*-- Search Section --*/
 .section-search input {
-    padding: 5px !important;
-    font-size: 18px !important;
-    width: 100% !important;
-    border: #f4f4f4 3px solid !important;
-    background-color: #f4f4f4 !important;
-    margin: 0 auto;
-    position: absolute i !important;
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 100% !important;
+  border: #f4f4f4 3px solid !important;
+  background-color: #f4f4f4 !important;
+  margin: 0 auto;
+  position: absolute i !important;
 }
 .input-field {
-    padding: 0;
+  padding: 0;
 }
 .search-btn {
-    height: 60px;
-    margin: 0 auto;
-    max-width: 100%;
-    padding: 0 15px;
-}
-/*-- Parallax --*/
-.parallax-container {
-    object-fit: cover;
-}
-.modal-btn {
-    margin: 8px !important;
-}
-
-/*-- Alphabetical Filter --*/
-.filter-card {
-    width: 100%;
-    margin: 0 auto;
-}
-.filter-heading {
-    font-size: 120%;
-    font-weight: 500;
-    color: black;
-}
-
-/*-- Error Handler --*/
-.error-card {
-    margin-top: 3em;
+  height: 60px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 15px;
 }
 
 /*-- No Results --*/
 .no-results {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 
+/*-- Parallax Section --*/
+.parallax-container {
+  object-fit: cover;
+}
 
+/*-- Account Page --*/
+/*-- Delete Confirmation Modal --*/
+.btn-small {
+  margin: 10px;
+}
+.modal-btn {
+  margin: 8px !important;
+}
+
+/*-- Glossary Page --*/
+/*-- Alphabetical Filter --*/
+.filter-card {
+  width: 100%;
+  margin: 0 auto;
+}
+.filter-heading {
+  font-size: 120%;
+  font-weight: 500;
+  color: black;
+}
+
+/*-- 404 and 500 Error Pages --*/
+.error-card {
+  margin-top: 3em;
+}
 
 /*--Media Queries--*/
-@media (max-width: 1200px) {
-}
-
-@media (max-width: 992px) {
-}
-@media (max-width: 768px) {
-}
-
 @media (max-width: 576px) {
-    body p {
-        line-height: 1.6;
-    }
-    .brand-logo {
-        margin-left: 0.7em; 
-        font-size: 1.8em !important;
-    }
-    .sidenav {
-        width: 75%;
-        padding-top: 40px;
-    }
-    .filter-card {
-        width: 100%;
-        padding: 0;
-    }
-    .pt {
-        padding-top: 0.3em;
-    }
-    .error-card {
-        min-width: 80%;
-    }
-    .card-panel {
-        padding-bottom: 1em;
-    }
-    .search-btn {
-        height: 58px;
-        margin-right: 6px;
-        max-width: 100%;
-    }
+  body p {
+    line-height: 1.6;
+  }
+  .brand-logo {
+    margin-left: 0.7em;
+    font-size: 1.8em !important;
+  }
+  .sidenav {
+    width: 75%;
+    padding-top: 40px;
+  }
+  .search-btn {
+    height: 58px;
+    margin-right: 6px;
+    max-width: 100%;
+  }
+  .card-panel {
+    padding-bottom: 1em;
+  }
+  .filter-card {
+    width: 100%;
+    padding: 0;
+  }
+  .pt {
+    padding-top: 0.3em;
+  }
+  .error-card {
+    min-width: 80%;
+  }
 }

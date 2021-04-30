@@ -134,7 +134,10 @@ This website was tested for usability by my family and friends. They didn't expe
 
 
 ### Performance Testing
-Performance testing was carried out using Lighthouse in Chrome Developer Tools. It has shown excellent performance and accessibility results for desktop devices. 
+Performance testing was carried out using Lighthouse in Chrome Developer Tools. The tests had shown an excellent performance and accessibility results for desktop devices. 
+Steps taken to improve performance for the mobile devices following the initial tests:
+* Added ```aria-label="search``` attribute to a search button.
+* Used darker background-color for the navbar to improve legibility and increase contrast with the text.
 
 
 ### Browser Compatibility Testing
