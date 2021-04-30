@@ -1,12 +1,19 @@
-## Testing
+## [Testing](#testing)
+___
 
----
-
----
+  * [Code Validity](#code-validity)
+  * [Testing User Stories](#testing-user-stories)
+  * [Functionality Testing](#functionality-testing)
+  * [Defensive Design Testing](#defensive-design-testing)
+  * [Responsiveness](#responsiveness)
+  * [Usability Testing](#usability-testing)
+  * [Performance Testing](#performance-testing)
+  * [Browser Compatibility Testing](#browser-compatibility-testing)
 
 ### Code Validity
 
-- HTML Markup Validation 
+- HTML Markup Validation - [fail](https://validator.w3.org/nu/)
+  * Tests returned multiple errors and warnings due HTML validator not being able to recognize Jinja.
 - CSS Validation - [pass](https://jigsaw.w3.org/css-validator/)
 - JavaScript Code Quality Tool JSHint - [pass](https://jshint.com/)
 - PEP8 - [pass](http://pep8online.com/)
@@ -47,6 +54,8 @@
   - The admin user is responsible for researching the newest terms and keeping the glossary up to date.
 * As a site owner of WD Buzzwords, I want to be able to delete entries contributed by registered users if necessary.
   - The admin user is authorised to remove any content that is irrelevant or inapropriate.
+
+[back to top](#testing)
 
 ### Functionality Testing
 
@@ -119,10 +128,13 @@ Social icons were tested by clicking on them, all links to the external websites
 * Confirmed that the page is rendered correctly if something has gone wrong on the web site's server.
 * _Return to Home Page_ link is functioning properly and redirects users back to the Home page. 
 
+[back to top](#testing)
+
 ### Defensive Design Testing
 
 
 
+[back to top](#testing)
 
 ### Responsiveness
 * The responsiveness of the website was tested on all popular devices, including iPhone 5/SE, Android Pixel 2, Samgung Galaxy S5, iPhone 6/7/8, iPad, iPad Pro, etc using [Responsinator](https://www.responsinator.com/) and Google Dev Tools Device Mode. 
@@ -146,3 +158,7 @@ Device/Browser | Google Chrome    | Microsoft Edge   | Firefox          | Safari
 Mobile Phone   |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| n/a               |
 Tablet         |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| n/a               |
 Desktop        |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| n/a               |
+
+
+
+[back to top](#testing)
