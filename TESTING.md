@@ -134,9 +134,12 @@ This website was tested for usability by my family and friends. They didn't expe
 
 
 ### Performance Testing
-Performance testing was carried out using Lighthouse in Chrome Developer Tools. It has shown excellent performance and accessibility results for desktop devices.
+Performance testing was carried out using Lighthouse in Chrome Developer Tools. It has shown excellent performance and accessibility results for desktop devices. 
 
 
 ### Browser Compatibility Testing
-
-
+Device/Browser | Google Chrome    | Microsoft Edge   | Firefox          | Safari           | Internet Explorer |
+-------------- | :---------------:|:----------------:| :---------------:| :---------------:| :----------------:|
+Mobile Phone   |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| n/a               |
+Tablet         |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| n/a               |
+Desktop        |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| n/a               |

@@ -20,7 +20,8 @@ app.secret_key = os.environ.get("SECRET_KEY")
 # Set up an instance of PyMongo
 mongo = PyMongo(app)
 
-# Home Page 
+
+# Home Page
 @app.route("/")
 @app.route("/home")
 def home():
@@ -46,7 +47,6 @@ def filter_terms(letter):
             filtered_terms.append(term)
     return render_template(
         "filtered_results.html", filtered_terms=filtered_terms, letter=letter)
-
 
 
 # Returns search results
@@ -169,8 +169,7 @@ def insert_term():
 
     # Add unique term into the database
     if existing_term == 0:
-        terms.insert_one(
-        {
+        terms.insert_one({
             "term_name": request.form.get("term_name"),
             "term_description": request.form.get("term_description"),
             "added_by": session["user"]
