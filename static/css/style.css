@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Average&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Special+Elite&display=swap");
 
-/*-- Body + Sticky footer from Materialize --*/
+/*-- Body and Sticky footer from Materialize --*/
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   font-family: "Average", serif;
+}
+main {
+  flex: 1 0 auto;
 }
 body p {
   line-height: 1.8;
@@ -21,14 +24,10 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
 }
-main {
-  flex: 1 0 auto;
-}
 .full-width {
   width: 100%;
   max-width: initial;
 }
-
 /*-- Flash Messages --*/
 .flashes h4 {
   line-height: 2;
@@ -48,7 +47,7 @@ main {
 }
 .sidenav {
   width: 60%;
-  padding-top: 50px;
+  padding-top: 3.1em;
   text-align: center;
   background-color: #4db6ac;
 }
@@ -69,7 +68,7 @@ main {
 }
 .social-links .fa-3x {
   display: inline-block;
-  margin: 5px 10px;
+  margin: 0.3em 0.6em;
   float: none !important;
 }
 .social-links a i {
@@ -88,13 +87,13 @@ main {
   padding-top: 0.6em;
 }
 .info {
-  margin-bottom: 8px;
+  margin-bottom: 0.5em;
 }
 
 /*-- Search Section --*/
 .section-search input {
-  padding: 5px !important;
-  font-size: 18px !important;
+  padding: 0.3em !important;
+  font-size: 1.2em !important;
   width: 100% !important;
   border: #f4f4f4 3px solid !important;
   background-color: #f4f4f4 !important;
@@ -105,10 +104,10 @@ main {
   padding: 0;
 }
 .search-btn {
-  height: 60px;
+  height: 3.75em;
   margin: 0 auto;
   max-width: 100%;
-  padding: 0 15px;
+  padding: 0 1em;
 }
 
 /*-- No Results --*/
@@ -124,10 +123,10 @@ main {
 /*-- Account Page --*/
 /*-- Delete Confirmation Modal --*/
 .btn-small {
-  margin: 10px;
+  margin: 0.6em;
 }
 .modal-btn {
-  margin: 8px !important;
+  margin: 0.5em !important;
 }
 
 /*-- Glossary Page --*/
@@ -158,11 +157,11 @@ main {
   }
   .sidenav {
     width: 75%;
-    padding-top: 40px;
+    padding-top: 3em;
   }
   .search-btn {
-    height: 58px;
-    margin-right: 6px;
+    height: 3.75em;
+    margin-right: 0.4em;
     max-width: 100%;
   }
   .card-panel {
