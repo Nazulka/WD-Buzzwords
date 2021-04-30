@@ -8,8 +8,8 @@
 
 - HTML Markup Validation
 - CSS Validation
-- JavaScript Code Quality Tool JSHint
-- PEP8
+- JavaScript Code Quality Tool JSHint - [pass](https://jshint.com/)
+- PEP8 - [pass](http://pep8online.com/)
 
 ### Testing User Stories
 

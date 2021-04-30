@@ -61,8 +61,6 @@ h6 {
 .social-links {
   width: 100%;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
@@ -74,9 +72,6 @@ h6 {
 .social-links a i {
   color: white;
   transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
 }
 .social-links a i:hover {
   color: #616161;
@@ -96,18 +91,11 @@ h6 {
   font-size: 1.2em !important;
   width: 100% !important;
   border: #f4f4f4 3px solid !important;
-  background-color: #f4f4f4 !important;
-  margin: 0 auto;
-  position: absolute i !important;
-}
-.input-field {
-  padding: 0;
 }
 .search-btn {
-  height: 3.75em;
-  margin: 0 auto;
+  height: 3.85em;
   max-width: 100%;
-  padding: 0 1em;
+  padding: 0 0.8em;
 }
 
 /*-- No Results --*/
@@ -158,11 +146,6 @@ h6 {
   .sidenav {
     width: 75%;
     padding-top: 3em;
-  }
-  .search-btn {
-    height: 3.75em;
-    margin-right: 0.4em;
-    max-width: 100%;
   }
   .card-panel {
     padding-bottom: 1em;
