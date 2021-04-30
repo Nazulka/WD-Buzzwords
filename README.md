@@ -210,7 +210,7 @@ ___
 ## Testing
 ___
 
-You can find the testing documentation [here](TESTING.md)
+You can find the testing documentation [HERE](TESTING.md)
 
 ### Issues and Solutions
 * In the Search form, I initially used ```label for = " "``` to hint the value of the input field to the users but couldn't align it vertically within the box using Materialize classes and CSS. It was placed underneath the input field. After trying few things, I replaced it with ```placeholder = " "``` and it solved the issue. 

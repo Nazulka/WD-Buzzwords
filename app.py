@@ -161,7 +161,7 @@ def add_term():
 # Inserts new unique terms into the db
 @app.route("/insert_term", methods=['POST'])
 def insert_term():
-    # Credit to Tim for template for this function
+    # Credit to Tim for the template for this function
     new_term = request.form.get("term_name")
     terms = mongo.db.terms
     existing_term = terms.count_documents({
@@ -171,7 +171,7 @@ def insert_term():
     if existing_term == 0:
         terms.insert_one(
         {
-            "term_name": request.form.get("term_name").upper(),
+            "term_name": request.form.get("term_name"),
             "term_description": request.form.get("term_description"),
             "added_by": session["user"]
         })
@@ -189,7 +189,7 @@ def insert_term():
 def edit_term(term_id):
     if request.method == "POST":
         submit = {
-            "term_name": request.form.get("term_name"),
+            "term_name": request.form.get("term_name").upper(),
             "term_description": request.form.get("term_description"),
             "added_by": session["user"]
         }
