@@ -142,28 +142,32 @@ Social icons were tested by clicking on them, all links to the external websites
 
 ### Defensive Design Testing
 - [ ] Registration attempt with an existing Username
-  ![username exists](static/img/img_test/test1.png)
   * Returns flash message "Username already exists".
   ![username exists](static/img/img_test/test2.png)
+
 - [ ] Registration attempt with an unmatching Password and Confirm Passwors fields
   * Returns flash message "Passwords don't match!".
   ![passwords don't match](static/img/img_test/test3.png)
+
 - [ ] Registration attempt with a Username and/or Password containing special charachters 
   * Displays form validation error message.
   ![passwords don't match](static/img/img_test/test5.png)
+
 - [ ] Log In attempt with an incorrect Username and/or Password
   * Returns flash message "Incorrect Username and/or Password" to deter users from trying to guess either one of the fields.
   ![incorrect username and/or password](static/img/img_test/test4.png)
-- Attempts by user to delete terms not contributed by them 
+
+- [ ] Attempts by user to delete terms not contributed by them 
   * Verified users are only able to view in the Account Page, edit and delete the terms contributed by themselves.
   * Admin user is authorised to delete other users' entries.
   ![account page](static/img/img_test/test6.png)
-- Confirmation delete modal pops up when users attempt to delete the term from the dictionary to avoid accidental deletion. 
-![delete modal](static/img/img_test/test8.png)
-- Attempts to contribute a term that already exists in the dictionary
+
+- [ ] Confirmation delete modal pops up when users attempt to delete the term from the dictionary to avoid accidental deletion. 
+  ![delete modal](static/img/img_test/test8.png)
+
+- [ ] Attempts to contribute a term that already exists in the dictionary
   * Returns flash message "This term already exists in the dictionary!"  
   ![add term](static/img/img_test/test7.png)
-
 
 
 [back to top](#testing)
