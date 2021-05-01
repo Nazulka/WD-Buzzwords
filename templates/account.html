@@ -9,8 +9,6 @@
             </h3>
         </div>
     </div>
-
-    <!-- Terms added by the user -->
     <div class="row">
         <div class="col s12 m10 offset-m1">
             <h3 class="left-align">
@@ -19,6 +17,7 @@
         </div>
     </div>
 </div>
+<!-- If there are terms added by the user -->
 {% if terms|length > 0 %}
     <div class="container">
         <div class="row">
@@ -64,7 +63,7 @@
     {% else %}
     <div class="container">
         <div class="col s12 m8 offset-m2">
-            <h3 class="red-text left-align">Oops... There is nothing here!</h3>
+            <h3 class="red-text left-align">You haven't got any added terms!</h3>
         </div>
     </div>
 {% endif %}

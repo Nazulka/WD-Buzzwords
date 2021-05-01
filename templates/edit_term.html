@@ -1,47 +1,46 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="center-align">Edit Your Word</h3>
-    
-    <!-- Card Panel -->
-    <div class="row card-panel grey lighten-5">
-        <form class="col m8 offset-m2 s12" method="POST" action="{{ url_for('edit_term', term_id=term._id) }}">
-            
-            <!-- Card Panel Input Term Name -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-pen-alt prefix"></i>
-                    <input id="term_name" name="term_name" minlength="3" maxlength="50" value="{{ term.term_name }}" type="text" class="validate"
-                        required>
-                    <label for="term_name">What's your word?</label>
-                </div>
+<h3 class="center-align">Edit Your Word</h3>
+
+<!-- Card Panel -->
+<div class="row card-panel grey lighten-5">
+    <form class="col m8 offset-m2 s12" method="POST" action="{{ url_for('edit_term', term_id=term._id) }}">
+        <!-- Card Panel Input Term Name -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-pen-alt prefix"></i>
+                <input id="term_name" name="term_name" minlength="3" maxlength="50" value="{{ term.term_name }}"
+                    type="text" class="validate" required>
+                <label for="term_name">What's your word?</label>
             </div>
-            <!-- Card Panel Input Term Description -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="far fa-sticky-note prefix"></i>
-                    <textarea id="term_description" name="term_description" class="materialize-textarea validate"
-                        minlength="5" data-length="500" required>
+        </div>
+        <!-- Card Panel Input Term Description -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="far fa-sticky-note prefix"></i>
+                <textarea id="term_description" name="term_description" class="materialize-textarea validate"
+                    minlength="5" data-length="500" required>
                         {{- term.term_description -}}
                     </textarea>
-                    <label for="term_description">What does it mean?</label>
-                </div>
+                <label for="term_description">What does it mean?</label>
             </div>
-            <!-- Edit Button -->
-            <div class="row">
-                <button class="col s4 m2 btn btn-small waves-effect waves-light amber accent-3"
-                    type="submit">Update
-                </button>
-                <!-- Cancel changes Button-->
-                <a href="{{ url_for('account', username=session['user']) }}" class="col s4 m2 btn btn-small waves-effect waves-light amber accent-3">Cancel</a>
+        </div>
+        <!-- Edit Button -->
+        <div class="row">
+            <button class="col s4 m2 btn btn-small waves-effect waves-light amber accent-3" type="submit">Update
+            </button>
+            <!-- Cancel changes Button-->
+            <a href="{{ url_for('account', username=session['user']) }}"
+                class="col s4 m2 btn btn-small waves-effect waves-light amber accent-3">Cancel</a>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <p class="center-align">
+                    Thank you for helping us keep WD Buzzwords up to date!
+                </p>
             </div>
-            <div class="row">
-                <div class="col s12">
-                    <p class="center-align">
-                        Thank you for helping us keep WD Buzzwords up to date!
-                    </p>
-                </div>
-            </div>
-        </form>
-    </div>
+        </div>
+    </form>
+</div>
 {% endblock %}

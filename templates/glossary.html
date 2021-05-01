@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-- Display filter results -->
 <div id="filter_results" class="container">
     <h2>Glossary of Terms</h2>
     <div class="container card card-panel filter-card grey lighten-5 pt">
@@ -15,6 +16,7 @@
             </div>
         </div>
     </div>
+    <!-- Display filter results -->
     {% if terms|length > 0 %}
         <div class="row">
             <div class="col s12 m10 offset-m1">
@@ -31,12 +33,14 @@
                 {% endfor %}
             </div>
         </div>
+        <!-- Back to top floating button -->
         <div class="fixed-action-btn">
             <a href="#filter_results" class="btn btn-floating btn-large waves-effect waves-light amber accent-3 click-to-toggle">
                 <i class="fa fa-arrow-up center-align" aria-hidden="true"></i>
             </a>    
         </div>
     {% else %}
+    <!-- If No Results -->
         <div class="col s12 m6 offset-m3 pt no-results">
             <h3 class="col s10 red-text left-align pt">No Matching Results Found</h3>
             <a href="{{ url_for('get_terms') }}"

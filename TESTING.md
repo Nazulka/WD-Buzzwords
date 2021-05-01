@@ -173,7 +173,7 @@ Social icons were tested by clicking on them, all links to the external websites
 [back to top](#testing)
 
 ### Responsiveness
-* The responsiveness of the website was tested on all popular devices, including iPhone 5/SE, Android Pixel 2, Samgung Galaxy S5, iPhone 6/7/8, iPad, iPad Pro, etc using [Responsinator](https://www.responsinator.com/) and Google Dev Tools Device Mode. 
+* The responsiveness of the website was tested on all popular devices, including iPhone 5/SE, Android Pixel 2, Samgung Galaxy S5, iPhone 6/7/8, iPad, iPad Pro, etc using [Responsinator](https://www.responsinator.com/), on [Am I Responsive](http://ami.responsivedesign.is/) as well as Google Dev Tools Device Mode. 
 * It was tested on physical devices including iPhone XR and iPad. All tests have shown that site is fully responsive and fits and adapts well to the different viewport size devices.
 
 
