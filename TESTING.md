@@ -132,8 +132,9 @@ Social icons were tested by clicking on them, all links to the external websites
 
 ### Defensive Design Testing
 - [] Registration attempt with an existing Username
+  ![username exists](static/img/img_test/username-exists.png)
   * Returns flash message "Username already exists".
-  ![]()
+  ![username exists](static/img/img_test/username-exists2.png)
 - [] Registration attempt with an unmatching Password and Confirm Passwors fields
   * Returns flash message "Passwords don't match!".
 - [] Log In attempt with an incorrect Username 

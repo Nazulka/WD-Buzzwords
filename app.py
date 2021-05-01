@@ -203,7 +203,7 @@ def edit_term(term_id):
 # Removes term from the db if added_by session.user
 @app.route("/delete_term/<term_id>")
 def delete_term(term_id):
-    mongo.db.terms.deleteOne({"_id": ObjectId(term_id)})
+    mongo.db.terms.remove({"_id": ObjectId(term_id)})
     flash("Entry Successfully Deleted")
     # Returns to the Profile Page
     return redirect(url_for("account", username=session["user"]))
