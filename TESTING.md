@@ -58,7 +58,7 @@ ___
 
 ### Functionality Testing
 
-- [x] Home Page
+- [x] **Home Page**
 
 **Navigation Bar**
 

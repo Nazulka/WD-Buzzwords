@@ -1,7 +1,7 @@
 # WD Buzzwords
 ___
 ___
-![responsive image]()
+![responsive image](static/img/responsive.png)
 
 WD Buzzwords is a crowdsourced dictionary where users can look up explanations to some of the most important terms and abbreviations they will come accross when working in web development. Members can also contribute to the dictionary to benefit others staring out in the industry. 
 
