@@ -1,21 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Average&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Special+Elite&display=swap");
 
-/*-- Body and Sticky footer from Materialize --*/
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  font-family: "Average", serif;
-}
-main {
-  flex: 1 0 auto;
-}
-body p {
-  line-height: 1.8;
-}
-.special {
-  font-size: 120%;
-}
+/*-- Styles used accross all Pages --*/
 h1,
 h2,
 h3,
@@ -24,16 +9,22 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
 }
+body p {
+  line-height: 1.8;
+}
+.special {
+  font-size: 120%;
+}
 .full-width {
   width: 100%;
   max-width: initial;
 }
-/*-- Flash Messages --*/
-.flashes h4 {
-  line-height: 2;
+.pt {
+  padding-top: 0.6em;
 }
 
-/*-- Navbar --*/
+
+/*-- Navbar and Sidenav --*/
 .nav-extended li > a {
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -57,7 +48,18 @@ h6 {
   color: #f4f4f4 !important;
 }
 
-/* -- Footer -- */
+/*-- Sticky Footer from Materialize --*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Average", serif;
+}
+main {
+  flex: 1 0 auto;
+}
+
+/*-- Footer Social Links --*/
 .social-links {
   width: 100%;
   list-style-type: none;
@@ -77,10 +79,18 @@ h6 {
   color: #616161;
 }
 
-/*-- Home Page --*/
-.pt {
-  padding-top: 0.6em;
+/*-- No Results Message --*/
+.no-results {
+  padding-bottom: 2em;
 }
+
+/*-- Flash Message --*/
+.flashes h4 {
+  line-height: 2;
+}
+
+/*-- Styles by Pages --*/
+/*-- Home Page --*/
 .info {
   margin-bottom: 0.5em;
 }
@@ -96,11 +106,6 @@ h6 {
   height: 3.85em;
   max-width: 100%;
   padding: 0 0.8em;
-}
-
-/*-- No Results --*/
-.no-results {
-  padding-bottom: 2em;
 }
 
 /*-- Parallax Section --*/

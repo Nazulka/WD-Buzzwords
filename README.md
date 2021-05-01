@@ -70,11 +70,11 @@ This website offers users the option to choose between the following two to acco
 
 
 ### Wireframing
-- [x] [Desktop wireframes](static/docs/desktop-wf.pdf)
-- [x] [Tablet and Mobile wireframes](static/docs/tablet-wf.pdf)
+- [x] **[Desktop wireframes](static/docs/desktop-wf.pdf)**
+- [x] **[Tablet and Mobile wireframes](static/docs/tablet-wf.pdf)**
 
 Some changes were made to the original wireframes during development process for better user experience. 
-* I decided to move the _Search Box_ to the Home Page, to improve the UX for the users who just want to look up a term. The Home Page has more content now and is scrollable, compared to the original one-page design.
+* I decided to move the _Search Box_ to the Home Page, to improve the UX for the users who don't have time to sign up or just want to look up a term. The Home Page has more content now and is scrollable, compared to the original one-page design.
 * The Glossary Page Filter results box was replaced by _Filter Results by Letters_ section and now features buttons with all the letters of the alphabet. I thought this will will be a useful feature to have as more terms are added and dictionary expands in the future.
 * I also added 404 'Page Not Found' and 500 'Internal Server Error' pages, which were not in wireframes, to communicate to users what was the reason the page didn't render correctly and give instructions on what to do next. 
 - [x] **Database Diagram**
@@ -215,7 +215,8 @@ You can find the testing documentation [HERE](TESTING.md)
 ### Issues and Solutions
 * In the Search form, I initially used ```label for = " "``` to hint the value of the input field to the users but couldn't align it vertically within the box using Materialize classes and CSS. It was placed underneath the input field. After trying few things, I replaced it with ```placeholder = " "``` and it solved the issue. 
 * When I tried to sort all the terms displayed in the Glossary Page in alphabetical order using ```sort()``` function, I noticed it was sorting first capitalized items and then again items beginning with lower case letters. I used ```upper()``` function in my ```insert_term``` functionality so all charachters on a string are converted to uppercase before being stored in the database. 
-* Some of the buttons didn't display correctly in Safari, Mozilla 
+* During the tests, some of the buttons didn't render correctly on mobile devices on Safari and Mozilla. This was fixed by removing ```type="submit"``` from the links styled as buttons.
+
 
 ## Deployment
 ___
@@ -235,9 +236,9 @@ ___
 * Once created, click on green **_Gitpod_** button to open your new workspace. 
 
 ### Deployment to Heroku
-Heroku cloud platform was used to deploy and host this app. 
+Heroku cloud platform was used to deploy and host this app by following the steps below:
 
-* Set up workspace for Heroku: 
+* **Set up workspace for Heroku:** 
     * In the terminal window of your IDE, create a requirements.txt file to contain all applications and dependencies required to run our app.
 
         ``` pip3 freeze --local . requirements.txt```
@@ -245,12 +246,12 @@ Heroku cloud platform was used to deploy and host this app.
 
         ``` echo web: python app.py > Procfile```
 
-* Create application in Heroku:
+* **Create application in Heroku:**
     * Navigate to [Heroku](https://www.heroku.com/home) website and create an account.
     * Once logged in, click on the **_New_** button and select **_Create New App_**
     * Create a name for your app and select the region closest to your location.
 
-* Connect your app to GitHub repository:
+* **Connect your app to GitHub repository:**
     * On the **_Deploy_** page, select GitHub as your **_Deplyment method_**.
     * You will then be prompted to find the github repository, click on **_Connect_** button to connect.
     * Click on the **_Settings_** tab and and select **_Config Vars_** and **_Reveal Config Vars_**.
