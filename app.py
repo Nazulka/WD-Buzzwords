@@ -183,7 +183,7 @@ def insert_term():
     return render_template("add_term.html")
 
 
-# Edits terms if added_by the user
+# Edits terms if added_by session user
 @app.route("/edit_term/<term_id>", methods=["GET", "POST"])
 def edit_term(term_id):
     if request.method == "POST":
