@@ -1,4 +1,4 @@
-## [Testing](#testing)
+## Testing
 ___
 
   * [Code Validity](#code-validity)
@@ -131,6 +131,15 @@ Social icons were tested by clicking on them, all links to the external websites
 [back to top](#testing)
 
 ### Defensive Design Testing
+- [] Registration attempt with an existing Username
+  * Returns flash message "Username already exists".
+  ![]()
+- [] Registration attempt with an unmatching Password and Confirm Passwors fields
+  * Returns flash message "Passwords don't match!".
+- [] Log In attempt with an incorrect Username 
+  * Returns flash message "Incorrect Username and/or Password" to deter users from trying to guess either one of the fields.
+- [] Log In attempt with an incorrect Password 
+  * Returns flash message "Incorrect Username and/or Password" to deter users from trying to guess either one of the fields.
 
 
 
@@ -148,7 +157,7 @@ This website was tested for usability by my family and friends. They didn't expe
 ### Performance Testing
 Performance testing was carried out using Lighthouse in Chrome Developer Tools. The tests had shown an excellent performance and accessibility results for desktop devices. 
 Steps taken to improve performance for the mobile devices following the initial tests:
-* Added ```aria-label="search``` attribute to a search button.
+* Added ```aria-label="search"``` attribute to a search button.
 * Used darker background-color for the navbar to improve legibility and increase contrast with the text.
 
 

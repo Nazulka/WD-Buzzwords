@@ -27,8 +27,6 @@ ___
   * [Acknowledgements](#acknowledgements)
 
 
-[back to top](#wd-buzzwords)
-
 ## UX
 ___
 **Project Goals**
@@ -59,6 +57,8 @@ ___
 * As a site owner of WD Buzzwords, I want to be able to delete entries contributed by registered users if necessary.
 
 
+[back to top](#wd-buzzwords)
+
 ### Scope
 * To create a user friendly website using HTML, CSS, JavaScript, Python, Flask and MongoDB that ensures continuous, intuitive and fluid experience for the users. 
 * To provide a learning aid that promotes understanding of web development terms and abbreviations and stimulates a desire to learn independently.
@@ -78,8 +78,10 @@ Some changes were made to the original wireframes during development process for
 * The Glossary Page Filter results box was replaced by _Filter Results by Letters_ section and now features buttons with all the letters of the alphabet. I thought this will will be a useful feature to have as more terms are added and dictionary expands in the future.
 * I also added 404 'Page Not Found' and 500 'Internal Server Error' pages, which were not in wireframes, to communicate to users what was the reason the page didn't render correctly and give instructions on what to do next. 
 - [x] **Database Diagram**
+* The diagram below shows the relationship between fields of the existing database collections.
 
 ![Database Diagram](static/docs/db-diagram.png)
+
 
 ### Design Choices
 - [x] **Color Scheme**
@@ -117,7 +119,6 @@ The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.
 * **[RandomKeygen](https://randomkeygen.com/)** - to create Fort Knox Password.
 * **[Balsamiq](https://balsamiq.com/wireframes/desktop/)** - to generate digital sketches for the project concept for better planning of the layout of the website.
 * **[Markdown-toc](http://ecotrust-canada.github.io/markdown-toc)** - to generate the Table of contents.
-
 
 
 - [x] **Back-end**
