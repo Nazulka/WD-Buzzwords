@@ -23,8 +23,7 @@ ___
 - [x] **Guest user**
 
 * As a guest user of WD Buzzwords, who is visiting the site for the first time, I want to understand easily what the site is about.
-  - The Home page has a 'Welcome' section to offer new visitors more information on what this site is about. It also contains two sections with
-    call to action buttons to spark curiosity and lead visitors to the other pages of the website. The parallax image visually supports the content and adds interactivity to the page.
+  * The Home page has a 'Welcome' section to offer new visitors more information on what this site is about. It also contains two sections with call to action buttons to spark curiosity and lead visitors to the other pages of the website. The parallax image visually supports the content and adds interactivity to the page.
 * As a guest user of WD Buzzwords, I want to be able to use the searchbox to search for terms that I would like to find out more about.
   - The search box is clearly labelled and easily accessible from the Home Page.
 * As a guest user of WD Buzzwords, I want to browse web development terms and jargons and look up meanings without needing to register to the website.
@@ -59,18 +58,21 @@ ___
 
 ### Functionality Testing
 
-- [x] **Navigation Bar**
+- [x] Home Page
 
-  - The Materialize navbar is fixed and is visible on all screen size devices. The included `.hide-on-med-and-down` class is working as expected and collapses into a hamburger menu on Tablets and smaller devices.
-  - The sidenav which is used in conjunction with the fullscreen navigation is working as desired and is visible on screen sizes =< 992px.
+**Navigation Bar**
+
+  - The Materialize navbar is fixed and is visible across all pages and on all screen size devices. The `.hide-on-med-and-down` class is working as expected and it collapses into a hamburger menu on Tablets and smaller devices.
+  - The sidenav, which was used in conjunction with the fullscreen navigation is working as desired and is visible on screen sizes =< 992px.
   - All the links on both, navbar and a sidenav were checked by clicking and are working as intended, allowing users to jump to the linked page.
   - The brand logo link was also tested by clicking and is working correctly, as it takes users back to the Home page from anywhere on the site.
 
-- [x] **Parallax**
+**Parallax**
 
-  - The parallax effect was tested by scrolling down the page. It is working as it should and the image moves slower than the rest of the page making the page more engaging.
+* The parallax effect was tested by scrolling down the page. It is working as it should and the image moves slower than the rest of the page making the page more engaging.
 
-- [x] **Search box**
+
+**Search box**
 
 The input field was tested by:
 * Entering terms that exist in the glossary and clicking the _Search button_ - the selected term is displayed in the Glossary Page
@@ -79,44 +81,52 @@ The input field was tested by:
 In both cases users see _Browse Terms_ button that refreshes the page and displays all the words contained in the glossary.
 * Clicking on the _Search button_ without entering any value - _Please fill in this field_ message is displayed, prompting users to enter a value. All above described features work as intended.
 
-- [x] **Icon Boxes Section**
+
+**Icon Boxes Section**
 * All three links on these sections were clicked to test and are working as intended.
     * The first two buttons contain links to redirect users to the _Sign Up_ and _Browse All_ pages accordingly.
     * The link on the last section opens up a third-party website in a new tab.
 * On small screen sizes each section takes up the full width of the scree.
 
 
-- [x] **Footer**
+**Footer**
 * Visible on all pages.
 * Materialize Sticky Footer is responsive and stays on the bottom of the page. It gets pushed down when there is a lot of content. This have been tested by reducing / increasing the screen width and is working as intended. 
 * Change of colour and transition effects on hovering over Social Icons have been tested and working as intended.
 Social icons were tested by clicking on them, all links to the external websites are functioning as intended and open in new tabs.
 * Copyright section is center-aligned and located directly below the Footer as intended.
 
-- [x] **Filter Results Buttons**
-* Verified that by default the Glossary page displays all existing terms (including ones contributed by the users) in alphabetical order. 
-* The _Back to top_ Materialize FAB is working as intended, it floats on right bottom corner of the page and when clicked takes users to the top of the page. 
-* The _Filter Results Buttons_ are functioning as expected. When clicked by user it renders the filter results on the _filtered_results_ page. If there are no terms in the dictionary starting with the letter displayed on the button, the page displays a message: "No results found for the letter _(letter clicked by user)_" along with the _Browse Terms_ button to redirect users back to the Glossary Page. 
+- [x] **Glossary Page**
+
+**Filter Results Buttons**
+  * Verified that by default the Glossary page displays all existing terms (including ones contributed by the users) in alphabetical order. 
+  * The _Back to top_ Materialize FAB is working as intended, it floats on right bottom corner of the page and when clicked takes users to the top of the page. 
+  * The _Filter Results Buttons_ are functioning as expected. When clicked by user it renders the filter results on the _filtered_results_ page. If there are no terms in the dictionary starting with the letter displayed on the button, the page displays a message: "No results found for the letter _(letter clicked by user)_" along with the _Browse Terms_ button to redirect users back to the Glossary Page. 
 
 - [x] **Log In Page**
+* The page only appears when the user is not logged in.
 * Verified, the Flash message always pops up when users successfully log in to the website. 
 * Link below the card was clicked to test and is functioning as it should, redirecting users to the _Sign Up_ page.
 
 - [x] **Sign Up Page**
+* Sign Up page only appears when the user is not logged in.
 * Flash message pops up to confirm the successul registration.
 * The link below th ecard is fully functional, redirects users to the _Log In_ page.
 
 - [x] **Account Page**
+* The page is only accessible after user logs in to the website.
 * The user's contributed words displayed on the page in an alphabetical order.
 * _Edit_ button is functioning as desired, allowing users to update the terms they contributed previuosly.
 * _Delete_ button is working as intended and _Confirm deletion_ modal pops up if users click on it. Clicking on the _Delete_ button again on the pop up modal will result in removal of the term from the glossary. Alternatively, if users clicked on it by mistake or changed mind, they can click on the _Cancel_ button. 
 
 - [x] **Add Term Page**
+* The page is available for logged in users only.
 * The image is rendered correctly.
 * The form was tested by entering a new term and description and is working as intended.
 * The flash message is correctly displayed after every successful contribution to the dictionary.
 
 - [x] **Log Out Page**
+* The page is visible for logged in users only.
 * The _Log Out_ link on the navbar (sidenav on smaller screens) is working as expected and logs users out of their account when clicked.
 * Further tests verified that users are then redirected to the _Log In_ page where a flash message pops up to confirm they've been logged out. 
 
@@ -131,16 +141,28 @@ Social icons were tested by clicking on them, all links to the external websites
 [back to top](#testing)
 
 ### Defensive Design Testing
-- [] Registration attempt with an existing Username
-  ![username exists](static/img/img_test/username-exists.png)
+- [ ] Registration attempt with an existing Username
+  ![username exists](static/img/img_test/test1.png)
   * Returns flash message "Username already exists".
-  ![username exists](static/img/img_test/username-exists2.png)
-- [] Registration attempt with an unmatching Password and Confirm Passwors fields
+  ![username exists](static/img/img_test/test2.png)
+- [ ] Registration attempt with an unmatching Password and Confirm Passwors fields
   * Returns flash message "Passwords don't match!".
-- [] Log In attempt with an incorrect Username 
+  ![passwords don't match](static/img/img_test/test3.png)
+- [ ] Registration attempt with a Username and/or Password containing special charachters 
+  * Displays form validation error message.
+  ![passwords don't match](static/img/img_test/test5.png)
+- [ ] Log In attempt with an incorrect Username and/or Password
   * Returns flash message "Incorrect Username and/or Password" to deter users from trying to guess either one of the fields.
-- [] Log In attempt with an incorrect Password 
-  * Returns flash message "Incorrect Username and/or Password" to deter users from trying to guess either one of the fields.
+  ![incorrect username and/or password](static/img/img_test/test4.png)
+- Attempts by user to delete terms not contributed by them 
+  * Verified users are only able to view in the Account Page, edit and delete the terms contributed by themselves.
+  * Admin user is authorised to delete other users' entries.
+  ![account page](static/img/img_test/test6.png)
+- Confirmation delete modal pops up when users attempt to delete the term from the dictionary to avoid accidental deletion. 
+![delete modal](static/img/img_test/test8.png)
+- Attempts to contribute a term that already exists in the dictionary
+  * Returns flash message "This term already exists in the dictionary!"  
+  ![add term](static/img/img_test/test7.png)
 
 
 
