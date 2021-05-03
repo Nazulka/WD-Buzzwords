@@ -39,7 +39,7 @@ def get_terms():
 # Filter results by first letter
 @app.route("/filter_terms/<letter>")
 def filter_terms(letter):
-
+    # Credit to Igor for help with this function
     filtered_terms = []
     terms = list(mongo.db.terms.find().sort('term_name', 1))
     for term in terms:

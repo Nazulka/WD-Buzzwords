@@ -1,5 +1,7 @@
 ## Testing
 ___
+___
+Table of Contents
 
   * [Code Validity](#code-validity)
   * [Testing User Stories](#testing-user-stories)
@@ -10,7 +12,9 @@ ___
   * [Performance Testing](#performance-testing)
   * [Browser Compatibility Testing](#browser-compatibility-testing)
 
+
 ### Code Validity
+___
 
 - HTML Markup Validation - [fail](https://validator.w3.org/nu/)
   * Tests returned multiple errors and warnings due HTML validator not being able to recognize Jinja.
@@ -18,7 +22,9 @@ ___
 - JavaScript Code Quality Tool JSHint - [pass](https://jshint.com/)
 - PEP8 - [pass](http://pep8online.com/)
 
+
 ### Testing User Stories
+___
 
 - [x] **Guest user**
 
@@ -57,6 +63,7 @@ ___
 [back to top](#testing)
 
 ### Functionality Testing
+___
 
 - [x] **Home Page**
 
@@ -141,6 +148,7 @@ Social icons were tested by clicking on them, all links to the external websites
 [back to top](#testing)
 
 ### Defensive Design Testing
+___
 - [ ] Registration attempt with an existing Username
   * Returns flash message "Username already exists".
   ![username exists](static/img/img_test/test2.png)
@@ -173,16 +181,19 @@ Social icons were tested by clicking on them, all links to the external websites
 [back to top](#testing)
 
 ### Responsiveness
+___
 The responsiveness of the website was tested on all popular devices, including iPhone 5/SE, Android Pixel 2, Samgung Galaxy S5, iPhone 6/7/8, iPad, iPad Pro, etc using [Responsinator](https://www.responsinator.com/), [Am I Responsive](http://ami.responsivedesign.is/) as well as Google Dev Tools Device Mode. 
 
 It was tested on physical devices including iPhone XR and iPad. All tests have shown that site is fully responsive and fits and adapts well to the different viewport size devices.
 
 
 ### Usability Testing
+___
 This website was tested for usability by my family and friends. They didn't experience any issues during the testing process and it was confirmed that the website was easy to use and navigate. They were able to intuitively use the interactive elements of the website, find the information they were looking for and easily understand the purpose of the website.
 
 
 ### Performance Testing
+___
 Performance testing was carried out using Lighthouse in Chrome Developer Tools. The tests had shown an excellent performance and accessibility results for desktop devices. 
 Steps taken to improve performance for the mobile devices following the initial tests:
 * Added ```aria-label="search"``` attribute to a search button.
@@ -190,6 +201,7 @@ Steps taken to improve performance for the mobile devices following the initial 
 
 
 ### Browser Compatibility Testing
+___
 Device/Browser | Google Chrome    | Microsoft Edge   | Firefox          | Safari           | Internet Explorer |
 -------------- | :---------------:|:----------------:| :---------------:| :---------------:| :----------------:|
 Mobile Phone   |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| n/a               |

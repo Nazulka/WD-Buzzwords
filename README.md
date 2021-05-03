@@ -74,19 +74,19 @@ This website offers users the option to choose between the following two to acco
 - [x] **[Tablet and Mobile wireframes](static/docs/tablet-wf.pdf)**
 
 Some changes were made to the original wireframes during development process for better user experience. 
-* I decided to move the _Search Box_ to the Home Page, to improve the UX for the users who don't have time to sign up or just want to look up a term. The Home Page has more content now and is scrollable, compared to the original one-page design.
-* The Glossary Page Filter results box was replaced by _Filter Results by Letters_ section and now features buttons with all the letters of the alphabet. I thought this will will be a useful feature to have as more terms are added and dictionary expands in the future.
+* I decided to move the _Search Box_ to the Home Page, to improve the UX for the users who don't have the time to sign up to the website or just want to look up a term. The Home Page has more content now and is scrollable, compared to the original one-page design.
+* The Glossary Page _Filter Results_ box was replaced by _Filter Results by Letters_ section and now features buttons with all the letters of the alphabet. I thought this will will be a useful feature to have as more terms will be added and dictionary expands in the future.
 * I also added 404 'Page Not Found' and 500 'Internal Server Error' pages, which were not in wireframes, to communicate to users what was the reason the page didn't render correctly and give instructions on what to do next. 
 - [x] **Database Diagram**
-* The diagram below shows the relationship between fields of the existing database collections.
+* The diagram below shows the relationship between fields of the existing database collections. I kept it simple as I wanted it to be compact and serve it's purpose of introducing a term and it's description. 
 
 ![Database Diagram](static/docs/db-diagram.png)
 
 
 ### Design Choices
 - [x] **Color Scheme**
-* The color palette has been created using [Coolors](https://coolors.co/4db6ac-ffc400-c2185b-e0e0e0-eeeeee) and materialize color classes have been used in this project.
-* I have chosen a base color of teal and a complimentary color orange to create contrast to the site and add depth. By using this bold combination, I aimed to create an inviting and relaxing design for the users. Light grey has been used to display the flash messages. 
+* The color palette was created using [Coolors](https://coolors.co/4db6ac-ffc400-c2185b-e0e0e0-eeeeee) and materialize color classes were used in this project.
+* I chose a base color of teal and a complimentary color orange to create contrast to the site and add depth. By using this bold combination, I aimed to create an inviting and relaxing design for the users. Light grey was used to display the flash messages. 
 ![color palette](static/img/color-palette.jpg)
 
 - [x] **Typography**
@@ -95,8 +95,8 @@ Some changes were made to the original wireframes during development process for
 * *Average* for the all other elements as I found it complemented well the above two fonts. 
 
 - [x] **Imagery**
-* The Home page supporting image added to enchance the overall experience and is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY).
-* A chart in Add Term page is from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html).
+* The Home page supporting image added to enchance the overall experience and was obtained from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY).
+* A chart in Add Term page was taken from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html).
 
 [back to top](#wd-buzzwords)
 
@@ -112,7 +112,7 @@ ___
 - [x] **Front-end**
 * **[Materialize CSS v1.0.0](https://materializecss.com/)** - a front-end framework, used to create sleek, consistent, functional and responsive website. I wanted to familiarize myself better with Materialize as my previous two projects used Bootstrap. 
 The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.  
-* **jQuery** - required to ensure proper rendering of the Materialize components listed above.
+* **[jQuery](https://jquery.com/)** - required to ensure proper rendering of the Materialize components listed above.
 * **[Google Fonts](https://fonts.google.com/)** for typography. 
 * **[Font Awesome v5.15.3](https://fontawesome.com/icons?d=gallery&p=2)** for icons in icons section, social icons and some of the buttons.
 * **[Tinypng.com](https://tinypng.com/)** - to reduce size and compress the images used in this project.
@@ -122,10 +122,10 @@ The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.
 
 
 - [x] **Back-end**
-* **Flask** - a lightweight micro web framework written in Python used to create a simple, clean code and to reduce development time.
+* **[Flask](https://flask.palletsprojects.com/en/1.1.x/)** - a lightweight micro web framework written in Python used to create a simple, clean code and to reduce development time.
 * **[MongoDB](https://www.mongodb.com/2)** - non-relational database, used to store, manipulate and retrieve data.
 * **[Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)** - used with Flask to securely store passwords with salted hashes and verify user passwords to authenticate users.
-* **Flask Jinja** - used as it's a part of a Flask package and to allow template inheritance.
+* **[Flask Jinja](https://flask.palletsprojects.com/en/1.1.x/templating/)** - used as it's a part of a Flask package and to allow template inheritance.
 
 
 - [x] **Deployment**
@@ -191,7 +191,7 @@ ___
 
 **Add Term**
 * The form allows users to add new entries (Create functionality) and their description. It features a check-before-adding chart to help users to decide whether to add their word to the dictionary.
-* If users try to add a term that already exists in the dictionary, they get a flash notification. Unique entries are added to the dictionary and users see a flash message to confirm the successful entry. This entry is then displayed in the users' Account Page. 
+* If users try to add a term that already exists in the dictionary, they get a flash notification. If entries are unique, they are added to the dictionary and users see a flash message to confirm the successful entry. This entry is then displayed in the users' Account Page. 
 
 **Account Page**
 * The Account page displays the entries made by the user (Read functionality). 
@@ -225,7 +225,7 @@ ___
 * **Python3** to write the code and run the application
 * **PIP** to install packages
 * **Git** for version control
-* **GitPod** powered by VS Code was used for this project (or any IDE of your choice)
+* **GitPod** powered by VS Code was used for this project (any IDE of your choice will work)
 * **MongoDB** - to create and manipulate the database
 * **Heroku** - to deploy and manage the app
 
@@ -240,7 +240,7 @@ ___
 Heroku cloud platform was used to deploy and host this app by following the steps below:
 
 * **Set up workspace for Heroku:** 
-    * In the terminal window of your IDE, create a requirements.txt file to contain all applications and dependencies required to run our app.
+    * In the terminal window of your IDE, create a requirements.txt file to contain all applications and dependencies required to run the app.
 
         ``` pip3 freeze --local . requirements.txt```
     * Create a Procfile (always with a capital P and no file extension!) - required by Heroku, to know which file runs the app.
@@ -341,7 +341,7 @@ ___
 
 
 ### Media 
-* A parallax image is from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY)
+* A parallax image was obtained from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY)
 * A new entry submission chart was taken from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) 
 * Favicon icon was made by Freepik from [Flaticon](https://www.flaticon.com)
 
