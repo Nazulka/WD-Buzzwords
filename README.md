@@ -57,7 +57,7 @@ ___
 * As a site owner of WD Buzzwords, I want to be able to delete entries contributed by registered users if necessary.
 
 
-[back to top](#wd-buzzwords)
+**[back to top](#wd-buzzwords)**
 
 ### Scope
 * To create a user friendly website using HTML, CSS, JavaScript, Python, Flask and MongoDB that ensures continuous, intuitive and fluid experience for the users. 
@@ -98,7 +98,7 @@ Some changes were made to the original wireframes during development process for
 * The Home page supporting image added to enchance the overall experience and was obtained from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY).
 * A chart in Add Term page was taken from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html).
 
-[back to top](#wd-buzzwords)
+**[back to top](#wd-buzzwords)**
 
 ## Technologies Used
 ___
@@ -134,7 +134,7 @@ The main components used: navbar, sidenav, parallax, cards, modal, footer, etc.
 * **GitHub** - used as a hosting service and for future collaborations.
 * **Heroku** - my GitHub repo for this project had been connected to Heroku app to enable management and deployment of this app.
 
-[back to top](#wd-buzzwords)
+**[back to top](#wd-buzzwords)**
 
 ## Features
 ___
@@ -206,7 +206,7 @@ ___
 * Expand the glossary by adding _part of speech_, _synonyms_ and _pronunciation_ features. 
 * Allow users to edit their passwords and delete their accounts. 
  
-[back to top](#wd-buzzwords)
+**[back to top](#wd-buzzwords)**
 
 ## Testing
 ___
@@ -326,7 +326,7 @@ To run this project on your device using the IDE of your choice follow these ste
     ```python3 app.py```. 
 
 
-[back to top](#wd-buzzwords)
+**[back to top](#wd-buzzwords)**
 
 
 ## Credits
@@ -361,4 +361,4 @@ ___
 * Thanks to the wonderful Slack community for inspiring me stay positive no matter how hard it gets!
 
 
-[back to top](#wd-buzzwords)
+**[back to top](#wd-buzzwords)**
