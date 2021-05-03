@@ -166,27 +166,27 @@ In both cases users see _Browse Terms_ button that refreshes the page and displa
 
 ### Defensive Design Testing
 ___
-* Registration attempt with an existing Username
+* **Registration attempt with an existing Username**
 
   :ballot_box_with_check: Returns flash message "Username already exists".
   ![username exists](static/img/img_test/test2.png)
 
-* Registration attempt with an unmatching Password and Confirm Passwors fields
+* **Registration attempt with an unmatching Password and Confirm Passwors fields**
 
   :ballot_box_with_check: Returns flash message "Passwords don't match!".
   ![passwords don't match](static/img/img_test/test3.png)
 
-* Registration attempt with a Username and/or Password containing special charachters 
+* **Registration attempt with a Username and/or Password containing special charachters**
 
   :ballot_box_with_check: Displays form validation error message.
   ![passwords don't match](static/img/img_test/test5.png)
 
-* Log In attempt with an incorrect Username and/or Password
+* **Log In attempt with an incorrect Username and/or Password**
 
   :ballot_box_with_check: Returns flash message "Incorrect Username and/or Password" to deter users from trying to guess either one of the fields.
   ![incorrect username and/or password](static/img/img_test/test4.png)
 
-* Attempts by user to delete terms not contributed by them 
+* **Attempts by user to delete terms not contributed by them**
 
   :ballot_box_with_check: Verified users are able to view their entries in their Account Page and only edit and delete the terms contributed by themselves. Only Admin user is authorised to delete other users' entries.
   ![account page](static/img/img_test/test6.png)
@@ -195,7 +195,7 @@ ___
 
   ![delete modal](static/img/img_test/test8.png)
 
-* Attempts to contribute a term that already exists in the dictionary
+* **Attempts to contribute a term that already exists in the dictionary**
 
   :ballot_box_with_check: Returns flash message "This term already exists in the dictionary!"  
   ![add term](static/img/img_test/test7.png)
