@@ -61,7 +61,7 @@ ___
 * As a site owner of WD Buzzwords, I want to be able to delete entries contributed by registered users if necessary.
   - The admin user is authorised to remove any content that is deemed irrelevant or inapropriate.
 
-[back to top](#testing)
+**[back to top](#testing)**
 
 ### Functionality Testing
 ___
@@ -161,46 +161,52 @@ In both cases users see _Browse Terms_ button that refreshes the page and displa
 * Confirmed that the page is rendered correctly if something has gone wrong on the web site's server.
 * _Return to Home Page_ link is functioning properly and redirects users back to the Home page. 
 
-[back to top](#testing)
+**[back to top](#testing)**
 
 
 ### Defensive Design Testing
 ___
-:arrow_right: Registration attempt with an existing Username
-  * Returns flash message "Username already exists".
+* Registration attempt with an existing Username
+
+  :ballot_box_with_check: Returns flash message "Username already exists".
   ![username exists](static/img/img_test/test2.png)
 
-:arrow_right: Registration attempt with an unmatching Password and Confirm Passwors fields
-  * Returns flash message "Passwords don't match!".
+* Registration attempt with an unmatching Password and Confirm Passwors fields
+
+  :ballot_box_with_check: Returns flash message "Passwords don't match!".
   ![passwords don't match](static/img/img_test/test3.png)
 
-:arrow_right: Registration attempt with a Username and/or Password containing special charachters 
-  * Displays form validation error message.
+* Registration attempt with a Username and/or Password containing special charachters 
+
+  :ballot_box_with_check: Displays form validation error message.
   ![passwords don't match](static/img/img_test/test5.png)
 
-:arrow_right: Log In attempt with an incorrect Username and/or Password
-  * Returns flash message "Incorrect Username and/or Password" to deter users from trying to guess either one of the fields.
+* Log In attempt with an incorrect Username and/or Password
+
+  :ballot_box_with_check: Returns flash message "Incorrect Username and/or Password" to deter users from trying to guess either one of the fields.
   ![incorrect username and/or password](static/img/img_test/test4.png)
 
-:arrow_right: Attempts by user to delete terms not contributed by them 
-  * Verified users are only able to view in the Account Page, edit and delete the terms contributed by themselves.
-  * Admin user is authorised to delete other users' entries.
+* Attempts by user to delete terms not contributed by them 
+
+  :ballot_box_with_check: Verified users are able to view their entries in their Account Page and only edit and delete the terms contributed by themselves. Only Admin user is authorised to delete other users' entries.
   ![account page](static/img/img_test/test6.png)
 
-:arrow_right: Confirmation delete modal pops up when users attempt to delete the term from the dictionary to avoid accidental deletion. 
+  :ballot_box_with_check: Confirmation delete modal pops up when users attempt to delete the term from the dictionary to avoid accidental deletion. 
+
   ![delete modal](static/img/img_test/test8.png)
 
-:arrow_right: Attempts to contribute a term that already exists in the dictionary
-  * Returns flash message "This term already exists in the dictionary!"  
+* Attempts to contribute a term that already exists in the dictionary
+
+  :ballot_box_with_check: Returns flash message "This term already exists in the dictionary!"  
   ![add term](static/img/img_test/test7.png)
 
 
-[back to top](#testing)
+**[back to top](#testing)**
 
 
 ### Responsiveness
 ___
-The responsiveness of the website was tested on all popular devices, including iPhone 5/SE, Android Pixel 2, Samgung Galaxy S5, iPhone 6/7/8, iPad, iPad Pro, etc using [Responsinator](https://www.responsinator.com/), [Am I Responsive](http://ami.responsivedesign.is/) as well as Google Dev Tools Device Mode. 
+The responsiveness of the website was tested on all popular devices, including iPhone 5/SE Android Pixel 2, Samgung Galaxy S5, iPhone 6/7/8, iPad, iPad Pro, etc using [Responsinator](https://www.responsinator.com/), [Am I Responsive](http://ami.responsivedesign.is/) as well as Google Dev Tools Device Mode. 
 
 It was tested on physical devices including iPhone XR and iPad. All tests have shown that site is fully responsive and fits and adapts well to the different viewport size devices.
 
@@ -215,7 +221,7 @@ ___
 Performance testing was carried out using Lighthouse in Chrome Developer Tools. The tests had shown an excellent performance and accessibility results for desktop devices. 
 Steps taken to improve performance for the mobile devices following the initial tests:
 * Added ```aria-label="search"``` attribute to a search button.
-* Used darker background-color for the navbar to improve legibility and increase contrast with the text.
+* Used darker background-color for the navbar to improve legibility and increase contrast with the foreground **text.
 
 
 ### Browser Compatibility Testing
@@ -227,4 +233,4 @@ Tablet         |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_
 Desktop        |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:| n/a               |
 
 
-[back to top](#testing)
+**[back to top](#testing)**
