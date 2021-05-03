@@ -91,25 +91,27 @@ In both cases users see _Browse Terms_ button that refreshes the page and displa
 
 
 **Icon Boxes Section**
+
 * All three links on these sections were clicked to test and are working as intended.
     * The first two buttons contain links to redirect users to the _Sign Up_ and _Browse All_ pages accordingly.
     * The link on the last section opens up a third-party website in a new tab.
-* On small screen sizes each section takes up the full width of the scree.
+* On small screen sizes each section takes up the full width of the screen.
 
 
 **Footer**
-* Visible on all pages.
-* Materialize Sticky Footer is responsive and stays on the bottom of the page. It gets pushed down when there is a lot of content. This have been tested by reducing / increasing the screen width and is working as intended. 
-* Change of colour and transition effects on hovering over Social Icons have been tested and working as intended.
-Social icons were tested by clicking on them, all links to the external websites are functioning as intended and open in new tabs.
+
+* Materialize Sticky Footer is responsive and stays on the bottom of the page. It is visible on all pages and gets pushed down when there is a lot of content. This have been tested by reducing / increasing the screen width and is working as intended. 
+* Change of colour and transition effects on hovering over Social Icons are working as intended. Social icons were tested by clicking on them, all links to the external websites are functioning as intended and open in new tabs.
 * Copyright section is center-aligned and located directly below the Footer as intended.
+
 
 - [x] **Glossary Page**
 
 **Filter Results Buttons**
+
   * Verified that by default the Glossary page displays all existing terms (including ones contributed by the users) in alphabetical order. 
   * The _Back to top_ Materialize FAB is working as intended, it floats on right bottom corner of the page and when clicked takes users to the top of the page. 
-  * The _Filter Results Buttons_ are functioning as expected. When clicked by user it renders the filter results on the _filtered_results_ page. If there are no terms in the dictionary starting with the letter displayed on the button, the page displays a message: "No results found for the letter _(letter clicked by user)_" along with the _Browse Terms_ button to redirect users back to the Glossary Page. 
+  * The _Filter Results Buttons_ are functioning as expected. When clicked by the user it renders the results for the button clicked on the _filtered_results_ page. If there are no terms in the dictionary starting with the letter displayed on the button, the page displays a message: "No results found for the letter _(letter clicked by user)_" along with the _Browse Terms_ button to redirect users back to the Glossary Page. 
 
 - [x] **Log In Page**
 
@@ -122,23 +124,24 @@ Social icons were tested by clicking on them, all links to the external websites
 
 * Sign Up page only appears when the user is not logged in.
 * Flash message pops up to confirm the successul registration.
-* The link below th ecard is fully functional, redirects users to the _Log In_ page.
+* The link below the card is fully functional, redirects users to the _Log In_ page.
 
 
 - [x] **Account Page**
 
 * The page is only accessible after user logs in to the website.
-* The user's contributed words displayed on the page in an alphabetical order.
+* The Account holder's contributed words displayed on the page in an alphabetical order.
 * _Edit_ button is functioning as desired, allowing users to update the terms they contributed previuosly.
-* _Delete_ button is working as intended and _Confirm deletion_ modal pops up if users click on it. Clicking on the _Delete_ button again on the pop up modal will result in removal of the term from the glossary. Alternatively, if users clicked on it by mistake or changed mind, they can click on the _Cancel_ button. 
+* _Delete_ button is working as intended and triggers _Confirm deletion_ pop up modal when clicked. Clicking on the _Delete_ button again on the modal will result in removal of the term from the glossary. Alternatively, if users clicked on it by accident or changed mind, they can click on the _Cancel_ button. 
 
 
 - [x] **Add Term Page**
 
 * The page is available for logged in users only.
 * The image is rendered correctly.
-* The form was tested by entering a new term and description and is working as intended.
-* The flash message is correctly displayed after every successful contribution to the dictionary.
+* The form was tested by:
+  * Entering a unique new term and description, it was verified that the form is working as intended allowing users to make a contribution to the dictionary. The flash message is correctly displayed after every successful contribution to the dictionary.
+  * Entering a non-unique term: a warning flash message is displayed, informing the user that _This term already exist in the dictionary_. The entry is not added to the dictionary.
 
 
 - [x] **Log Out Page**
@@ -163,7 +166,7 @@ Social icons were tested by clicking on them, all links to the external websites
 
 ### Defensive Design Testing
 ___
-- [ ] Registration attempt with an existing Username
+:arrow_forward: Registration attempt with an existing Username
   * Returns flash message "Username already exists".
   ![username exists](static/img/img_test/test2.png)
 
