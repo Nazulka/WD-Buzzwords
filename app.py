@@ -170,7 +170,7 @@ def insert_term():
     # Add unique term into the database
     if existing_term == 0:
         terms.insert_one({
-            "term_name": request.form.get("term_name"),
+            "term_name": request.form.get("term_name").upper(),
             "term_description": request.form.get("term_description"),
             "added_by": session["user"]
         })
