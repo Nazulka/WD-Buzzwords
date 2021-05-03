@@ -40,7 +40,7 @@
             </a>    
         </div>
     {% else %}
-    <!-- If No Results -->
+    <!-- Displays if No Results -->
         <div class="col s12 m6 offset-m3 pt no-results">
             <h3 class="col s10 red-text left-align pt">No Matching Results Found</h3>
             <a href="{{ url_for('get_terms') }}"
@@ -48,6 +48,5 @@
         </div>
     {% endif %}
 </div>
-
 
 {% endblock %}

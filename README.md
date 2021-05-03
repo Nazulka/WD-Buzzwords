@@ -1,4 +1,4 @@
-# **![WD Buzzwords](static/img/logo.png)**
+# **WD Buzzwords**
 ___
 ___
 ![responsive image](static/img/responsive.png)
