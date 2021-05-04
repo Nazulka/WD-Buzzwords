@@ -201,8 +201,9 @@ ___
 * Enables users to log out of their account and deletes their session cookies. 
 
 ### Future Features 
-* Add an _autocomplete_ attribute to the search box input field to allow the search form to predict terms and display options to fill in the field.
 * Expand the glossary by adding _part of speech_, _synonyms_ and _pronunciation_ features. 
+* Add pagination to the Glossary Page for easier navigation and better user experience as the content grows.
+* Add an _autocomplete_ attribute to the search box input field to allow the search form to predict terms and display options to fill in the field.
 * Allow users to edit their passwords and delete their accounts. 
  
 **[back to top](#wd-buzzwords)**

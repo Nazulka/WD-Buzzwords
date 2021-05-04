@@ -20,25 +20,24 @@ body p {
   max-width: initial;
 }
 .pt {
-  padding-top: 0.6em;
+  padding-top: 0.6rem;
 }
-
 
 /*-- Navbar and Sidenav --*/
 .nav-extended li > a {
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding-right: 1em;
+  letter-spacing: 0.08rem;
+  padding-right: 1rem;
   font-size: 1.2em;
 }
 .brand-logo {
-  margin-left: 1.2em;
+  margin-left: 1.2rem;
   font-family: "Special Elite", cursive;
   font-size: 2.5em !important;
 }
 .sidenav {
   width: 60%;
-  padding-top: 3.1em;
+  padding-top: 3.1rem;
   text-align: center;
   background-color: #4db6ac;
 }
@@ -68,7 +67,7 @@ main {
 }
 .social-links .fa-3x {
   display: inline-block;
-  margin: 0.3em 0.6em;
+  margin: 0.3rem 0.6rem;
   float: none !important;
 }
 .social-links a i {
@@ -81,7 +80,7 @@ main {
 
 /*-- No Results Message --*/
 .no-results {
-  padding-bottom: 2em;
+  padding-bottom: 2rem;
 }
 
 /*-- Flash Message --*/
@@ -92,20 +91,21 @@ main {
 /*-- Styles Sorted by Pages --*/
 /*-- Home Page --*/
 .info {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 /*-- Search Section --*/
 .section-search input {
-  padding: 0.3em !important;
+  padding: 0.3rem !important;
   font-size: 1.2em !important;
   width: 100% !important;
   border: #f4f4f4 3px solid !important;
 }
 .search-btn {
-  height: 3.85em;
+  height: 4rem;
   max-width: 100%;
-  padding: 0 0.8em;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 /*-- Parallax Section --*/
@@ -116,10 +116,10 @@ main {
 /*-- Account Page --*/
 /*-- Delete Confirmation Modal --*/
 .btn-small {
-  margin: 0.6em;
+  margin: 0.6rem;
 }
 .modal-btn {
-  margin: 0.5em !important;
+  margin: 0.5rem !important;
 }
 
 /*-- Glossary Page --*/
@@ -136,7 +136,7 @@ main {
 
 /*-- 404 and 500 Error Pages --*/
 .error-card {
-  margin-top: 3em;
+  margin-top: 3rem;
 }
 
 /*--Media Queries--*/
@@ -145,22 +145,22 @@ main {
     line-height: 1.6;
   }
   .brand-logo {
-    margin-left: 0.7em;
+    margin-left: 0.7rem;
     font-size: 1.8em !important;
   }
   .sidenav {
     width: 75%;
-    padding-top: 3em;
+    padding-top: 3rem;
   }
   .card-panel {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
   }
   .filter-card {
     width: 100%;
     padding: 0;
   }
   .pt {
-    padding-top: 0.3em;
+    padding-top: 0.3rem;
   }
   .error-card {
     min-width: 80%;
