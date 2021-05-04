@@ -350,6 +350,7 @@ ___
 It was modified and adapted to the site's needs. 
 * Tim Nelson from Tutor Support suggested a for-loop for Filter Results buttons.
 * Igor for his help with the Filter Results function.
+* A check-before-submit chart on the Add Term page was inspired by [Macmillan Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html).
 
 
 ## Acknowledgements
