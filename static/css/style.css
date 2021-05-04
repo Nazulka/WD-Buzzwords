@@ -39,7 +39,7 @@ body p {
   width: 60%;
   padding-top: 3.1rem;
   text-align: center;
-  background-color: #4db6ac;
+  background-color: #009688;
 }
 .sidenav li > a {
   font-size: 1.2em;
@@ -126,15 +126,16 @@ main {
 /*-- Alphabetical Filter --*/
 .filter-card {
   width: 100%;
-  margin: 0 auto;
-  float: none !important;
 }
 .filter-heading {
   font-size: 120%;
   font-weight: 500;
   color: black;
-  padding-top: 1.8rem;
+  padding-top: 1.5rem;
   font-style: italic;
+}
+.filter-letters {
+  float: none !important;
 }
 
 /*-- 404 and 500 Error Pages --*/

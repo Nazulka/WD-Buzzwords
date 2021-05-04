@@ -3,10 +3,10 @@
 
 <!-- Display filter results -->
 <div id="filter_results" class="container">
-    <h2>Glossary of Terms</h2>
+    <h3>Glossary of Terms</h3>
     <div class="container card card-panel filter-card grey lighten-5">
         <div class="row center-align">
-            <div class="col s12 m10 offset-m1 center-align">
+            <div class="col s12 m10 offset-m1 center-align filter-letters">
                 <h4 class="pt"><strong>Filter Results</strong></h4>
                 {% set letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
                 {% for letter in letters %}
@@ -44,7 +44,7 @@
     {% else %}
     <!-- Displays if No results -->
     <div class="col s12 m6 offset-m3 pt no-results">
-        <h3 class="col s10 red-text left-align pt">No Matching Results Found</h3>
+        <h5 class="col s10 red-text left-align pt">No Matching Results Found</h5>
         <a href="{{ url_for('get_terms') }}"
             class="col s4 m2 btn btn-large left-align waves-effect waves-light amber accent-3">Browse Terms</a>
     </div>
