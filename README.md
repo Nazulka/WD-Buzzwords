@@ -96,7 +96,6 @@ Some changes were made to the original wireframes during development process for
 
 - [x] **Imagery**
 * The Home page supporting image added to enchance the overall experience and was obtained from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY).
-* A chart in Add Term page was taken from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html).
 
 **[back to top](#wd-buzzwords)**
 
@@ -342,7 +341,6 @@ ___
 
 ### Media 
 * A parallax image was obtained from [Unsplash](https://unsplash.com/photos/T6fDN60bMWY)
-* A new entry submission chart was taken from [Macmillian Dictionary](https://www.macmillandictionary.com/open-dictionary/submit.html) 
 * Favicon icon was made by Freepik from [Flaticon](https://www.flaticon.com)
 
 
