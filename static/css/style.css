@@ -127,11 +127,14 @@ main {
 .filter-card {
   width: 100%;
   margin: 0 auto;
+  float: none !important;
 }
 .filter-heading {
   font-size: 120%;
   font-weight: 500;
   color: black;
+  padding-top: 1.8rem;
+  font-style: italic;
 }
 
 /*-- 404 and 500 Error Pages --*/

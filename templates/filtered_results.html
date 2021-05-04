@@ -3,11 +3,11 @@
 
 <div id="filter_results" class="container">
     <h2>Glossary of Terms</h2>
-    <div class="container card card-panel filter-card grey lighten-5 pt">
+    <div class="container center-align card card-panel filter-card grey lighten-5">
         <div class="row">
             <div class="col s12 m10 offset-m1">
                 <!-- Filter Results by letters -->
-                <h5 class="center-align filter-header"><strong>Filter Results</strong></h5>
+                <h4 class="pt"><strong>Filter Results</strong></h4>
                 {% set letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
                 {% for letter in letters %}
                 <a href="{{ url_for('filter_terms', letter=letter) }}"
@@ -22,12 +22,12 @@
     <!-- Display filter results -->
     {% if filtered_terms|length > 0 %}
     <div class="row pt">
-        <h4>Terms starting with <span class="filter-heading">{{ letter }}</span></h4>
+        <h4 class="pt">Terms starting with <span class="filter-heading">{{ letter }}</span></h4>
         <div class="col s12 m10 offset-m1">
             {% for term in filtered_terms %}
-            <div class="row">
+            <div class="row pt">
                 <a href="{{ url_for('get_terms') }}"></a>
-                <div class="section left-align">
+                <div>
                     <h5><strong>{{ term.term_name }}</strong></h5>
                     <p>{{ term.term_description }}</p>
                     <p><em>Added by: {{term.added_by }}</em></p>
