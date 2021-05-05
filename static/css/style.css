@@ -137,11 +137,6 @@ main {
   font-style: italic;
 }
 
-/*-- Account Page --*/
-.content-account {
-  min-height: 200px;
-}
-
 /*-- 404 and 500 Error Pages --*/
 .error-card {
   margin-top: 3rem;
