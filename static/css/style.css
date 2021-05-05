@@ -162,6 +162,9 @@ main {
     width: 100%;
     padding: 0;
   }
+  .account-heading {
+    font-size: 2rem !important;
+  }
   .pt {
     padding-top: 0.2rem;
   }
