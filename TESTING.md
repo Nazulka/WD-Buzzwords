@@ -130,6 +130,7 @@ In both cases users see _Browse Terms_ button that refreshes the page and displa
 - [x] **Account Page**
 
 * The page is only accessible after user logs in to the website.
+* The _Add Term_ button is verified to redirect users to the Add Term page.
 * The Account holder's contributed words displayed on the page in an alphabetical order.
 * _Edit_ button is functioning as desired, allowing users to update the terms they contributed previuosly.
 * _Delete_ button is working as intended and triggers _Confirm deletion_ pop up modal when clicked. Clicking on the _Delete_ button again on the modal will result in removal of the term from the glossary. Alternatively, if users clicked on it by accident or changed mind, they can click on the _Cancel_ button. 

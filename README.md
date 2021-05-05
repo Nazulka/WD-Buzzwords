@@ -195,7 +195,8 @@ ___
 **Account Page**
 * The Account page displays the entries made by the user (Read functionality). 
 * Materialize buttons are placed below each entry, providing an option to edit (Update functionality) or delete the term (Delete functionality). If delete button is clicked, users see a pop-up delete confirmation modal to eliminate accidental removal of entries.
-* Admin user has the highest level of access to the website and an authorisation to delete entries made by other users, if they are deemed  irrelevant or inapropriate.
+* Add Term button is placed on top of the page encouraging users to contribute to the website.
+* Admin user is authorized to delete entries made by other users, if they are deemed irrelevant or inapropriate.
 
 **Log Out**
 * Enables users to log out of their account and deletes their session cookies. 

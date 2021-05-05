@@ -11,18 +11,16 @@
         </div>
     </div>
     <div class="row valign-wrapper pt">
-        <div class="col s8 left-align">
-            <h4>My Added Words</h4>
+        <div class="col s6 m6 offset-m1 left-align">
+            <h5>My Added Words</h5>
         </div>
-        <div class="col s4 right-align">
-            <a href="{{ url_for('add_term') }}"
-                class="btn btn-large waves-effect waves-light amber accent-3">Add a term
+        <div class="col s6 m4 center-align">
+            <a href="{{ url_for('add_term') }}" class="s12 btn waves-effect waves-light amber accent-3">Add term
             </a>
-        </div>        
+        </div>
     </div>
     <div class="divider"></div>
 </div>
-
 <!-- If there are terms added by the user -->
 <div class="container content-account grey lighten-5">
     <div class="row">
@@ -47,7 +45,6 @@
             <div class="divider"></div>
             {% endif %}
         </div>
-        
         <!-- Delete Confirmation Modal -->
         <div id="delete_modal_{{ term._id }}" class="modal grey lighten-4">
             <div class="modal-content">
