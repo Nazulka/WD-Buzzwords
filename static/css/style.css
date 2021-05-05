@@ -103,6 +103,7 @@ main {
 }
 .search-btn {
   height: 4rem;
+  width: 100%;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -126,16 +127,14 @@ main {
 /*-- Alphabetical Filter --*/
 .filter-card {
   width: 100%;
+  max-width: 100%;
 }
 .filter-heading {
   font-size: 120%;
   font-weight: 500;
   color: black;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   font-style: italic;
-}
-.filter-letters {
-  float: none !important;
 }
 
 /*-- 404 and 500 Error Pages --*/
