@@ -111,7 +111,8 @@ In both cases users see _Browse Terms_ button that refreshes the page and displa
 
   * Verified that by default the Glossary page displays all existing terms (including ones contributed by the users) in alphabetical order. 
   * The _Back to top_ Materialize FAB is working as intended, it floats on right bottom corner of the page and when clicked takes users to the top of the page. 
-  * The _Filter Results Buttons_ are functioning as expected. When clicked by the user it renders the results for the button clicked on the _filtered_results_ page. If there are no terms in the dictionary starting with the letter displayed on the button, the page displays a message: "No results found for the letter _(letter clicked by user)_" along with the _Browse Terms_ button to redirect users back to the Glossary Page. 
+  * In an unfortunate event of dictionary being empty, it displays a message: "No results found" and a _ADD TERM_ button to encourage users to make contributions.
+  * The _Filter Results Buttons_ are functioning as expected. When clicked by the user it renders the results for the button clicked on the _Filtered Results_ page. If there are no terms in the dictionary starting with the letter displayed on the button, the page displays a message: "No results found for the letter _(clicked by the user)_" along with the _Browse Terms_ button to redirect users back to the Glossary Page. 
 
 - [x] **Log In Page**
 

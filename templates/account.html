@@ -21,11 +21,13 @@
     </div>
     <div class="divider"></div>
 </div>
-<!-- If there are terms added by the user -->
+<!-- If there are terms added by the session user -->
 <div class="container content-account grey lighten-5">
     <div class="row">
         {% for term in terms %}
         <div class="col s12 m10 offset-m1">
+            <!-- Admin is able to view all users' entries -->
+            <!-- Session user is able to view their entries -->
             {% if session.user == 'admin' or session.user|lower == term.added_by|lower %}
             <a href="{{ url_for('add_term', term_name=term._id) }}"></a>
             <div class="section left-align">
@@ -34,8 +36,10 @@
                 <p><em>Added by: {{term.added_by }}</em></p>
             </div>
             <div class="row">
+                <!-- Admin and the session user can delete entries -->
                 <a href="#delete_modal_{{ term._id }}"
                     class="col s4 m2 btn btn-small waves-effect waves-light amber accent-3 modal-trigger">Delete</a>
+                    <!-- Session user can only edit their entries -->
                 {% if session.user|lower == term.added_by|lower %}
                 <a href="{{ url_for('edit_term', term_id=term._id) }}"
                     class="col s4 m2 btn btn-small waves-effect waves-light amber accent-3">Edit
@@ -51,6 +55,7 @@
                 <h5 class="center-align">Delete {{ term.term_name }} from the dictionary?</h5>
             </div>
             <div class="modal-footer">
+                <!-- Cancel and Delete buttons -->
                 <a href="{{ url_for('account', username=session['user']) }}"
                     class="col s4 m2 btn btn-small waves-effect waves-light amber accent-3 modal-close center-align modal-btn">Cancel</a>
                 <a href="{{ url_for('delete_term', term_id=term._id) }}"

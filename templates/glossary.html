@@ -42,11 +42,11 @@
         </a>
     </div>
     {% else %}
-    <!-- Displays if No results -->
+    <!-- Displays if dictionary is empty -->
     <div class="col s12 m6 offset-m3 pt no-results">
-        <h5 class="col s10 red-text left-align pt">No Matching Results Found</h5>
-        <a href="{{ url_for('get_terms') }}"
-            class="col s4 m2 btn btn-large left-align waves-effect waves-light amber accent-3">Browse Terms</a>
+        <h5 class="col s10 red-text left-align pt">No Results Found</h5>
+        <a href="{{ url_for('add_term') }}"
+            class="col s4 m2 btn btn-large left-align waves-effect waves-light amber accent-3">Add Term</a>
     </div>
     {% endif %}
 </div>
